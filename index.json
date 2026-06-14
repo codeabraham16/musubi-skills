@@ -761,6 +761,157 @@
       "rules_url": "https://zod.dev/api",
       "excerpt": "Derive TypeScript types from schemas with z.infer<typeof Schema> — never declare the type separately. Use .parse() to throw ZodError on failure and .safeParse() to get { success, data, error } for graceful handling. For async refinements/transforms call .parseAsync()/.safeParseAsync() — sync .parse() throws on async schemas. Add custom rules with .refine() (single error) or .superRefine() (ctx.addIssue for multiple). Use z.coerce.number() to convert string inputs; object schemas strip unknown keys by default — use z.strictObject() to reject them.",
       "source": "official-docs"
+    },
+    {
+      "id": "react-native",
+      "name": "React Native Conventions",
+      "description": "React Native framework conventions: core native components vs web DOM, StyleSheet-based styling, virtualized lists, platform-specific code, and the New Architecture.",
+      "stacks": [
+        "Node.js"
+      ],
+      "triggers": [
+        "*.tsx",
+        "*.ts",
+        "*.jsx"
+      ],
+      "rules_url": "https://reactnative.dev/docs/intro-react-native-components",
+      "excerpt": "Use core components (View, Text, Image, ScrollView, TextInput), never web DOM elements; all text must be wrapped in <Text>. Define styles with StyleSheet.create using camelCase props; in style arrays the last entry wins. Use FlatList/SectionList over ScrollView for long lists; provide keyExtractor, getItemLayout for fixed-height rows, and wrap renderItem in useCallback with memoized items. Branch platforms with Platform.OS/Platform.select or .ios.js/.android.js files. The New Architecture (Fabric, TurboModules, JSI) is the default since RN 0.76.",
+      "deps": [
+        "react-native"
+      ],
+      "capabilities": [],
+      "tags": [
+        "mobile",
+        "react-native"
+      ],
+      "source": "official-docs"
+    },
+    {
+      "id": "expo",
+      "name": "Expo SDK & Tooling Conventions",
+      "description": "Expo SDK and tooling conventions: Expo Router file-based routing, app config in app.json/app.config, EAS Build, and development builds vs Expo Go.",
+      "stacks": [
+        "Node.js"
+      ],
+      "triggers": [
+        "*.tsx",
+        "*.ts",
+        "app.json",
+        "app.config.js",
+        "app.config.ts"
+      ],
+      "rules_url": "https://docs.expo.dev/router/introduction/",
+      "excerpt": "Use Expo Router file-based routing: files in app/ become routes; index.tsx is the default route, _layout.tsx defines shared navigation (Stack/Tabs), [param] is dynamic (read via useLocalSearchParams), and (group) folders organize without changing the URL. Configure via static app.json or dynamic app.config.ts (export a function for env-based config); read runtime values from Constants.expoConfig. Prefer Expo SDK modules over bare native; use development builds (not Expo Go) once you add native libraries. Build in the cloud with eas build via eas.json profiles.",
+      "capabilities": [],
+      "deps": [
+        "expo"
+      ],
+      "tags": [
+        "mobile",
+        "expo"
+      ],
+      "source": "official-docs"
+    },
+    {
+      "id": "supabase-js",
+      "name": "Supabase JS Client (supabase-js v2)",
+      "description": "Best practices for the supabase-js v2 isomorphic JavaScript client: client initialization, secure querying with Row Level Security, key handling, and auth.",
+      "stacks": [
+        "Node.js"
+      ],
+      "triggers": [
+        "*.ts",
+        "*.tsx",
+        "*.js"
+      ],
+      "rules_url": "https://supabase.com/docs/reference/javascript/introduction",
+      "excerpt": "Create a single supabase client with createClient(url, key) and reuse it; do not instantiate per request. In the browser use only the anon/publishable key — never the service_role/secret key, which bypasses RLS and must stay server-side. Enable Row Level Security on every table in an exposed schema; with a publishable key no data is returned until you add explicit policies. Select explicit columns with .select('col1, col2') instead of '*', and chain filters like .eq() after it. Authenticate via supabase.auth (signInWithPassword, getUser, onAuthStateChange).",
+      "deps": [
+        "@supabase/supabase-js"
+      ],
+      "capabilities": [],
+      "tags": [
+        "supabase",
+        "database",
+        "auth"
+      ],
+      "source": "official-docs"
+    },
+    {
+      "id": "vite",
+      "name": "Vite Build Tool Conventions",
+      "description": "Official Vite conventions for project configuration, environment variables, dev server/HMR, static assets, and production builds.",
+      "stacks": [
+        "Node.js"
+      ],
+      "triggers": [
+        "vite.config.ts",
+        "vite.config.js",
+        "*.ts"
+      ],
+      "rules_url": "https://vite.dev/guide/",
+      "excerpt": "Define config in vite.config.ts; wrap with defineConfig for intellisense, or export a function receiving { command, mode } for conditional config. Only env vars prefixed VITE_ are exposed to client code; access them via import.meta.env (never process.env), and keep secrets out since values are bundled. Use the dev server for native ESM and HMR. Import static assets to get resolved URLs (hashed in build), use ?url/?raw suffixes, and reference public/ assets by root-absolute path. Customize the bundle via build.rollupOptions and set base for deploy paths.",
+      "deps": [
+        "vite"
+      ],
+      "capabilities": [],
+      "tags": [
+        "build",
+        "tooling",
+        "frontend"
+      ],
+      "source": "official-docs"
+    },
+    {
+      "id": "go-redis",
+      "name": "go-redis v9",
+      "description": "Redis access in Go with the go-redis v9 client: connection pooling, context-aware commands, pipelines, and missing-key handling.",
+      "stacks": [
+        "Go"
+      ],
+      "triggers": [
+        "*.go"
+      ],
+      "rules_url": "https://redis.io/docs/latest/develop/clients/go/",
+      "excerpt": "Create one redis.NewClient and reuse it: it is safe for concurrent use by multiple goroutines and has a built-in connection pool. Pass a context.Context as the first arg to every command for timeout and cancellation. After Get, check `err == redis.Nil` to detect a missing key before treating it as a real error. Batch round-trips with Pipeline/Pipelined (or TxPipeline for atomic MULTI/EXEC) and read results via Exec. Tune Options: PoolSize, DialTimeout, ReadTimeout, WriteTimeout, MaxRetries. Always defer rdb.Close().",
+      "deps": [
+        "github.com/redis/go-redis/v9"
+      ],
+      "capabilities": [
+        "go"
+      ],
+      "tags": [
+        "redis",
+        "cache",
+        "go"
+      ],
+      "source": "official-docs"
+    },
+    {
+      "id": "go-postgres",
+      "name": "Go PostgreSQL with database/sql + lib/pq",
+      "description": "PostgreSQL access in Go using the standard database/sql package with the lib/pq driver: connection pooling, parameterized queries, context, and row handling.",
+      "stacks": [
+        "Go"
+      ],
+      "triggers": [
+        "*.go"
+      ],
+      "rules_url": "https://pkg.go.dev/github.com/lib/pq",
+      "excerpt": "Blank-import _ \"github.com/lib/pq\" to register the driver, then sql.Open(\"postgres\", dsn) once and reuse the *sql.DB (it is a goroutine-safe pool); call db.Ping() to verify. Use $1,$2 ordinal placeholders with params passed separately to prevent SQL injection; never concatenate input. Set SetMaxOpenConns, SetMaxIdleConns, and SetConnMaxLifetime to bound the pool. Prefer QueryRowContext/QueryContext/ExecContext with a context.WithTimeout. defer rows.Close() and check rows.Err() after the Next() loop. lib/pq has no LastInsertId; use INSERT ... RETURNING id with QueryRow.Scan.",
+      "deps": [
+        "github.com/lib/pq"
+      ],
+      "capabilities": [
+        "go"
+      ],
+      "tags": [
+        "postgres",
+        "database",
+        "sql",
+        "go"
+      ],
+      "source": "official-docs"
     }
   ]
 }
