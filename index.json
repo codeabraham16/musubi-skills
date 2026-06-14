@@ -5,11 +5,22 @@
       "id": "go-effective",
       "name": "Go — Effective Go",
       "description": "Guía oficial de estilo y convenciones para código Go idiomático: nombrado, errores, goroutines y paquetes.",
-      "stacks": ["Go"],
+      "stacks": [
+        "Go"
+      ],
       "deps": [],
-      "triggers": ["*.go"],
-      "capabilities": ["go"],
-      "tags": ["style", "idioms", "errors", "concurrency"],
+      "triggers": [
+        "*.go"
+      ],
+      "capabilities": [
+        "go"
+      ],
+      "tags": [
+        "style",
+        "idioms",
+        "errors",
+        "concurrency"
+      ],
       "rules_url": "https://go.dev/doc/effective_go",
       "excerpt": "Nombrá con MixedCaps, no snake_case. Manejá errores explícitamente — nunca ignorés un error con _. Usá goroutines con defer para garantizar cleanup. Escribí comentarios godoc en cada símbolo exportado comenzando con su nombre.",
       "source": "official-docs"
@@ -18,11 +29,24 @@
       "id": "go-gin",
       "name": "Go — Gin HTTP Framework",
       "description": "Convenciones de routing, middleware y manejo de errores para aplicaciones HTTP con Gin.",
-      "stacks": ["Go"],
-      "deps": ["github.com/gin-gonic/gin"],
-      "triggers": ["*.go"],
-      "capabilities": ["go"],
-      "tags": ["http", "rest", "middleware", "routing"],
+      "stacks": [
+        "Go"
+      ],
+      "deps": [
+        "github.com/gin-gonic/gin"
+      ],
+      "triggers": [
+        "*.go"
+      ],
+      "capabilities": [
+        "go"
+      ],
+      "tags": [
+        "http",
+        "rest",
+        "middleware",
+        "routing"
+      ],
       "rules_url": "https://gin-gonic.com/docs/",
       "excerpt": "Usá gin.Context.ShouldBind para validar request bodies. Centralizá el manejo de errores con un middleware ErrorHandler. Agrupá rutas con router.Group para prefijos y middlewares compartidos. Preferí c.JSON sobre c.String para APIs.",
       "source": "official-docs"
@@ -31,11 +55,23 @@
       "id": "react-rules",
       "name": "React — Rules of React",
       "description": "Reglas oficiales de React sobre componentes puros, Hooks y efectos secundarios.",
-      "stacks": ["Node.js"],
-      "deps": ["react"],
-      "triggers": ["*.tsx", "*.jsx"],
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "react"
+      ],
+      "triggers": [
+        "*.tsx",
+        "*.jsx"
+      ],
       "capabilities": [],
-      "tags": ["react", "hooks", "purity", "effects"],
+      "tags": [
+        "react",
+        "hooks",
+        "purity",
+        "effects"
+      ],
       "rules_url": "https://react.dev/reference/rules",
       "excerpt": "Los componentes y Hooks deben ser funciones puras: mismas entradas → misma salida. Nunca mutés props ni state directamente. Llamá Hooks solo en el top-level — nunca dentro de condicionales o loops. Los efectos son para sincronización con sistemas externos, no para cómputo derivado.",
       "source": "official-docs"
@@ -44,11 +80,24 @@
       "id": "nextjs-app-router",
       "name": "Next.js — App Router Conventions",
       "description": "Convenciones del App Router de Next.js: layouts, Server Components, streaming y data fetching.",
-      "stacks": ["Node.js"],
-      "deps": ["next"],
-      "triggers": ["*.tsx", "*.jsx", "*.ts"],
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "next"
+      ],
+      "triggers": [
+        "*.tsx",
+        "*.jsx",
+        "*.ts"
+      ],
       "capabilities": [],
-      "tags": ["nextjs", "app-router", "server-components", "streaming"],
+      "tags": [
+        "nextjs",
+        "app-router",
+        "server-components",
+        "streaming"
+      ],
       "rules_url": "https://nextjs.org/docs/app",
       "excerpt": "Por defecto todos los componentes en app/ son Server Components — solo agregá 'use client' cuando necesites interactividad o APIs del browser. Usá fetch() en Server Components para data fetching: Next lo cachea y deduplica automáticamente. Layouts anidan automáticamente sin re-render.",
       "source": "official-docs"
@@ -57,11 +106,23 @@
       "id": "vue-style-guide",
       "name": "Vue.js — Style Guide",
       "description": "Guía oficial de estilo para componentes Vue 3: naming, Composition API y estructura de archivos SFC.",
-      "stacks": ["Node.js"],
-      "deps": ["vue"],
-      "triggers": ["*.vue", "*.ts"],
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "vue"
+      ],
+      "triggers": [
+        "*.vue",
+        "*.ts"
+      ],
       "capabilities": [],
-      "tags": ["vue", "composition-api", "sfc", "style"],
+      "tags": [
+        "vue",
+        "composition-api",
+        "sfc",
+        "style"
+      ],
       "rules_url": "https://vuejs.org/style-guide/",
       "excerpt": "Usá Composition API con <script setup> para componentes nuevos. Los nombres de componentes deben ser siempre multi-palabra para evitar conflictos con HTML. Definí props con defineProps y tipos explícitos. Evitá acceder a this en setup().",
       "source": "official-docs"
@@ -70,11 +131,25 @@
       "id": "node-express",
       "name": "Node.js — Express Best Practices",
       "description": "Mejores prácticas de Express.js: manejo de errores asíncrono, middleware y seguridad.",
-      "stacks": ["Node.js"],
-      "deps": ["express"],
-      "triggers": ["*.js", "*.ts"],
-      "capabilities": ["node"],
-      "tags": ["express", "middleware", "errors", "async"],
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "express"
+      ],
+      "triggers": [
+        "*.js",
+        "*.ts"
+      ],
+      "capabilities": [
+        "node"
+      ],
+      "tags": [
+        "express",
+        "middleware",
+        "errors",
+        "async"
+      ],
       "rules_url": "https://expressjs.com/en/advanced/best-practice-performance.html",
       "excerpt": "Usá async/await con un wrapper para capturar errores y pasarlos a next(err). Definí un middleware de error con 4 parámetros (err, req, res, next) al final. Nunca confiés en el body sin validarlo. Activá compression y helmet en producción.",
       "source": "official-docs"
@@ -83,11 +158,22 @@
       "id": "python-pep8",
       "name": "Python — PEP 8 Style Guide",
       "description": "Convenciones de estilo oficial de Python: indentación, imports, nomenclatura y longitud de línea.",
-      "stacks": ["Python"],
+      "stacks": [
+        "Python"
+      ],
       "deps": [],
-      "triggers": ["*.py"],
-      "capabilities": ["python"],
-      "tags": ["style", "pep8", "formatting", "naming"],
+      "triggers": [
+        "*.py"
+      ],
+      "capabilities": [
+        "python"
+      ],
+      "tags": [
+        "style",
+        "pep8",
+        "formatting",
+        "naming"
+      ],
       "rules_url": "https://peps.python.org/pep-0008/",
       "excerpt": "Usá 4 espacios para indentación, nunca tabs. Máximo 79 caracteres por línea. snake_case para funciones y variables, PascalCase para clases, UPPER_CASE para constantes. Imports en orden: stdlib → third-party → local, separados por línea en blanco.",
       "source": "official-docs"
@@ -96,11 +182,25 @@
       "id": "django-best-practices",
       "name": "Django — Best Practices",
       "description": "Convenciones oficiales de Django: ORM, views basadas en clase, señales y seguridad.",
-      "stacks": ["Python"],
-      "deps": ["django"],
-      "triggers": ["*.py", "manage.py"],
-      "capabilities": ["python"],
-      "tags": ["django", "orm", "security", "views"],
+      "stacks": [
+        "Python"
+      ],
+      "deps": [
+        "django"
+      ],
+      "triggers": [
+        "*.py",
+        "manage.py"
+      ],
+      "capabilities": [
+        "python"
+      ],
+      "tags": [
+        "django",
+        "orm",
+        "security",
+        "views"
+      ],
       "rules_url": "https://docs.djangoproject.com/en/stable/misc/design-philosophies/",
       "excerpt": "Usá select_related y prefetch_related para evitar N+1 queries. Preferí Class-Based Views para operaciones CRUD estándar. Nunca confíes en datos del usuario: usá always_escape y Form/Serializer para validación. Activá CSRF en todos los formularios POST.",
       "source": "official-docs"
@@ -109,11 +209,24 @@
       "id": "fastapi-patterns",
       "name": "FastAPI — Patterns & Best Practices",
       "description": "Patrones de FastAPI: dependency injection, modelos Pydantic, async handlers y documentación automática.",
-      "stacks": ["Python"],
-      "deps": ["fastapi"],
-      "triggers": ["*.py"],
-      "capabilities": ["python"],
-      "tags": ["fastapi", "pydantic", "async", "api"],
+      "stacks": [
+        "Python"
+      ],
+      "deps": [
+        "fastapi"
+      ],
+      "triggers": [
+        "*.py"
+      ],
+      "capabilities": [
+        "python"
+      ],
+      "tags": [
+        "fastapi",
+        "pydantic",
+        "async",
+        "api"
+      ],
       "rules_url": "https://fastapi.tiangolo.com/tutorial/",
       "excerpt": "Usá Pydantic models para request/response: validación automática y documentación OpenAPI incluida. Inyectá dependencias con Depends() — DB sessions, auth, settings. Decorá con async def cuando usés operaciones I/O asíncronas. Response models ocultan campos internos del schema público.",
       "source": "official-docs"
@@ -122,11 +235,22 @@
       "id": "rust-book",
       "name": "Rust — The Book: Ownership & Safety",
       "description": "Reglas de ownership, borrowing y lifetimes del lenguaje Rust para código seguro sin GC.",
-      "stacks": ["Rust"],
+      "stacks": [
+        "Rust"
+      ],
       "deps": [],
-      "triggers": ["*.rs"],
-      "capabilities": ["cargo"],
-      "tags": ["ownership", "borrowing", "lifetimes", "safety"],
+      "triggers": [
+        "*.rs"
+      ],
+      "capabilities": [
+        "cargo"
+      ],
+      "tags": [
+        "ownership",
+        "borrowing",
+        "lifetimes",
+        "safety"
+      ],
       "rules_url": "https://doc.rust-lang.org/book/",
       "excerpt": "Cada valor tiene un único owner; cuando sale de scope se libera. Podés tener muchas referencias inmutables (&T) o una sola mutable (&mut T) — nunca ambas simultáneamente. Usá Result<T,E> para errores recuperables y panic! solo para bugs irrecuperables. Preferí iteradores sobre loops manuales.",
       "source": "official-docs"
@@ -135,11 +259,24 @@
       "id": "docker-best-practices",
       "name": "Docker — Dockerfile Best Practices",
       "description": "Mejores prácticas oficiales para Dockerfiles: capas, multi-stage builds, usuarios no-root y tamaño de imagen.",
-      "stacks": ["Docker"],
+      "stacks": [
+        "Docker"
+      ],
       "deps": [],
-      "triggers": ["Dockerfile", "docker-compose.yml", "docker-compose.yaml"],
-      "capabilities": ["docker"],
-      "tags": ["docker", "dockerfile", "security", "multi-stage"],
+      "triggers": [
+        "Dockerfile",
+        "docker-compose.yml",
+        "docker-compose.yaml"
+      ],
+      "capabilities": [
+        "docker"
+      ],
+      "tags": [
+        "docker",
+        "dockerfile",
+        "security",
+        "multi-stage"
+      ],
       "rules_url": "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/",
       "excerpt": "Usá multi-stage builds para separar build de runtime y reducir el tamaño final. Agrupá RUN commands con && para minimizar capas. Copiá primero solo los archivos de dependencias (package.json, go.mod) para aprovechar el cache. Nunca corras el contenedor como root — usá USER.",
       "source": "official-docs"
@@ -148,11 +285,24 @@
       "id": "typescript-handbook",
       "name": "TypeScript — Handbook: Type System",
       "description": "Reglas del sistema de tipos de TypeScript: strict mode, utility types, type narrowing y generics.",
-      "stacks": ["Node.js"],
-      "deps": ["typescript"],
-      "triggers": ["*.ts", "*.tsx", "tsconfig.json"],
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "typescript"
+      ],
+      "triggers": [
+        "*.ts",
+        "*.tsx",
+        "tsconfig.json"
+      ],
       "capabilities": [],
-      "tags": ["typescript", "types", "strict", "generics"],
+      "tags": [
+        "typescript",
+        "types",
+        "strict",
+        "generics"
+      ],
       "rules_url": "https://www.typescriptlang.org/docs/handbook/2/types-from-types.html",
       "excerpt": "Activá strict: true en tsconfig para habilitar strictNullChecks, noImplicitAny y strictFunctionTypes. Usá unknown en lugar de any para inputs no confiables — forzá type narrowing explícito. Preferí interfaces para formas de objetos y type aliases para uniones/intersecciones. Evitá type assertions (as X) — usá type guards.",
       "source": "official-docs"
@@ -161,11 +311,23 @@
       "id": "rust-clippy",
       "name": "Rust — Clippy Lints",
       "description": "Lints y correcciones idiomáticas de Clippy: código más claro, eficiente y seguro en Rust.",
-      "stacks": ["Rust"],
+      "stacks": [
+        "Rust"
+      ],
       "deps": [],
-      "triggers": ["*.rs", "Cargo.toml"],
-      "capabilities": ["cargo"],
-      "tags": ["rust", "clippy", "linting", "idioms"],
+      "triggers": [
+        "*.rs",
+        "Cargo.toml"
+      ],
+      "capabilities": [
+        "cargo"
+      ],
+      "tags": [
+        "rust",
+        "clippy",
+        "linting",
+        "idioms"
+      ],
       "rules_url": "https://doc.rust-lang.org/clippy/",
       "excerpt": "Usá cargo clippy -- -D warnings en CI para tratar todos los lints como errores. Preferí .map()/.filter() sobre match cuando el resultado es transformación simple. Evitá .clone() innecesario — considerá referencias. Reemplazá unwrap() con ? o manejo explícito en producción.",
       "source": "official-docs"
@@ -174,11 +336,21 @@
       "id": "go-testing",
       "name": "Go — Testing conventions",
       "description": "Convenciones del paquete testing de Go: table-driven tests, subtests, helpers y temp dirs.",
-      "stacks": ["Go"],
+      "stacks": [
+        "Go"
+      ],
       "deps": [],
-      "triggers": ["*_test.go"],
-      "capabilities": ["go"],
-      "tags": ["testing", "table-driven", "subtests"],
+      "triggers": [
+        "*_test.go"
+      ],
+      "capabilities": [
+        "go"
+      ],
+      "tags": [
+        "testing",
+        "table-driven",
+        "subtests"
+      ],
       "rules_url": "https://pkg.go.dev/testing",
       "excerpt": "Nombrá los tests TestXxx(t *testing.T) en archivos _test.go. Preferí table-driven tests con subtests t.Run(nombre, ...). Marcá los helpers con t.Helper() para reportar la línea correcta. Usá t.TempDir() para archivos temporales (autolimpieza). Corré go test -race para detectar data races.",
       "source": "official-docs"
@@ -187,11 +359,23 @@
       "id": "angular",
       "name": "Angular — Style Guide",
       "description": "Guía oficial de estilo de Angular: estructura por feature, inyección de dependencias y componentes.",
-      "stacks": ["Node.js"],
-      "deps": ["@angular/core"],
-      "triggers": ["*.ts", "*.html"],
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "@angular/core"
+      ],
+      "triggers": [
+        "*.ts",
+        "*.html"
+      ],
       "capabilities": [],
-      "tags": ["angular", "style", "di", "components"],
+      "tags": [
+        "angular",
+        "style",
+        "di",
+        "components"
+      ],
       "rules_url": "https://angular.dev/style-guide",
       "excerpt": "Un archivo por componente/servicio, nombrado feature.tipo.ts (user.component.ts). Usá inject() y standalone components. Mantené los componentes chicos y delegá la lógica a servicios. Activá OnPush change detection para performance. Tipá todo: evitá any.",
       "source": "official-docs"
@@ -200,11 +384,22 @@
       "id": "svelte",
       "name": "Svelte — Docs & Reactivity",
       "description": "Convenciones de Svelte: reactividad con runes, estructura de componentes y stores.",
-      "stacks": ["Node.js"],
-      "deps": ["svelte"],
-      "triggers": ["*.svelte"],
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "svelte"
+      ],
+      "triggers": [
+        "*.svelte"
+      ],
       "capabilities": [],
-      "tags": ["svelte", "reactivity", "runes", "stores"],
+      "tags": [
+        "svelte",
+        "reactivity",
+        "runes",
+        "stores"
+      ],
       "rules_url": "https://svelte.dev/docs",
       "excerpt": "En Svelte 5 usá runes ($state, $derived, $effect) para reactividad explícita. Calculá valores derivados con $derived, no con efectos. Un componente por archivo .svelte. Compartí estado con stores. Mantené el markup declarativo y la lógica en <script>.",
       "source": "official-docs"
@@ -213,11 +408,22 @@
       "id": "nestjs",
       "name": "NestJS — Architecture",
       "description": "Arquitectura modular de NestJS: módulos, inyección de dependencias, DTOs y separación de capas.",
-      "stacks": ["Node.js"],
-      "deps": ["@nestjs/core"],
-      "triggers": ["*.ts"],
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "@nestjs/core"
+      ],
+      "triggers": [
+        "*.ts"
+      ],
       "capabilities": [],
-      "tags": ["nestjs", "modules", "di", "dto"],
+      "tags": [
+        "nestjs",
+        "modules",
+        "di",
+        "dto"
+      ],
       "rules_url": "https://docs.nestjs.com/",
       "excerpt": "Organizá el código en módulos (@Module) con imports y providers explícitos. Inyectá dependencias por constructor. Validá entradas con DTOs + class-validator y un ValidationPipe global. Separá controladores (HTTP) de servicios (lógica). Usá guards para auth e interceptors para cross-cutting concerns.",
       "source": "official-docs"
@@ -226,11 +432,24 @@
       "id": "flask",
       "name": "Flask — Patterns",
       "description": "Patrones de Flask: application factory, blueprints, configuración y manejo de errores.",
-      "stacks": ["Python"],
-      "deps": ["flask"],
-      "triggers": ["*.py"],
-      "capabilities": ["python"],
-      "tags": ["flask", "factory", "blueprints", "wsgi"],
+      "stacks": [
+        "Python"
+      ],
+      "deps": [
+        "flask"
+      ],
+      "triggers": [
+        "*.py"
+      ],
+      "capabilities": [
+        "python"
+      ],
+      "tags": [
+        "flask",
+        "factory",
+        "blueprints",
+        "wsgi"
+      ],
       "rules_url": "https://flask.palletsprojects.com/en/stable/",
       "excerpt": "Usá una application factory (create_app) y blueprints para modularizar. No guardes estado global mutable entre requests. Configurá con app.config y variables de entorno. Manejá errores con @app.errorhandler. En producción usá un WSGI server (gunicorn), nunca el server de desarrollo.",
       "source": "official-docs"
@@ -239,11 +458,25 @@
       "id": "pytest",
       "name": "pytest — Testing",
       "description": "Convenciones de pytest: descubrimiento de tests, fixtures, parametrización y asserts.",
-      "stacks": ["Python"],
-      "deps": ["pytest"],
-      "triggers": ["test_*.py", "*_test.py"],
-      "capabilities": ["python"],
-      "tags": ["pytest", "fixtures", "parametrize", "testing"],
+      "stacks": [
+        "Python"
+      ],
+      "deps": [
+        "pytest"
+      ],
+      "triggers": [
+        "test_*.py",
+        "*_test.py"
+      ],
+      "capabilities": [
+        "python"
+      ],
+      "tags": [
+        "pytest",
+        "fixtures",
+        "parametrize",
+        "testing"
+      ],
       "rules_url": "https://docs.pytest.org/en/stable/",
       "excerpt": "Nombrá los tests test_*.py con funciones test_*. Usá fixtures (@pytest.fixture) para setup/teardown reutilizable. Parametrizá con @pytest.mark.parametrize en vez de loops. Usá assert plano: pytest reescribe el assert con detalle. Usá tmp_path para archivos temporales.",
       "source": "official-docs"
@@ -252,11 +485,20 @@
       "id": "spring-boot",
       "name": "Java — Spring Boot",
       "description": "Convenciones de Spring Boot: inyección por constructor, capas, configuración tipada y validación.",
-      "stacks": ["Java"],
+      "stacks": [
+        "Java"
+      ],
       "deps": [],
-      "triggers": ["*.java"],
+      "triggers": [
+        "*.java"
+      ],
       "capabilities": [],
-      "tags": ["spring", "java", "di", "layers"],
+      "tags": [
+        "spring",
+        "java",
+        "di",
+        "layers"
+      ],
       "rules_url": "https://docs.spring.io/spring-boot/reference/",
       "excerpt": "Preferí inyección por constructor sobre @Autowired en campos. Separá capas con @RestController + @Service + @Repository. Configurá con application.yml y @ConfigurationProperties tipadas. Validá DTOs con @Valid y Bean Validation. Mantené los controladores sin lógica de negocio.",
       "source": "official-docs"
@@ -265,11 +507,21 @@
       "id": "rails",
       "name": "Ruby on Rails — Guides",
       "description": "Convenciones de Rails: convention over configuration, modelos, controladores y migrations.",
-      "stacks": ["Ruby"],
+      "stacks": [
+        "Ruby"
+      ],
       "deps": [],
-      "triggers": ["*.rb", "Gemfile"],
+      "triggers": [
+        "*.rb",
+        "Gemfile"
+      ],
       "capabilities": [],
-      "tags": ["rails", "mvc", "activerecord", "migrations"],
+      "tags": [
+        "rails",
+        "mvc",
+        "activerecord",
+        "migrations"
+      ],
       "rules_url": "https://guides.rubyonrails.org/",
       "excerpt": "Seguí convention over configuration: modelos con la lógica, controladores delgados. Usá strong parameters (params.require.permit). Evitá N+1 con includes/eager loading. Validá en el modelo. Cambiá el schema solo con migrations, nunca editando schema.rb a mano. Tareas pesadas con Active Job.",
       "source": "official-docs"
@@ -278,11 +530,20 @@
       "id": "laravel",
       "name": "PHP — Laravel",
       "description": "Convenciones de Laravel: Eloquent, validación con Form Requests, capas y configuración.",
-      "stacks": ["PHP"],
+      "stacks": [
+        "PHP"
+      ],
       "deps": [],
-      "triggers": ["*.php"],
+      "triggers": [
+        "*.php"
+      ],
       "capabilities": [],
-      "tags": ["laravel", "eloquent", "validation", "php"],
+      "tags": [
+        "laravel",
+        "eloquent",
+        "validation",
+        "php"
+      ],
       "rules_url": "https://laravel.com/docs",
       "excerpt": "Usá Eloquent con relaciones explícitas y eager loading (with()) para evitar N+1. Validá con Form Requests. Mantené los controladores delgados y poné la lógica en Services/Actions. Versioná el schema con migrations y seeders. Nunca pongas secrets en el código: usá .env y config().",
       "source": "official-docs"
@@ -291,13 +552,214 @@
       "id": "aspnet-core",
       "name": ".NET — ASP.NET Core",
       "description": "Convenciones de ASP.NET Core: inyección de dependencias, configuración tipada, validación y async.",
-      "stacks": [".NET"],
+      "stacks": [
+        ".NET"
+      ],
       "deps": [],
-      "triggers": ["*.cs"],
+      "triggers": [
+        "*.cs"
+      ],
       "capabilities": [],
-      "tags": ["aspnet", "dotnet", "di", "async"],
+      "tags": [
+        "aspnet",
+        "dotnet",
+        "di",
+        "async"
+      ],
       "rules_url": "https://learn.microsoft.com/aspnet/core/",
       "excerpt": "Usá la inyección de dependencias incorporada (builder.Services.Add...). Configurá con appsettings.json + IOptions<T> tipado. Validá con Data Annotations o FluentValidation. Usá async/await en handlers de I/O. Poné los cross-cutting concerns en middleware. Devolvé tipos de resultado claros (Results/ActionResult).",
+      "source": "official-docs"
+    },
+    {
+      "id": "anthropic-token-savings-py",
+      "name": "Anthropic SDK — Token Optimization (Python)",
+      "description": "Reduce Anthropic API costs using prompt caching, Message Batches, and token counting in Python.",
+      "stacks": [
+        "Python"
+      ],
+      "deps": [
+        "anthropic"
+      ],
+      "triggers": [
+        "*.py"
+      ],
+      "capabilities": [],
+      "tags": [
+        "llm",
+        "tokens",
+        "cost"
+      ],
+      "rules_url": "https://docs.claude.com/en/docs/build-with-claude/prompt-caching",
+      "excerpt": "Add cache_control {type: 'ephemeral'} on the last static content block; cache reads cost 0.1x base vs 1.25x for writes, breaking even on the second request. Minimum cacheable size is model-dependent (1024 tokens for Sonnet, 4096 for Haiku); if cache_read_input_tokens and cache_creation_input_tokens are both 0, caching did not occur. Use the Message Batches API (client.messages.batches) for offline work: 50% discount, up to 100k requests per batch. Call client.messages.count_tokens() before sending to measure prompt size — the call is free.",
+      "source": "official-docs"
+    },
+    {
+      "id": "anthropic-token-savings-js",
+      "name": "Anthropic SDK — Token Optimization (Node.js/TypeScript)",
+      "description": "Reduce Anthropic API costs using prompt caching, Message Batches, and token counting in TypeScript/JavaScript.",
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "@anthropic-ai/sdk"
+      ],
+      "triggers": [
+        "*.ts",
+        "*.js"
+      ],
+      "capabilities": [],
+      "tags": [
+        "llm",
+        "tokens",
+        "cost"
+      ],
+      "rules_url": "https://docs.claude.com/en/docs/build-with-claude/prompt-caching",
+      "excerpt": "Set cache_control {type: 'ephemeral'} on the last static content block; a 5-min TTL costs 1.25x base on write and 0.1x on read, breaking even on the second hit. For a 1-hour TTL (2x write) use {type: 'ephemeral', ttl: '1h'} and place 1h entries before 5m entries. Use client.messages.batches.create() for offline jobs: 50% discount, max 100k requests per batch; stream:true and max_tokens:0 are not allowed in batches. Before sending, call client.messages.countTokens() (free) to verify the prompt fits the context window and estimate cost.",
+      "source": "official-docs"
+    },
+    {
+      "id": "tailwind-css",
+      "name": "Tailwind CSS — Utility-First Styling",
+      "description": "Utility-first CSS framework for building UIs directly in markup without writing custom CSS.",
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "tailwindcss"
+      ],
+      "triggers": [
+        "*.css",
+        "*.tsx",
+        "*.jsx",
+        "*.html",
+        "*.vue"
+      ],
+      "capabilities": [],
+      "tags": [
+        "css",
+        "styling",
+        "frontend"
+      ],
+      "rules_url": "https://tailwindcss.com/docs/utility-first",
+      "excerpt": "Apply single-purpose utility classes directly in markup instead of writing custom CSS classes. Use @apply only to override third-party libraries or style elements you cannot template — not as a general abstraction. Prefer theme tokens defined via @theme (--color-*, --spacing-*) over arbitrary bracket values like top-[117px]; use arbitrary values only as escape hatches. Always write complete static class names — never build them dynamically (e.g. text-${color}-600) or Tailwind cannot detect them. For reusable patterns, create component abstractions rather than extracting CSS.",
+      "source": "official-docs"
+    },
+    {
+      "id": "prisma-orm",
+      "name": "Prisma ORM — Database Access",
+      "description": "Type-safe ORM for Node.js with schema-first modeling, migrations, and a declarative query API.",
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "prisma",
+        "@prisma/client"
+      ],
+      "triggers": [
+        "*.prisma",
+        "*.ts"
+      ],
+      "capabilities": [],
+      "tags": [
+        "orm",
+        "database",
+        "node"
+      ],
+      "rules_url": "https://www.prisma.io/docs/orm/overview/introduction/what-is-prisma",
+      "excerpt": "Treat schema.prisma as the single source of truth — models, relations and types live there and drive both migrations and the generated client. Use prisma migrate dev in development and prisma migrate deploy in production; never edit a migration after it is applied. Always specify select or include to avoid over-fetching — by default all scalar fields return and no relations. Solve N+1 with nested include/select (a single findMany with include fetches relations in one round trip), not sequential queries. Instantiate PrismaClient as a singleton; in serverless, create it outside the handler.",
+      "source": "official-docs"
+    },
+    {
+      "id": "tokio-async",
+      "name": "Tokio — Async Runtime",
+      "description": "Rules for writing correct, efficient async Rust with the Tokio runtime.",
+      "stacks": [
+        "Rust"
+      ],
+      "deps": [
+        "tokio"
+      ],
+      "triggers": [
+        "*.rs"
+      ],
+      "capabilities": [],
+      "tags": [
+        "async",
+        "concurrency",
+        "rust"
+      ],
+      "rules_url": "https://tokio.rs/tokio/tutorial",
+      "excerpt": "Never run blocking or CPU-bound work inside async tasks — use spawn_blocking, which offloads to a dedicated thread pool; for indefinite workloads use a separate thread. Restructure code so a std MutexGuard drops before any .await; if you must hold a lock across await, use tokio::sync::Mutex. tokio::spawn requires the future to be Send + 'static — capture owned data with async move. In tokio::select! use only cancellation-safe futures per branch. Bound parallel spawn_blocking tasks with a semaphore to avoid exhausting the thread pool.",
+      "source": "official-docs"
+    },
+    {
+      "id": "serde-rust",
+      "name": "Serde — Serialization",
+      "description": "Rules for deriving and customizing Serde Serialize/Deserialize in Rust.",
+      "stacks": [
+        "Rust"
+      ],
+      "deps": [
+        "serde"
+      ],
+      "triggers": [
+        "*.rs"
+      ],
+      "capabilities": [],
+      "tags": [
+        "serialization",
+        "json",
+        "rust"
+      ],
+      "rules_url": "https://serde.rs/attributes.html",
+      "excerpt": "Derive Serialize and Deserialize for zero-overhead compile-time impls with no runtime reflection. Use #[serde(rename_all = \"camelCase\")] on the container to rename all fields at once; use #[serde(rename = \"name\")] on a field for one-off overrides. Apply #[serde(skip_serializing_if = \"Option::is_none\")] to omit optional fields from output. Use #[serde(borrow)] on &str/&[u8] fields to deserialize without allocation. Apply #[serde(default)] to fill missing fields and #[serde(flatten)] to merge a nested struct's keys into the parent.",
+      "source": "official-docs"
+    },
+    {
+      "id": "pydantic-validation",
+      "name": "Pydantic — Data Validation (v2)",
+      "description": "Validate and serialize Python data by subclassing BaseModel; enforces type safety and constraints at parse time (Pydantic v2).",
+      "stacks": [
+        "Python"
+      ],
+      "deps": [
+        "pydantic"
+      ],
+      "triggers": [
+        "*.py"
+      ],
+      "capabilities": [],
+      "tags": [
+        "validation",
+        "types",
+        "python",
+        "settings"
+      ],
+      "rules_url": "https://docs.pydantic.dev/latest/concepts/models/",
+      "excerpt": "Subclass BaseModel and annotate fields with Python types — Pydantic validates on construction. Use Field(gt=0, min_length=1) for numeric/string constraints; bare annotations enforce no constraint. Call model_validate(dict) and model_validate_json(str) to parse — not the deprecated parse_obj(). Export with model_dump() / model_dump_json(); use mode='json' for JSON-safe primitives. For non-model types (list[int], Union) use TypeAdapter.validate_python(). Enable strict=True via ConfigDict to block implicit str->int coercion.",
+      "source": "official-docs"
+    },
+    {
+      "id": "zod-validation",
+      "name": "Zod — Schema Validation",
+      "description": "Define runtime validation schemas in TypeScript with Zod and derive static types from them.",
+      "stacks": [
+        "Node.js"
+      ],
+      "deps": [
+        "zod"
+      ],
+      "triggers": [
+        "*.ts"
+      ],
+      "capabilities": [],
+      "tags": [
+        "validation",
+        "types",
+        "typescript"
+      ],
+      "rules_url": "https://zod.dev/api",
+      "excerpt": "Derive TypeScript types from schemas with z.infer<typeof Schema> — never declare the type separately. Use .parse() to throw ZodError on failure and .safeParse() to get { success, data, error } for graceful handling. For async refinements/transforms call .parseAsync()/.safeParseAsync() — sync .parse() throws on async schemas. Add custom rules with .refine() (single error) or .superRefine() (ctx.addIssue for multiple). Use z.coerce.number() to convert string inputs; object schemas strip unknown keys by default — use z.strictObject() to reject them.",
       "source": "official-docs"
     }
   ]
