@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Musubi Skill Catalog",
+  "description": "Esquema del catálogo de skills que Musubi consume vía catalog_url.",
+  "type": "object",
+  "required": ["catalog_version", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "catalog_version": { "type": "integer", "minimum": 1 },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "description", "stacks", "triggers", "rules_url", "excerpt"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,63}$",
+            "description": "Slug único: minúsculas, números y guiones."
+          },
+          "name": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "stacks": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" },
+            "description": "Ecosistemas; deben coincidir EXACTAMENTE con los valores de detector.StackResult."
+          },
+          "deps": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Dependencias requeridas (al menos una debe estar presente). Vacío = nivel de ecosistema."
+          },
+          "triggers": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" },
+            "description": "Globs que deben coincidir con algún archivo real del proyecto."
+          },
+          "capabilities": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Herramientas que deben estar en PATH (ej. 'go', 'cargo')."
+          },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "rules_url": { "type": "string", "format": "uri" },
+          "excerpt": { "type": "string", "minLength": 1, "maxLength": 600 },
+          "source": { "type": "string" }
+        }
+      }
+    }
+  }
+}
