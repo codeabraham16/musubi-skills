@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-06-22T12:50:28Z",
+  "generated": "2026-06-22T13:07:50Z",
   "seeds": [
     "Go",
     "Python",
@@ -8,8 +8,13 @@
     "TypeScript",
     "Rust",
     "Java",
-    "SQL",
-    "Docker"
+    "Ruby",
+    "PHP",
+    "C#",
+    ".NET",
+    "Kubernetes",
+    "Docker",
+    "SQL"
   ],
   "skills": [
     {
@@ -453,6 +458,56 @@
       "updatedAt": "1781179941"
     },
     {
+      "id": "affaan-m-ecc-skills-kubernetes-patterns-skill-md",
+      "name": "kubernetes-patterns",
+      "author": "affaan-m",
+      "description": "Kubernetes workload patterns, resource management, RBAC, probes, autoscaling, ConfigMap/Secret handling, and kubectl debugging for production-grade deployments.",
+      "githubUrl": "https://github.com/affaan-m/ECC/tree/main/skills/kubernetes-patterns",
+      "skillUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-kubernetes-patterns",
+      "stars": 216872,
+      "updatedAt": "1781179941"
+    },
+    {
+      "id": "affaan-m-ecc-skills-netmiko-ssh-automation-skill-md",
+      "name": "netmiko-ssh-automation",
+      "author": "affaan-m",
+      "description": "Safe Python Netmiko patterns for read-only collection, bounded batch SSH, TextFSM parsing, guarded config changes, timeouts, and network automation error handling.",
+      "githubUrl": "https://github.com/affaan-m/ECC/tree/main/skills/netmiko-ssh-automation",
+      "skillUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-netmiko-ssh-automation",
+      "stars": 216872,
+      "updatedAt": "1781179941"
+    },
+    {
+      "id": "affaan-m-ecc-skills-network-bgp-diagnostics-skill-md",
+      "name": "network-bgp-diagnostics",
+      "author": "affaan-m",
+      "description": "Diagnostics-only BGP troubleshooting patterns for neighbor state, route exchange, prefix policy, AS path inspection, and safe evidence collection.",
+      "githubUrl": "https://github.com/affaan-m/ECC/tree/main/skills/network-bgp-diagnostics",
+      "skillUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-network-bgp-diagnostics",
+      "stars": 216872,
+      "updatedAt": "1781179941"
+    },
+    {
+      "id": "affaan-m-ecc-skills-network-config-validation-skill-md",
+      "name": "network-config-validation",
+      "author": "affaan-m",
+      "description": "Pre-deployment checks for router and switch configuration, including dangerous commands, duplicate addresses, subnet overlaps, stale references, management-plane risk, and IOS-style security hygiene.",
+      "githubUrl": "https://github.com/affaan-m/ECC/tree/main/skills/network-config-validation",
+      "skillUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-network-config-validation",
+      "stars": 216872,
+      "updatedAt": "1781179941"
+    },
+    {
+      "id": "affaan-m-ecc-skills-network-interface-health-skill-md",
+      "name": "network-interface-health",
+      "author": "affaan-m",
+      "description": "Diagnose interface errors, drops, CRCs, duplex mismatches, flapping, speed negotiation issues, and counter trends on routers, switches, and Linux hosts.",
+      "githubUrl": "https://github.com/affaan-m/ECC/tree/main/skills/network-interface-health",
+      "skillUrl": "https://skillsmp.com/creators/affaan-m/ecc/skills-network-interface-health",
+      "stars": 216872,
+      "updatedAt": "1781179941"
+    },
+    {
       "id": "affaan-m-ecc-skills-python-patterns-skill-md",
       "name": "python-patterns",
       "author": "affaan-m",
@@ -561,6 +616,36 @@
       "skillUrl": "https://skillsmp.com/creators/oven-sh/bun/claude-skills-javascriptcore-garbage-collector",
       "stars": 93302,
       "updatedAt": "1777890016"
+    },
+    {
+      "id": "netdata-netdata-agents-skills-mirror-netdata-repos-skill-md",
+      "name": "mirror-netdata-repos",
+      "author": "netdata",
+      "description": "Maintains a local mirror of Netdata-org source repositories at `${NETDATA_REPOS_DIR}` so AI assistants and developers can do cross-repo grep / code review locally without GitHub API round-trips and rate limits. Ships a vendored sync script (`scripts/sync-netdata-repos.sh`) that updates ~150 repos in two phases (resync existing on default branch, discover and clone new). Safety -- skips repos that have staged or modified changes; otherwise switches to the default branch and recursively updates submodules. Reset-to-default is intentional -- it prevents stale-feature-branch \"black hole\" repos that confuse cross-repo reasoning. Supports `--repo NAME` (repeatable) to scope to specific repos. Independent from any other repo mirrors this workstation may have. Use when the local mirror is out of date, before a cross-repo grep / review session, when adding a new netdata-org repo (auto-discovered), when an assistant needs cross-repo cognition without `gh` API turnaround.",
+      "githubUrl": "https://github.com/netdata/netdata/tree/master/.agents/skills/mirror-netdata-repos",
+      "skillUrl": "https://skillsmp.com/creators/netdata/netdata/agents-skills-mirror-netdata-repos",
+      "stars": 79184,
+      "updatedAt": "1779439114"
+    },
+    {
+      "id": "netdata-netdata-docs-netdata-ai-skills-query-netdata-agents-skill-md",
+      "name": "query-netdata-agents",
+      "author": "netdata",
+      "description": "Query Netdata Agents (parents and children) directly via their HTTP API on port 19999. Includes a bearer-token helper that mints, caches, and transparently refreshes a per-agent bearer from a long-lived Netdata Cloud token, and auto-detects bearer-protected agents. Use when the user asks how to call an agent's REST API or Function directly, query an agent's logs/metrics/alerts directly, mint a bearer token from a cloud token, or work around bearer protection.",
+      "githubUrl": "https://github.com/netdata/netdata/tree/master/docs/netdata-ai/skills/query-netdata-agents",
+      "skillUrl": "https://skillsmp.com/creators/netdata/netdata/docs-netdata-ai-skills-query-netdata-agents",
+      "stars": 79184,
+      "updatedAt": "1781456571"
+    },
+    {
+      "id": "netdata-netdata-docs-netdata-ai-skills-query-netdata-cloud-skill-md",
+      "name": "query-netdata-cloud",
+      "author": "netdata",
+      "description": "Query Netdata Cloud via its REST API -- metrics, logs (systemd-journal / windows-events / otel-logs), topology graphs (topology:snmp), network flows (flows:netflow), alerts, dynamic configuration (DynCfg), and generic Functions on a node. Use when the user asks about querying Netdata Cloud, fetching metrics from the cloud, querying logs / topology / netflow / sflow / ipfix through Cloud, listing or modifying configurations via DynCfg, calling agent Functions through Cloud, listing spaces/rooms/nodes, or building a curl command against `app.netdata.cloud`. Pairs with the `query-netdata-agents` skill when direct-agent access is needed.",
+      "githubUrl": "https://github.com/netdata/netdata/tree/master/docs/netdata-ai/skills/query-netdata-cloud",
+      "skillUrl": "https://skillsmp.com/creators/netdata/netdata/docs-netdata-ai-skills-query-netdata-cloud",
+      "stars": 79184,
+      "updatedAt": "1781456571"
     },
     {
       "id": "lobehub-lobehub-agents-skills-typescript-skill-md",
@@ -863,6 +948,56 @@
       "updatedAt": "1776118482"
     },
     {
+      "id": "sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-kubernetes-architect-skill-md",
+      "name": "kubernetes-architect",
+      "author": "sickn33",
+      "description": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration.",
+      "githubUrl": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/kubernetes-architect",
+      "skillUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-kubernetes-architect",
+      "stars": 40893,
+      "updatedAt": "1776118482"
+    },
+    {
+      "id": "sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-kubernetes-deployment-skill-md",
+      "name": "kubernetes-deployment",
+      "author": "sickn33",
+      "description": "Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and production-ready K8s configurations.",
+      "githubUrl": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/kubernetes-deployment",
+      "skillUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-kubernetes-deployment",
+      "stars": 40893,
+      "updatedAt": "1776118482"
+    },
+    {
+      "id": "sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-network-engineer-skill-md",
+      "name": "network-engineer",
+      "author": "sickn33",
+      "description": "Expert network engineer specializing in modern cloud networking, security architectures, and performance optimization.",
+      "githubUrl": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/network-engineer",
+      "skillUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-network-engineer",
+      "stars": 40893,
+      "updatedAt": "1776118482"
+    },
+    {
+      "id": "sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-networkx-skill-md",
+      "name": "networkx",
+      "author": "sickn33",
+      "description": "NetworkX is a Python package for creating, manipulating, and analyzing complex networks and graphs.",
+      "githubUrl": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/networkx",
+      "skillUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-networkx",
+      "stars": 40893,
+      "updatedAt": "1776118482"
+    },
+    {
+      "id": "sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-php-pro-skill-md",
+      "name": "php-pro",
+      "author": "sickn33",
+      "description": "Write idiomatic PHP code with generators, iterators, SPL data\nstructures, and modern OOP features. Use PROACTIVELY for high-performance PHP\napplications.",
+      "githubUrl": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/php-pro",
+      "skillUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-php-pro",
+      "stars": 40893,
+      "updatedAt": "1776118482"
+    },
+    {
       "id": "sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-python-development-python-scaffold-skill-md",
       "name": "python-development-python-scaffold",
       "author": "sickn33",
@@ -939,6 +1074,16 @@
       "description": "Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven development. Use when writing Python tests, setting up test suites, or implementing testing best practices.",
       "githubUrl": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/python-testing-patterns",
       "skillUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-python-testing-patterns",
+      "stars": 40893,
+      "updatedAt": "1776118482"
+    },
+    {
+      "id": "sickn33-antigravity-awesome-skills-plugins-antigravity-awesome-skills-claude-skills-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "sickn33",
+      "description": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks.",
+      "githubUrl": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/plugins-antigravity-awesome-skills-claude-skills-ruby-pro",
       "stars": 40893,
       "updatedAt": "1776118482"
     },
@@ -1041,6 +1186,16 @@
       "skillUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/skills-go-rod-master",
       "stars": 40893,
       "updatedAt": "1772180381"
+    },
+    {
+      "id": "sickn33-antigravity-awesome-skills-skills-network-101-skill-md",
+      "name": "network-101",
+      "author": "sickn33",
+      "description": "Configure and test common network services (HTTP, HTTPS, SNMP, SMB) for penetration testing lab environments. Enable hands-on practice with service enumeration, log analysis, and security testing against properly configured target systems.",
+      "githubUrl": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/network-101",
+      "skillUrl": "https://skillsmp.com/creators/sickn33/antigravity-awesome-skills/skills-network-101",
+      "stars": 40893,
+      "updatedAt": "1773994005"
     },
     {
       "id": "sickn33-antigravity-awesome-skills-skills-python-development-skill-md",
@@ -1363,6 +1518,16 @@
       "updatedAt": "1777359164"
     },
     {
+      "id": "github-awesome-copilot-skills-php-mcp-server-generator-skill-md",
+      "name": "php-mcp-server-generator",
+      "author": "github",
+      "description": "Generate a complete PHP Model Context Protocol server project with tools, resources, prompts, and tests using the official PHP SDK",
+      "githubUrl": "https://github.com/github/awesome-copilot/tree/main/skills/php-mcp-server-generator",
+      "skillUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-php-mcp-server-generator",
+      "stars": 35142,
+      "updatedAt": "1771904373"
+    },
+    {
       "id": "github-awesome-copilot-skills-python-mcp-server-generator-skill-md",
       "name": "python-mcp-server-generator",
       "author": "github",
@@ -1381,6 +1546,16 @@
       "skillUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-python-pypi-package-builder",
       "stars": 35142,
       "updatedAt": "1775694977"
+    },
+    {
+      "id": "github-awesome-copilot-skills-ruby-mcp-server-generator-skill-md",
+      "name": "ruby-mcp-server-generator",
+      "author": "github",
+      "description": "Generate a complete Model Context Protocol server project in Ruby using the official MCP Ruby SDK gem.",
+      "githubUrl": "https://github.com/github/awesome-copilot/tree/main/skills/ruby-mcp-server-generator",
+      "skillUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-ruby-mcp-server-generator",
+      "stars": 35142,
+      "updatedAt": "1771904373"
     },
     {
       "id": "github-awesome-copilot-skills-rust-mcp-server-generator-skill-md",
@@ -1483,6 +1658,16 @@
       "updatedAt": "1779652769"
     },
     {
+      "id": "k-dense-ai-scientific-agent-skills-skills-networkx-skill-md",
+      "name": "networkx",
+      "author": "K-Dense-AI",
+      "description": "Create, analyze, and visualize complex networks and graphs in Python with NetworkX. Use when working with network/graph data structures, computing graph algorithms (shortest paths, centrality, clustering), detecting communities, generating synthetic networks (random, scale-free, small-world), reading/writing graph file formats, or drawing network topologies. Common applications include social, biological, transportation, and citation networks.",
+      "githubUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/networkx",
+      "skillUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-networkx",
+      "stars": 28402,
+      "updatedAt": "1781213034"
+    },
+    {
       "id": "grafana-loki-cursor-skills-go-skill-md",
       "name": "go",
       "author": "grafana",
@@ -1541,6 +1726,16 @@
       "skillUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-google-cloud-waf-reliability",
       "stars": 28108,
       "updatedAt": "1778680398"
+    },
+    {
+      "id": "davila7-claude-code-templates-cli-tool-components-skills-development-netlify-deploy-skill-md",
+      "name": "netlify-deploy",
+      "author": "davila7",
+      "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys.",
+      "githubUrl": "https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/skills/development/netlify-deploy",
+      "skillUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-netlify-deploy",
+      "stars": 28108,
+      "updatedAt": "1770514388"
     },
     {
       "id": "davila7-claude-code-templates-cli-tool-components-skills-development-rust-cli-builder-skill-md",
@@ -1623,6 +1818,16 @@
       "updatedAt": "1775874341"
     },
     {
+      "id": "chromium-chromium-agents-skills-network-traffic-annotations-skill-md",
+      "name": "network-traffic-annotations",
+      "author": "chromium",
+      "description": "Guide for writing and managing Network Traffic Annotations in Chromium. Use this skill when adding or updating code that makes network requests.",
+      "githubUrl": "https://github.com/chromium/chromium/tree/main/agents/skills/network-traffic-annotations",
+      "skillUrl": "https://skillsmp.com/creators/chromium/chromium/agents-skills-network-traffic-annotations",
+      "stars": 23986,
+      "updatedAt": "1775209374"
+    },
+    {
       "id": "coleam00-archon-claude-skills-docker-extend-skill-md",
       "name": "docker-extend",
       "author": "coleam00",
@@ -1631,6 +1836,16 @@
       "skillUrl": "https://skillsmp.com/creators/coleam00/archon/claude-skills-docker-extend",
       "stars": 22420,
       "updatedAt": "1775419237"
+    },
+    {
+      "id": "openai-skills-skills-curated-netlify-deploy-skill-md",
+      "name": "netlify-deploy",
+      "author": "openai",
+      "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys.",
+      "githubUrl": "https://github.com/openai/skills/tree/main/skills/.curated/netlify-deploy",
+      "skillUrl": "https://skillsmp.com/creators/openai/skills/skills-curated-netlify-deploy",
+      "stars": 22348,
+      "updatedAt": "1770063640"
     },
     {
       "id": "rustpython-rustpython-agents-skills-rustpython-capi-expansion-skill-md",
@@ -1693,6 +1908,16 @@
       "updatedAt": "1772523522"
     },
     {
+      "id": "alirezarezvani-claude-skills-engineering-kubernetes-operator-skills-kubernetes-operator-skill-md",
+      "name": "kubernetes-operator",
+      "author": "alirezarezvani",
+      "description": "Use when building a Kubernetes Operator — custom controllers that reconcile CRD state. Triggers on \"build an operator\", \"CRD design\", \"reconcile loop\", \"controller-runtime\", \"kubebuilder\", \"operator-sdk\", \"metacontroller\", \"KOPF\", \"operator capability levels\", or \"custom resource\". Ships CRD validator, reconcile-loop linter, and OperatorHub capability auditor (all stdlib Python), 4 references on the operator pattern + CRD design + reconcile patterns + tooling landscape, and a /operator-audit slash command. NOT a generic k8s skill — specifically the Operator pattern.",
+      "githubUrl": "https://github.com/alirezarezvani/claude-skills/tree/main/engineering/kubernetes-operator/skills/kubernetes-operator",
+      "skillUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/engineering-kubernetes-operator-skills-kubernetes-operator",
+      "stars": 18287,
+      "updatedAt": "1779859379"
+    },
+    {
       "id": "alirezarezvani-claude-skills-engineering-team-google-workspace-cli-skills-google-workspace-cli-skill-md",
       "name": "google-workspace-cli",
       "author": "alirezarezvani",
@@ -1719,6 +1944,16 @@
       "description": "Go programming expert for goroutines, channels, interfaces, modules, and concurrency patterns",
       "githubUrl": "https://github.com/RightNow-AI/openfang/tree/main/crates/openfang-skills/bundled/golang-expert",
       "skillUrl": "https://skillsmp.com/creators/rightnow-ai/openfang/crates-openfang-skills-bundled-golang-expert",
+      "stars": 17843,
+      "updatedAt": "1772056827"
+    },
+    {
+      "id": "rightnow-ai-openfang-crates-openfang-skills-bundled-kubernetes-skill-md",
+      "name": "kubernetes",
+      "author": "RightNow-AI",
+      "description": "Kubernetes operations expert for kubectl, pods, deployments, and debugging",
+      "githubUrl": "https://github.com/RightNow-AI/openfang/tree/main/crates/openfang-skills/bundled/kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/rightnow-ai/openfang/crates-openfang-skills-bundled-kubernetes",
       "stars": 17843,
       "updatedAt": "1772056827"
     },
@@ -1783,12 +2018,32 @@
       "updatedAt": "1772262019"
     },
     {
+      "id": "mukul975-anthropic-cybersecurity-skills-skills-implementing-network-policies-for-kubernetes-skill-md",
+      "name": "implementing-network-policies-for-kubernetes",
+      "author": "mukul975",
+      "description": "Kubernetes NetworkPolicies provide pod-level network segmentation by defining ingress and egress rules that control traffic flow between pods, namespaces, and external endpoints. Combined with CNI plu",
+      "githubUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/implementing-network-policies-for-kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-implementing-network-policies-for-kubernetes",
+      "stars": 15980,
+      "updatedAt": "1780308809"
+    },
+    {
       "id": "mukul975-anthropic-cybersecurity-skills-skills-performing-docker-bench-security-assessment-skill-md",
       "name": "performing-docker-bench-security-assessment",
       "author": "mukul975",
       "description": "Docker Bench for Security is an open-source script that checks dozens of common best practices around deploying Docker containers in production. Based on the CIS Docker Benchmark, it audits host confi",
       "githubUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/performing-docker-bench-security-assessment",
       "skillUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-performing-docker-bench-security-assessment",
+      "stars": 15980,
+      "updatedAt": "1780308809"
+    },
+    {
+      "id": "mukul975-anthropic-cybersecurity-skills-skills-performing-kubernetes-penetration-testing-skill-md",
+      "name": "performing-kubernetes-penetration-testing",
+      "author": "mukul975",
+      "description": "Kubernetes penetration testing systematically evaluates cluster security by simulating attacker techniques against the API server, kubelet, etcd, pods, RBAC, network policies, and secrets. Using tools",
+      "githubUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/performing-kubernetes-penetration-testing",
+      "skillUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-performing-kubernetes-penetration-testing",
       "stars": 15980,
       "updatedAt": "1780308809"
     },
@@ -1873,6 +2128,16 @@
       "updatedAt": "1774346951"
     },
     {
+      "id": "phpstan-phpstan-claude-skills-analyse-with-phpstan-skill-md",
+      "name": "analyse-with-phpstan",
+      "author": "phpstan",
+      "description": "Analyse PHP code with PHPStan via the playground API. Tests across all PHP versions (7.2–8.5) and reports errors grouped by version. Supports configuring level, strict rules, and bleeding edge.",
+      "githubUrl": "https://github.com/phpstan/phpstan/tree/2.2.x/.claude/skills/analyse-with-phpstan",
+      "skillUrl": "https://skillsmp.com/creators/phpstan/phpstan/claude-skills-analyse-with-phpstan",
+      "stars": 13999,
+      "updatedAt": "1771672504"
+    },
+    {
       "id": "ccfos-nightingale-aiagent-skill-embedded-builtin-sql-generator-skill-md",
       "name": "sql-generator",
       "author": "ccfos",
@@ -1891,6 +2156,16 @@
       "skillUrl": "https://skillsmp.com/creators/fathah/hermes-desktop/agents-skills-typescript-expert",
       "stars": 12301,
       "updatedAt": "1779530439"
+    },
+    {
+      "id": "kubeshark-kubeshark-skills-network-rca-skill-md",
+      "name": "network-rca",
+      "author": "kubeshark",
+      "description": "Kubernetes network root cause analysis skill powered by Kubeshark MCP. Use this skill whenever the user wants to investigate past incidents, perform retrospective traffic analysis, take or manage traffic snapshots, extract PCAPs, dissect L7 API calls from historical captures, compare traffic patterns over time, detect drift or anomalies between snapshots, or do any kind of forensic network analysis in Kubernetes. Also trigger when the user mentions snapshots, raw capture, PCAP extraction, traffic replay, postmortem analysis, \"what happened yesterday/last week\", root cause analysis, RCA, cloud snapshot storage, snapshot dissection, or KFL filters for historical traffic. Even if the user just says \"figure out what went wrong\" or \"compare today's traffic to yesterday\" in a Kubernetes context, use this skill.",
+      "githubUrl": "https://github.com/kubeshark/kubeshark/tree/master/skills/network-rca",
+      "skillUrl": "https://skillsmp.com/creators/kubeshark/kubeshark/skills-network-rca",
+      "stars": 11956,
+      "updatedAt": "1779169981"
     },
     {
       "id": "microsoft-agent-framework-python-github-skills-python-code-quality-skill-md",
@@ -1993,6 +2268,26 @@
       "updatedAt": "1777433552"
     },
     {
+      "id": "jeffallan-claude-skills-skills-kubernetes-specialist-skill-md",
+      "name": "kubernetes-specialist",
+      "author": "Jeffallan",
+      "description": "Use when deploying or managing Kubernetes workloads. Invoke to create deployment manifests, configure pod security policies, set up service accounts, define network isolation rules, debug pod crashes, analyze resource limits, inspect container logs, or right-size workloads. Use for Helm charts, RBAC policies, NetworkPolicies, storage configuration, performance optimization, GitOps pipelines, and multi-cluster management.",
+      "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/kubernetes-specialist",
+      "skillUrl": "https://skillsmp.com/creators/jeffallan/claude-skills/skills-kubernetes-specialist",
+      "stars": 9964,
+      "updatedAt": "1777433552"
+    },
+    {
+      "id": "jeffallan-claude-skills-skills-php-pro-skill-md",
+      "name": "php-pro",
+      "author": "Jeffallan",
+      "description": "Use when building PHP applications with modern PHP 8.3+ features, Laravel, or Symfony frameworks. Invokes strict typing, PHPStan level 9, async patterns with Swoole, and PSR standards. Creates controllers, configures middleware, generates migrations, writes PHPUnit/Pest tests, defines typed DTOs and value objects, sets up dependency injection, and scaffolds REST/GraphQL APIs. Use when working with Eloquent, Doctrine, Composer, Psalm, ReactPHP, or any PHP API development.",
+      "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/php-pro",
+      "skillUrl": "https://skillsmp.com/creators/jeffallan/claude-skills/skills-php-pro",
+      "stars": 9964,
+      "updatedAt": "1777433552"
+    },
+    {
       "id": "jeffallan-claude-skills-skills-rust-engineer-skill-md",
       "name": "rust-engineer",
       "author": "Jeffallan",
@@ -2071,6 +2366,16 @@
       "skillUrl": "https://skillsmp.com/creators/github/copilot-sdk/github-skills-rust-coding-skill",
       "stars": 9409,
       "updatedAt": "1779910743"
+    },
+    {
+      "id": "crmeb-crmeb-codebuddy-skills-php-api-skill-md",
+      "name": "php",
+      "author": "crmeb",
+      "description": "PHP后端开发skill说明",
+      "githubUrl": "https://github.com/crmeb/CRMEB/tree/master/.codebuddy/skills/php-api",
+      "skillUrl": "https://skillsmp.com/creators/crmeb/crmeb/codebuddy-skills-php-api",
+      "stars": 8934,
+      "updatedAt": "1774249067"
     },
     {
       "id": "fastrepl-anarlog-agents-skills-sqlite-schema-design-skill-md",
@@ -2193,6 +2498,136 @@
       "updatedAt": "1774339402"
     },
     {
+      "id": "netalertx-netalertx-github-skills-authentication-skill-md",
+      "name": "netalertx-authentication-tokens",
+      "author": "netalertx",
+      "description": "Manage and troubleshoot API tokens and authentication-related secrets. Use this when you need to find, rotate, verify, or debug authentication issues (401/403) in NetAlertX.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/authentication",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-authentication",
+      "stars": 6554,
+      "updatedAt": "1769377557"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-code-standards-skill-md",
+      "name": "netalertx-code-standards",
+      "author": "netalertx",
+      "description": "NetAlertX coding standards and conventions. Use this when writing code, reviewing code, or implementing features.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/code-standards",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-code-standards",
+      "stars": 6554,
+      "updatedAt": "1779589316"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-database-reset-skill-md",
+      "name": "reset-netalertx-database",
+      "author": "netalertx",
+      "description": "Wipe and regenerate the NetAlertX database and config. Use this when asked to reset database, wipe db, fresh database, clean slate, or start fresh.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/database-reset",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-database-reset",
+      "stars": 6554,
+      "updatedAt": "1769377557"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-devcontainer-configs-skill-md",
+      "name": "netalertx-devcontainer-configs",
+      "author": "netalertx",
+      "description": "Generate devcontainer configuration files. Use this when asked to generate devcontainer configs, update devcontainer template, or regenerate devcontainer.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/devcontainer-configs",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-devcontainer-configs",
+      "stars": 6554,
+      "updatedAt": "1769377557"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-devcontainer-services-skill-md",
+      "name": "restarting-netalertx-services",
+      "author": "netalertx",
+      "description": "Control NetAlertX services inside the devcontainer. Use this when asked to start backend, start frontend, start nginx, start php-fpm, start crond, stop services, restart services, or check if services are running.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/devcontainer-services",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-devcontainer-services",
+      "stars": 6554,
+      "updatedAt": "1769377557"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-devcontainer-setup-skill-md",
+      "name": "netalertx-idempotent-setup",
+      "author": "netalertx",
+      "description": "Reprovision and reset the devcontainer environment. Use this when asked to re-run startup, reprovision, setup devcontainer, fix permissions, or reset runtime state.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/devcontainer-setup",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-devcontainer-setup",
+      "stars": 6554,
+      "updatedAt": "1769382203"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-docker-build-skill-md",
+      "name": "netalertx-docker-build",
+      "author": "netalertx",
+      "description": "Build Docker images for testing or production. Use this when asked to build container, build image, docker build, build test image, or launch production container.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/docker-build",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-docker-build",
+      "stars": 6554,
+      "updatedAt": "1769377557"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-docker-prune-skill-md",
+      "name": "netalertx-docker-prune",
+      "author": "netalertx",
+      "description": "Clean up unused Docker resources. Use this when asked to prune docker, clean docker, remove unused images, free disk space, or docker cleanup. DANGEROUS operation. Requires human confirmation.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/docker-prune",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-docker-prune",
+      "stars": 6554,
+      "updatedAt": "1769377557"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-plugin-run-development-skill-md",
+      "name": "netalertx-plugin-run-development",
+      "author": "netalertx",
+      "description": "Create and run NetAlertX plugins. Use this when asked to create plugin, run plugin, test plugin, plugin development, or execute plugin script.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/plugin-run-development",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-plugin-run-development",
+      "stars": 6554,
+      "updatedAt": "1769382203"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-project-navigation-skill-md",
+      "name": "about-netalertx-project-structure",
+      "author": "netalertx",
+      "description": "Navigate the NetAlertX codebase structure. Use this when asked about file locations, project structure, where to find code, or key paths.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/project-navigation",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-project-navigation",
+      "stars": 6554,
+      "updatedAt": "1769382203"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-sample-data-skill-md",
+      "name": "netalertx-sample-data",
+      "author": "netalertx",
+      "description": "Load synthetic device data into the devcontainer. Use this when asked to load sample devices, seed data, import test devices, populate database, or generate test data.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/sample-data",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-sample-data",
+      "stars": 6554,
+      "updatedAt": "1769377557"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-settings-management-skill-md",
+      "name": "netalertx-settings-management",
+      "author": "netalertx",
+      "description": "Manage NetAlertX configuration settings. Use this when asked to add setting, read config, get_setting_value, ccd, or configure options.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/settings-management",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-settings-management",
+      "stars": 6554,
+      "updatedAt": "1770878994"
+    },
+    {
+      "id": "netalertx-netalertx-github-skills-testing-workflow-skill-md",
+      "name": "netalertx-testing-workflow",
+      "author": "netalertx",
+      "description": "Run and debug tests in the NetAlertX devcontainer. Use this when asked to run tests, check test failures, debug failing tests, or execute pytest.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/testing-workflow",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-testing-workflow",
+      "stars": 6554,
+      "updatedAt": "1769382203"
+    },
+    {
       "id": "redisearch-redisearch-skills-rust-docs-guidelines-skill-md",
       "name": "rust-docs-guidelines",
       "author": "RediSearch",
@@ -2231,6 +2666,16 @@
       "skillUrl": "https://skillsmp.com/creators/midudev/autoskills/packages-autoskills-skills-registry-sqlalchemy",
       "stars": 6040,
       "updatedAt": "1777059413"
+    },
+    {
+      "id": "ccostan-home-assistantconfig-codex-skills-network-architecture-diagrammer-skill-md",
+      "name": "network-architecture-diagrammer",
+      "author": "CCOSTAN",
+      "description": "Create homelab and network architecture diagrams from plain-English prompts by producing Mermaid-first artifacts that import cleanly into Excalidraw. Use for Docker host topology, service dependency maps, Cloudflare/public edge diagrams, and before/after infrastructure sketches.",
+      "githubUrl": "https://github.com/CCOSTAN/Home-AssistantConfig/tree/master/codex_skills/network-architecture-diagrammer",
+      "skillUrl": "https://skillsmp.com/creators/ccostan/home-assistantconfig/codex-skills-network-architecture-diagrammer",
+      "stars": 5212,
+      "updatedAt": "1779565645"
     },
     {
       "id": "pierrecomputer-pierre-agents-skills-typescript-monorepo-skill-md",
@@ -2313,6 +2758,26 @@
       "updatedAt": "1778625952"
     },
     {
+      "id": "tech-leads-club-agent-skills-packages-skills-catalog-skills-cloud-netlify-deploy-skill-md",
+      "name": "netlify-deploy",
+      "author": "tech-leads-club",
+      "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys. Do NOT use for deploying to Vercel, Cloudflare, or Render (use their respective skills).",
+      "githubUrl": "https://github.com/tech-leads-club/agent-skills/tree/main/packages/skills-catalog/skills/(cloud)/netlify-deploy",
+      "skillUrl": "https://skillsmp.com/creators/tech-leads-club/agent-skills/packages-skills-catalog-skills-cloud-netlify-deploy",
+      "stars": 4610,
+      "updatedAt": "1772127994"
+    },
+    {
+      "id": "ed1s0nz-cyberstrikeai-skills-network-penetration-testing-skill-md",
+      "name": "network-penetration-testing",
+      "author": "Ed1s0nZ",
+      "description": "网络渗透测试的专业技能和方法论",
+      "githubUrl": "https://github.com/Ed1s0nZ/CyberStrikeAI/tree/main/skills/network-penetration-testing",
+      "skillUrl": "https://skillsmp.com/creators/ed1s0nz/cyberstrikeai/skills-network-penetration-testing",
+      "stars": 4587,
+      "updatedAt": "1768485610"
+    },
+    {
       "id": "ed1s0nz-cyberstrikeai-skills-sql-injection-testing-skill-md",
       "name": "sql-injection-testing",
       "author": "Ed1s0nZ",
@@ -2321,6 +2786,16 @@
       "skillUrl": "https://skillsmp.com/creators/ed1s0nz/cyberstrikeai/skills-sql-injection-testing",
       "stars": 4587,
       "updatedAt": "1768485610"
+    },
+    {
+      "id": "purpleailab-decepticon-packages-decepticon-decepticon-skills-standard-ad-netexec-skill-md",
+      "name": "netexec",
+      "author": "PurpleAILAB",
+      "description": "NetExec (CrackMapExec successor) — unified SMB/LDAP/MSSQL/WinRM/RDP/SSH/FTP/VNC protocol auth + post-auth modules. 200+ modules incl. BloodHound auto-ingest, ESC1-15 scanning, PrintNightmare, LDAP relay.",
+      "githubUrl": "https://github.com/PurpleAILAB/Decepticon/tree/main/packages/decepticon/decepticon/skills/standard/ad/netexec",
+      "skillUrl": "https://skillsmp.com/creators/purpleailab/decepticon/packages-decepticon-decepticon-skills-standard-ad-netexec",
+      "stars": 4393,
+      "updatedAt": "1779765139"
     },
     {
       "id": "purpleailab-decepticon-packages-decepticon-decepticon-skills-standard-analyst-sql-injection-skill-md",
@@ -2343,6 +2818,16 @@
       "updatedAt": "1779787534"
     },
     {
+      "id": "purpleailab-decepticon-packages-decepticon-decepticon-skills-standard-exploit-web-php-type-juggling-skill-md",
+      "name": "php-type-juggling",
+      "author": "PurpleAILAB",
+      "description": "PHP type juggling and magic hash attacks — exploit loose comparison (==) with 0e-prefixed hash collisions and NULL returns to bypass authentication.",
+      "githubUrl": "https://github.com/PurpleAILAB/Decepticon/tree/main/packages/decepticon/decepticon/skills/standard/exploit/web/php-type-juggling",
+      "skillUrl": "https://skillsmp.com/creators/purpleailab/decepticon/packages-decepticon-decepticon-skills-standard-exploit-web-php-type-juggling",
+      "stars": 4393,
+      "updatedAt": "1780104565"
+    },
+    {
       "id": "purpleailab-decepticon-packages-decepticon-decepticon-skills-standard-exploit-web-sqli-skill-md",
       "name": "sqli",
       "author": "PurpleAILAB",
@@ -2353,6 +2838,16 @@
       "updatedAt": "1780422299"
     },
     {
+      "id": "purpleailab-decepticon-packages-decepticon-decepticon-skills-standard-post-exploit-network-replay-skill-md",
+      "name": "network-replay",
+      "author": "PurpleAILAB",
+      "description": "PCAP-based network replay attacks: capture auth sequences, session tokens, and protocol frames, then replay or inject to achieve unauthorized access or session hijack.",
+      "githubUrl": "https://github.com/PurpleAILAB/Decepticon/tree/main/packages/decepticon/decepticon/skills/standard/post-exploit/network-replay",
+      "skillUrl": "https://skillsmp.com/creators/purpleailab/decepticon/packages-decepticon-decepticon-skills-standard-post-exploit-network-replay",
+      "stars": 4393,
+      "updatedAt": "1780104565"
+    },
+    {
       "id": "zebbern-claude-code-guide-skills-sqlmap-database-pentesting-skill-md",
       "name": "sqlmap-database-pentesting",
       "author": "zebbern",
@@ -2361,6 +2856,36 @@
       "skillUrl": "https://skillsmp.com/creators/zebbern/claude-code-guide/skills-sqlmap-database-pentesting",
       "stars": 4307,
       "updatedAt": "1780242297"
+    },
+    {
+      "id": "didi-mpx-agents-skills-network-proxy-skill-md",
+      "name": "network-proxy",
+      "author": "didi",
+      "description": "Helps when network-related commands (like curl, git, npm, pip, brew) are failing, timing out, or running slowly due to network issues. It suggests and applies proxy environment variables to fix connectivity problems.",
+      "githubUrl": "https://github.com/didi/mpx/tree/master/.agents/skills/network-proxy",
+      "skillUrl": "https://skillsmp.com/creators/didi/mpx/agents-skills-network-proxy",
+      "stars": 3905,
+      "updatedAt": "1772792606"
+    },
+    {
+      "id": "agentscope-ai-agentscope-java-docs-v2-en-docs-harness-skill-md",
+      "name": "code-reviewer",
+      "author": "agentscope-ai",
+      "description": "Four-layer skill composition, skill marketplaces, the self-learning loop",
+      "githubUrl": "https://github.com/agentscope-ai/agentscope-java/tree/main/docs/v2/en/docs/harness",
+      "skillUrl": "https://skillsmp.com/creators/agentscope-ai/agentscope-java/docs-v2-en-docs-harness",
+      "stars": 3890,
+      "updatedAt": "1781690686"
+    },
+    {
+      "id": "agentscope-ai-agentscope-java-docs-v2-zh-docs-harness-skill-md",
+      "name": "code-reviewer",
+      "author": "agentscope-ai",
+      "description": "四层技能合成、技能市场、自学习闭环",
+      "githubUrl": "https://github.com/agentscope-ai/agentscope-java/tree/main/docs/v2/zh/docs/harness",
+      "skillUrl": "https://skillsmp.com/creators/agentscope-ai/agentscope-java/docs-v2-zh-docs-harness",
+      "stars": 3890,
+      "updatedAt": "1781690686"
     },
     {
       "id": "mergisi-awesome-openclaw-agents-skills-gemma-sql-explainer-skill-md",
@@ -2391,6 +2916,136 @@
       "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-build-web-data-visualization-skills-typescript-data-visualization-engineering",
       "stars": 3124,
       "updatedAt": "1779839167"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-ai-gateway-skill-md",
+      "name": "netlify-ai-gateway",
+      "author": "openai",
+      "description": "Guide for using Netlify AI Gateway to access AI models. Use when adding AI capabilities or selecting/changing AI models. Must be read before choosing a model. Covers supported providers (OpenAI, Anthropic, Google), SDK setup, environment variables, and the list of available models.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-ai-gateway",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-ai-gateway",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-blobs-skill-md",
+      "name": "netlify-blobs",
+      "author": "openai",
+      "description": "Guide for using Netlify Blobs object storage. Use when storing files, images, documents, or simple key-value data without a full database. Covers getStore(), CRUD operations, metadata, listing, deploy-scoped vs site-scoped stores, and local development.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-blobs",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-blobs",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-caching-skill-md",
+      "name": "netlify-caching",
+      "author": "openai",
+      "description": "Guide for controlling caching on Netlify's CDN. Use when configuring cache headers, setting up stale-while-revalidate, implementing on-demand cache purge, or understanding Netlify's CDN caching behavior. Covers Cache-Control, Netlify-CDN-Cache-Control, cache tags, durable cache, and framework-specific caching patterns.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-caching",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-caching",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-cli-and-deploy-skill-md",
+      "name": "netlify-cli-and-deploy",
+      "author": "openai",
+      "description": "Guide for using the Netlify CLI and deploying sites. Use when installing the CLI, linking sites, deploying (Git-based or manual), managing environment variables, or running local development. Covers netlify dev, netlify deploy, Git vs non-Git workflows, and environment variable management.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-cli-and-deploy",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-cli-and-deploy",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-config-skill-md",
+      "name": "netlify-config",
+      "author": "openai",
+      "description": "Reference for netlify.toml configuration. Use when configuring build settings, redirects, rewrites, headers, deploy contexts, environment variables, or any site-level configuration. Covers the complete netlify.toml syntax including redirects with splats/conditions, headers, deploy contexts, functions config, and edge functions config.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-config",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-config",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-deploy-skill-md",
+      "name": "netlify-deploy",
+      "author": "openai",
+      "description": "Deploy projects to Netlify with the Netlify CLI. Use when the user wants to link a repo, validate deploy settings, run a deploy, or choose between preview and production flows.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-deploy",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-deploy",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-edge-functions-skill-md",
+      "name": "netlify-edge-functions",
+      "author": "openai",
+      "description": "Guide for writing Netlify Edge Functions. Use when building middleware, geolocation-based logic, request/response manipulation, authentication checks, A/B testing, or any low-latency edge compute. Covers Deno runtime, context.next() middleware pattern, geolocation, and when to choose edge vs serverless.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-edge-functions",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-edge-functions",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-forms-skill-md",
+      "name": "netlify-forms",
+      "author": "openai",
+      "description": "Guide for using Netlify Forms for HTML form handling. Use when adding contact forms, feedback forms, file upload forms, or any form that should be collected by Netlify. Covers the data-netlify attribute, spam filtering, AJAX submissions, file uploads, notifications, and the submissions API.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-forms",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-forms",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-frameworks-skill-md",
+      "name": "netlify-frameworks",
+      "author": "openai",
+      "description": "Guide for deploying web frameworks on Netlify. Use when setting up a framework project (Vite/React, Astro, TanStack Start, Next.js, Nuxt, SvelteKit, Remix) for Netlify deployment, configuring adapters or plugins, or troubleshooting framework-specific Netlify integration. Covers what Netlify needs from each framework and how adapters handle server-side rendering.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-frameworks",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-frameworks",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-functions-skill-md",
+      "name": "netlify-functions",
+      "author": "openai",
+      "description": "Guide for writing Netlify serverless functions. Use when creating API endpoints, background processing, scheduled tasks, or any server-side logic using Netlify Functions. Covers modern syntax (default export + Config), TypeScript, path routing, background functions, scheduled functions, streaming, and method routing.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-functions",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-functions",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-identity-skill-md",
+      "name": "netlify-identity",
+      "author": "openai",
+      "description": "Use when the task involves authentication, user signups, logins, password recovery, OAuth providers, role-based access control, or protecting routes and functions. Always use `@netlify/identity`. Never use `netlify-identity-widget` or `gotrue-js` — they are deprecated.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-identity",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-identity",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "openai-plugins-plugins-netlify-skills-netlify-image-cdn-skill-md",
+      "name": "netlify-image-cdn",
+      "author": "openai",
+      "description": "Guide for using Netlify Image CDN for image optimization and transformation. Use when serving optimized images, creating responsive image markup, setting up user-uploaded image pipelines, or configuring image transformations. Covers the /.netlify/images endpoint, query parameters, remote image allowlisting, clean URL rewrites, and composing uploads with Functions + Blobs.",
+      "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/netlify/skills/netlify-image-cdn",
+      "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-netlify-skills-netlify-image-cdn",
+      "stars": 3124,
+      "updatedAt": "1775684749"
+    },
+    {
+      "id": "markdown-viewer-skills-network-skill-md",
+      "name": "network",
+      "author": "markdown-viewer",
+      "description": "Create network topology diagrams using PlantUML syntax with mxgraph device icons (Cisco, Citrix, etc.). Best for LAN/WAN layouts, datacenter interconnects, and physical/logical network design.",
+      "githubUrl": "https://github.com/markdown-viewer/skills/tree/main/network",
+      "skillUrl": "https://skillsmp.com/creators/markdown-viewer/skills/network",
+      "stars": 2969,
+      "updatedAt": "1776104301"
     },
     {
       "id": "webinstall-webi-installers-sql-migrate-skill-md",
@@ -2503,6 +3158,16 @@
       "updatedAt": "1779227207"
     },
     {
+      "id": "binaricat-netcatty-skills-netcatty-tool-cli-skill-md",
+      "name": "netcatty-tool-cli",
+      "author": "binaricat",
+      "description": "Use this skill when an external agent needs to operate on Netcatty sessions through Skills + CLI instead of the netcatty-remote-hosts MCP server.",
+      "githubUrl": "https://github.com/binaricat/Netcatty/tree/main/skills/netcatty-tool-cli",
+      "skillUrl": "https://skillsmp.com/creators/binaricat/netcatty/skills-netcatty-tool-cli",
+      "stars": 2481,
+      "updatedAt": "1776322764"
+    },
+    {
       "id": "snailclimb-interview-guide-app-src-main-resources-skills-java-backend-skill-md",
       "name": "java-backend",
       "author": "Snailclimb",
@@ -2553,6 +3218,16 @@
       "updatedAt": "1774934990"
     },
     {
+      "id": "ukgovernmentbeis-inspect-ai-examples-skills-skills-network-info-skill-md",
+      "name": "network-info",
+      "author": "UKGovernmentBEIS",
+      "description": "Gather network configuration and connectivity details on Linux including interfaces, IP addresses, routing tables, DNS settings, and listening ports. Use when the user asks about IP configuration, network interfaces, connection issues, DNS resolution, open ports, routing, or network troubleshooting.",
+      "githubUrl": "https://github.com/UKGovernmentBEIS/inspect_ai/tree/main/examples/skills/skills/network-info",
+      "skillUrl": "https://skillsmp.com/creators/ukgovernmentbeis/inspect_ai/examples-skills-skills-network-info",
+      "stars": 2208,
+      "updatedAt": "1773764106"
+    },
+    {
       "id": "postgis-postgis-doc-skills-sql-programming-skill-md",
       "name": "sql-programming",
       "author": "postgis",
@@ -2569,6 +3244,16 @@
       "description": "Docker best practices including multi-stage builds, compose patterns, image optimization, and security",
       "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit/tree/main/skills/docker-best-practices",
       "skillUrl": "https://skillsmp.com/creators/rohitg00/awesome-claude-code-toolkit/skills-docker-best-practices",
+      "stars": 2081,
+      "updatedAt": "1770239308"
+    },
+    {
+      "id": "rohitg00-awesome-claude-code-toolkit-skills-kubernetes-operations-skill-md",
+      "name": "kubernetes-operations",
+      "author": "rohitg00",
+      "description": "Kubernetes operations including manifests, Helm charts, operators, troubleshooting, and resource management",
+      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit/tree/main/skills/kubernetes-operations",
+      "skillUrl": "https://skillsmp.com/creators/rohitg00/awesome-claude-code-toolkit/skills-kubernetes-operations",
       "stars": 2081,
       "updatedAt": "1770239308"
     },
@@ -2591,6 +3276,16 @@
       "skillUrl": "https://skillsmp.com/creators/rohitg00/awesome-claude-code-toolkit/skills-typescript-advanced",
       "stars": 2081,
       "updatedAt": "1770239308"
+    },
+    {
+      "id": "leoyeai-openclaw-master-skills-skills-network-ai-skill-md",
+      "name": "network-ai",
+      "author": "LeoYeAI",
+      "description": "Python orchestration skill: local multi-agent workflows via blackboard file, permission gating, and token budget scripts. All execution is local — no network calls, no Node.js required. TypeScript/Node.js features (HMAC tokens, AES-256, MCP server, 14 adapters, CLI) are in the SEPARATE companion npm package (npm install -g network-ai) and are NOT part of this skill bundle.",
+      "githubUrl": "https://github.com/LeoYeAI/openclaw-master-skills/tree/main/skills/network-ai",
+      "skillUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-network-ai",
+      "stars": 2048,
+      "updatedAt": "1778464902"
     },
     {
       "id": "leoyeai-openclaw-master-skills-skills-sql-query-generator-skill-md",
@@ -2823,6 +3518,86 @@
       "updatedAt": "1776914194"
     },
     {
+      "id": "wgpsec-aboutsecurity-skills-code-audit-php-php-audit-pipeline-skill-md",
+      "name": "php-audit-pipeline",
+      "author": "wgpsec",
+      "description": "PHP 白盒源码安全审计总方法论。当需要对 PHP 项目进行完整的源码安全审计、\n或需要系统化的白盒漏洞挖掘流程时触发。\n覆盖 5 阶段审计流水线: 路由映射→权限建模→数据流追踪→分类漏洞审计→利用链组装。\n核心机制: 证据合约系统(EVID_*)防止 AI 幻觉误报，所有漏洞结论必须有数据流证据支撑。",
+      "githubUrl": "https://github.com/wgpsec/AboutSecurity/tree/master/skills/code-audit/php/php-audit-pipeline",
+      "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-code-audit-php-php-audit-pipeline",
+      "stars": 1464,
+      "updatedAt": "1779353599"
+    },
+    {
+      "id": "wgpsec-aboutsecurity-skills-code-audit-php-php-auth-config-audit-skill-md",
+      "name": "php-auth-config-audit",
+      "author": "wgpsec",
+      "description": "PHP 源码认证、配置与逻辑类漏洞审计。当在 PHP 白盒审计中需要检测认证绕过、\n权限控制、安全配置、密码学误用或业务逻辑漏洞时触发。\n覆盖 5 类风险: 认证绕过(硬编码凭据/弱比较/JWT 缺陷)、授权失控(IDOR/水平越权)、\n安全配置(CORS/错误暴露/调试模式)、密码学误用(弱哈希/ECB/硬编码密钥)、业务逻辑(竞争条件/支付篡改)。",
+      "githubUrl": "https://github.com/wgpsec/AboutSecurity/tree/master/skills/code-audit/php/php-auth-config-audit",
+      "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-code-audit-php-php-auth-config-audit",
+      "stars": 1464,
+      "updatedAt": "1776914194"
+    },
+    {
+      "id": "wgpsec-aboutsecurity-skills-code-audit-php-php-exploit-chain-skill-md",
+      "name": "php-exploit-chain",
+      "author": "wgpsec",
+      "description": "PHP 审计漏洞链组装方法论。当已完成各分类漏洞审计、需要评估多个漏洞组合利用的可行性时触发。\n覆盖: 文件写入→文件包含→RCE 链、反序列化→敏感操作链、SQL 注入→文件写入链、\nSSRF→内部服务链、信息泄露→权限提升链。同时包含 Composer 依赖 CVE 扫描方法。",
+      "githubUrl": "https://github.com/wgpsec/AboutSecurity/tree/master/skills/code-audit/php/php-exploit-chain",
+      "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-code-audit-php-php-exploit-chain",
+      "stars": 1464,
+      "updatedAt": "1776914194"
+    },
+    {
+      "id": "wgpsec-aboutsecurity-skills-code-audit-php-php-file-audit-skill-md",
+      "name": "php-file-audit",
+      "author": "wgpsec",
+      "description": "PHP 源码文件操作类漏洞审计。当在 PHP 白盒审计中需要检测文件相关漏洞时触发。\n覆盖 5 类文件风险: 任意文件上传(类型绕过/路径穿越/二次渲染)、任意文件读取(include/fread/路径穿越)、\n任意文件写入(日志注入/配置覆盖)、文件系统竞争(TOCTOU/符号链接)、归档提取漏洞(Zip Slip)。\n需要 php-audit-pipeline 提供的数据流证据。",
+      "githubUrl": "https://github.com/wgpsec/AboutSecurity/tree/master/skills/code-audit/php/php-file-audit",
+      "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-code-audit-php-php-file-audit",
+      "stars": 1464,
+      "updatedAt": "1776914194"
+    },
+    {
+      "id": "wgpsec-aboutsecurity-skills-code-audit-php-php-framework-audit-skill-md",
+      "name": "php-framework-audit",
+      "author": "wgpsec",
+      "description": "PHP 框架特定安全审计。当在 PHP 白盒审计中已识别目标使用特定框架、\n需要检查框架特有安全机制和常见配置缺陷时触发。\n覆盖 6 大框架: Laravel(Mass Assignment/Blade XSS/CSRF 例外)、\nThinkPHP(RCE 历史漏洞/路由注入/缓存写入)、WordPress(插件漏洞/权限钩子/nonce 验证)、\nSymfony(Debug Bar/YAML 解析/安全投票器)、Yii2(RBAC/ActiveRecord 注入)、CodeIgniter(全局 XSS/CSRF Token)。",
+      "githubUrl": "https://github.com/wgpsec/AboutSecurity/tree/master/skills/code-audit/php/php-framework-audit",
+      "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-code-audit-php-php-framework-audit",
+      "stars": 1464,
+      "updatedAt": "1776914194"
+    },
+    {
+      "id": "wgpsec-aboutsecurity-skills-code-audit-php-php-frontend-audit-skill-md",
+      "name": "php-frontend-audit",
+      "author": "wgpsec",
+      "description": "PHP 源码前端交互类漏洞审计。当在 PHP 白盒审计中需要检测前端安全相关漏洞时触发。\n覆盖 5 类前端风险: XSS(反射/存储/DOM)、CSRF(Token 验证缺失)、\n开放重定向(header Location 可控)、CRLF 注入(HTTP 响应拆分)、会话与 Cookie 安全(固定/劫持/属性)。\n需要 php-audit-pipeline 提供的数据流证据。",
+      "githubUrl": "https://github.com/wgpsec/AboutSecurity/tree/master/skills/code-audit/php/php-frontend-audit",
+      "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-code-audit-php-php-frontend-audit",
+      "stars": 1464,
+      "updatedAt": "1776914194"
+    },
+    {
+      "id": "wgpsec-aboutsecurity-skills-code-audit-php-php-injection-audit-skill-md",
+      "name": "php-injection-audit",
+      "author": "wgpsec",
+      "description": "PHP 源码注入类漏洞审计。当在 PHP 白盒审计中需要检测注入类漏洞时触发。\n覆盖 6 种注入: SQL 注入(PDO/MySQLi/ORM)、NoSQL 注入(MongoDB)、\n命令注入(system/exec/passthru)、LDAP 注入、表达式注入(eval/preg_replace /e)、SSRF。\n需要 php-audit-pipeline 提供的数据流证据(EVID_*)作为审计输入。",
+      "githubUrl": "https://github.com/wgpsec/AboutSecurity/tree/master/skills/code-audit/php/php-injection-audit",
+      "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-code-audit-php-php-injection-audit",
+      "stars": 1464,
+      "updatedAt": "1776914194"
+    },
+    {
+      "id": "wgpsec-aboutsecurity-skills-code-audit-php-php-serialization-audit-skill-md",
+      "name": "php-serialization-audit",
+      "author": "wgpsec",
+      "description": "PHP 源码序列化与模板类漏洞审计。当在 PHP 白盒审计中需要检测反序列化、XML 解析或模板注入漏洞时触发。\n覆盖 3 类风险: PHP 反序列化(unserialize/phar 反序列化/POP 链构造)、\nXXE(XML 外部实体注入/libxml 配置)、SSTI(模板注入/Twig/Blade/Smarty 引擎)。\n需要 php-audit-pipeline 提供的数据流证据。",
+      "githubUrl": "https://github.com/wgpsec/AboutSecurity/tree/master/skills/code-audit/php/php-serialization-audit",
+      "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-code-audit-php-php-serialization-audit",
+      "stars": 1464,
+      "updatedAt": "1779349360"
+    },
+    {
       "id": "wgpsec-aboutsecurity-skills-exploit-network-service-sqlserver-attack-skill-md",
       "name": "sqlserver-attack",
       "author": "wgpsec",
@@ -2841,6 +3616,26 @@
       "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-exploit-web-method-java-deserialization-methodology",
       "stars": 1464,
       "updatedAt": "1776911865"
+    },
+    {
+      "id": "wgpsec-aboutsecurity-skills-exploit-web-method-php-bypass-skill-md",
+      "name": "php-bypass",
+      "author": "wgpsec",
+      "description": "PHP 安全特性绕过：disable_functions 和 open_basedir 限制突破。当已获取 webshell 但命令执行函数被禁用或文件操作被 open_basedir 限制时使用",
+      "githubUrl": "https://github.com/wgpsec/AboutSecurity/tree/master/skills/exploit/web-method/php-bypass",
+      "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-exploit-web-method-php-bypass",
+      "stars": 1464,
+      "updatedAt": "1776914194"
+    },
+    {
+      "id": "wgpsec-aboutsecurity-skills-exploit-web-method-php-type-juggling-skill-md",
+      "name": "php-type-juggling",
+      "author": "wgpsec",
+      "description": "PHP 类型杂耍（Type Juggling）和 Magic Hash 攻击方法论。当目标是 PHP 应用且存在密码比较、哈希校验、认证逻辑时使用。当看到 PHP `==` 松散比较、MD5/SHA1 哈希校验、strcmp 比较、JSON 输入处理、is_numeric 检查时必须使用。当错误登录泄露了输入的 MD5 哈希值时，这是 Magic Hash 的强信号，立即使用。CTF/渗透中 PHP 认证绕过最常见的漏洞类型之一。即使只是看到 PHP 5.x 或响应中包含哈希值，也应考虑使用此 skill",
+      "githubUrl": "https://github.com/wgpsec/AboutSecurity/tree/master/skills/exploit/web-method/php-type-juggling",
+      "skillUrl": "https://skillsmp.com/creators/wgpsec/aboutsecurity/skills-exploit-web-method-php-type-juggling",
+      "stars": 1464,
+      "updatedAt": "1776914194"
     },
     {
       "id": "wgpsec-aboutsecurity-skills-exploit-web-method-sql-injection-methodology-skill-md",
@@ -2889,6 +3684,26 @@
       "description": "Build and deploy Java applications — Maven, Gradle, Spring Boot, version detection, and Dockerfile patterns. Use when deploying a Java project, or when pom.xml or build.gradle is detected.",
       "githubUrl": "https://github.com/nixopus/nixopus/tree/master/api/skills/java-deploy",
       "skillUrl": "https://skillsmp.com/creators/nixopus/nixopus/api-skills-java-deploy",
+      "stars": 1447,
+      "updatedAt": "1778178499"
+    },
+    {
+      "id": "nixopus-nixopus-api-skills-php-deploy-skill-md",
+      "name": "php-deploy",
+      "author": "nixopus",
+      "description": "Build and deploy PHP applications — Composer, Laravel, Symfony, FrankenPHP, PHP-FPM, and Dockerfile patterns. Use when deploying a PHP project, or when composer.json or index.php is detected.",
+      "githubUrl": "https://github.com/nixopus/nixopus/tree/master/api/skills/php-deploy",
+      "skillUrl": "https://skillsmp.com/creators/nixopus/nixopus/api-skills-php-deploy",
+      "stars": 1447,
+      "updatedAt": "1778178499"
+    },
+    {
+      "id": "nixopus-nixopus-api-skills-ruby-deploy-skill-md",
+      "name": "ruby-deploy",
+      "author": "nixopus",
+      "description": "Build and deploy Ruby applications — Bundler, Rails, Rack, asset pipeline, bootsnap, and Dockerfile patterns. Use when deploying a Ruby or Rails project, or when a Gemfile is detected.",
+      "githubUrl": "https://github.com/nixopus/nixopus/tree/master/api/skills/ruby-deploy",
+      "skillUrl": "https://skillsmp.com/creators/nixopus/nixopus/api-skills-ruby-deploy",
       "stars": 1447,
       "updatedAt": "1778178499"
     },
@@ -3103,6 +3918,16 @@
       "updatedAt": "1771763383"
     },
     {
+      "id": "yaklang-hack-skills-skills-kubernetes-pentesting-skill-md",
+      "name": "kubernetes-pentesting",
+      "author": "yaklang",
+      "description": "Kubernetes penetration testing playbook. Use when targeting Kubernetes clusters via API server, RBAC enumeration, service account abuse, etcd access, Kubelet API, pod escape, cloud-specific metadata, admission webhook bypass, and registry secrets.",
+      "githubUrl": "https://github.com/yaklang/hack-skills/tree/main/skills/kubernetes-pentesting",
+      "skillUrl": "https://skillsmp.com/creators/yaklang/hack-skills/skills-kubernetes-pentesting",
+      "stars": 1121,
+      "updatedAt": "1775738773"
+    },
+    {
       "id": "yaklang-hack-skills-skills-sqli-sql-injection-skill-md",
       "name": "sqli-sql-injection",
       "author": "yaklang",
@@ -3173,6 +3998,16 @@
       "updatedAt": "1780922861"
     },
     {
+      "id": "freekmurze-dotfiles-config-claude-skills-php-guidelines-from-spatie-skill-md",
+      "name": "php-guidelines-from-spatie",
+      "author": "freekmurze",
+      "description": "Describes PHP and Laravel guidelines provided by Spatie. These rules result in more maintainable, and readable code.",
+      "githubUrl": "https://github.com/freekmurze/dotfiles/tree/main/config/claude/skills/php-guidelines-from-spatie",
+      "skillUrl": "https://skillsmp.com/creators/freekmurze/dotfiles/config-claude-skills-php-guidelines-from-spatie",
+      "stars": 952,
+      "updatedAt": "1770823043"
+    },
+    {
       "id": "legions-developer-invoicely-agents-skills-typescript-advanced-types-skill-md",
       "name": "typescript-advanced-types",
       "author": "legions-developer",
@@ -3191,6 +4026,36 @@
       "skillUrl": "https://skillsmp.com/creators/rmyndharis/antigravity-skills/skills-database-migrations-sql-migrations",
       "stars": 854,
       "updatedAt": "1768724076"
+    },
+    {
+      "id": "rmyndharis-antigravity-skills-skills-kubernetes-architect-skill-md",
+      "name": "kubernetes-architect",
+      "author": "rmyndharis",
+      "description": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Masters EKS/AKS/GKE, service mesh (Istio/Linkerd), progressive delivery, multi-tenancy, and platform engineering. Handles security, observability, cost optimization, and developer experience. Use PROACTIVELY for K8s architecture, GitOps implementation, or cloud-native platform design.",
+      "githubUrl": "https://github.com/rmyndharis/antigravity-skills/tree/main/skills/kubernetes-architect",
+      "skillUrl": "https://skillsmp.com/creators/rmyndharis/antigravity-skills/skills-kubernetes-architect",
+      "stars": 854,
+      "updatedAt": "1768724076"
+    },
+    {
+      "id": "rmyndharis-antigravity-skills-skills-php-pro-skill-md",
+      "name": "php-pro",
+      "author": "rmyndharis",
+      "description": "Write idiomatic PHP code with generators, iterators, SPL data structures, and modern OOP features. Use PROACTIVELY for high-performance PHP applications.",
+      "githubUrl": "https://github.com/rmyndharis/antigravity-skills/tree/main/skills/php-pro",
+      "skillUrl": "https://skillsmp.com/creators/rmyndharis/antigravity-skills/skills-php-pro",
+      "stars": 854,
+      "updatedAt": "1781429874"
+    },
+    {
+      "id": "rmyndharis-antigravity-skills-skills-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "rmyndharis",
+      "description": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks. Use PROACTIVELY for Ruby refactoring, optimization, or complex Ruby features.",
+      "githubUrl": "https://github.com/rmyndharis/antigravity-skills/tree/main/skills/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/rmyndharis/antigravity-skills/skills-ruby-pro",
+      "stars": 854,
+      "updatedAt": "1781429874"
     },
     {
       "id": "rmyndharis-antigravity-skills-skills-sql-pro-skill-md",
@@ -3273,6 +4138,16 @@
       "updatedAt": "1771522075"
     },
     {
+      "id": "incidentfox-incidentfox-sre-agent-claude-skills-infrastructure-kubernetes-skill-md",
+      "name": "kubernetes-debug",
+      "author": "incidentfox",
+      "description": "Kubernetes debugging methodology and scripts. Use for pod crashes, CrashLoopBackOff, OOMKilled, deployment issues, resource problems, or container failures.",
+      "githubUrl": "https://github.com/incidentfox/incidentfox/tree/main/sre-agent/.claude/skills/infrastructure-kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/incidentfox/incidentfox/sre-agent-claude-skills-infrastructure-kubernetes",
+      "stars": 629,
+      "updatedAt": "1772518178"
+    },
+    {
       "id": "bage2014-study-study-ai-skills-trae-skills-common-dockerize-skill-md",
       "name": "common-dockerize",
       "author": "bage2014",
@@ -3281,6 +4156,16 @@
       "skillUrl": "https://skillsmp.com/creators/bage2014/study/study-ai-skills-trae-skills-common-dockerize",
       "stars": 623,
       "updatedAt": "1781522744"
+    },
+    {
+      "id": "xalgord-xalgorix-internal-tools-skills-data-container-security-implementing-network-policies-for-kubernetes-skill-md",
+      "name": "implementing-network-policies-for-kubernetes",
+      "author": "xalgord",
+      "description": "Kubernetes NetworkPolicies provide pod-level network segmentation by defining ingress and egress rules that control traffic flow between pods, namespaces, and external endpoints. Combined with CNI plu",
+      "githubUrl": "https://github.com/xalgord/xalgorix/tree/main/internal/tools/skills/data/container-security/implementing-network-policies-for-kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/xalgord/xalgorix/internal-tools-skills-data-container-security-implementing-network-policies-for-kubernetes",
+      "stars": 618,
+      "updatedAt": "1780764075"
     },
     {
       "id": "xalgord-xalgorix-internal-tools-skills-data-container-security-performing-docker-bench-security-assessment-skill-md",
@@ -3293,6 +4178,16 @@
       "updatedAt": "1780764075"
     },
     {
+      "id": "xalgord-xalgorix-internal-tools-skills-data-container-security-performing-kubernetes-penetration-testing-skill-md",
+      "name": "performing-kubernetes-penetration-testing",
+      "author": "xalgord",
+      "description": "Kubernetes penetration testing systematically evaluates cluster security by simulating attacker techniques against the API server, kubelet, etcd, pods, RBAC, network policies, and secrets. Using tools",
+      "githubUrl": "https://github.com/xalgord/xalgorix/tree/main/internal/tools/skills/data/container-security/performing-kubernetes-penetration-testing",
+      "skillUrl": "https://skillsmp.com/creators/xalgord/xalgorix/internal-tools-skills-data-container-security-performing-kubernetes-penetration-testing",
+      "stars": 618,
+      "updatedAt": "1780764075"
+    },
+    {
       "id": "sundial-org-awesome-openclaw-skills-skills-docker-pro-diagnostic-skill-md",
       "name": "docker-pro-diagnostic",
       "author": "sundial-org",
@@ -3301,6 +4196,16 @@
       "skillUrl": "https://skillsmp.com/creators/sundial-org/awesome-openclaw-skills/skills-docker-pro-diagnostic",
       "stars": 615,
       "updatedAt": "1769932612"
+    },
+    {
+      "id": "sundial-org-awesome-openclaw-skills-skills-kubernetes-skill-md",
+      "name": "kubernetes",
+      "author": "sundial-org",
+      "description": "Comprehensive Kubernetes and OpenShift cluster management skill covering operations, troubleshooting, manifest generation, security, and GitOps. Use this skill when:\n(1) Cluster operations: upgrades, backups, node management, scaling, monitoring setup\n(2) Troubleshooting: pod failures, networking issues, storage problems, performance analysis\n(3) Creating manifests: Deployments, StatefulSets, Services, Ingress, NetworkPolicies, RBAC\n(4) Security: audits, Pod Security Standards, RBAC, secrets management, vulnerability scanning\n(5) GitOps: ArgoCD, Flux, Kustomize, Helm, CI/CD pipelines, progressive delivery\n(6) OpenShift-specific: SCCs, Routes, Operators, Builds, ImageStreams\n(7) Multi-cloud: AKS, EKS, GKE, ARO, ROSA operations",
+      "githubUrl": "https://github.com/sundial-org/awesome-openclaw-skills/tree/main/skills/kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/sundial-org/awesome-openclaw-skills/skills-kubernetes",
+      "stars": 615,
+      "updatedAt": "1769929037"
     },
     {
       "id": "docker-model-runner-cmd-cli-commands-skills-docker-model-runner-skill-md",
@@ -3331,6 +4236,76 @@
       "skillUrl": "https://skillsmp.com/creators/kurtosis-tech/kurtosis/skills-docker-local-build",
       "stars": 544,
       "updatedAt": "1773659217"
+    },
+    {
+      "id": "hoangnguyen0403-agent-skills-standard-skills-php-php-best-practices-skill-md",
+      "name": "php-best-practices",
+      "author": "HoangNguyen0403",
+      "description": "Write PHP following best practices, PSR standards, and code quality guidelines. Use when writing PHP following PSR standards, SOLID principles, or improving code quality.",
+      "githubUrl": "https://github.com/HoangNguyen0403/agent-skills-standard/tree/develop/skills/php/php-best-practices",
+      "skillUrl": "https://skillsmp.com/creators/hoangnguyen0403/agent-skills-standard/skills-php-php-best-practices",
+      "stars": 508,
+      "updatedAt": "1776835389"
+    },
+    {
+      "id": "hoangnguyen0403-agent-skills-standard-skills-php-php-concurrency-skill-md",
+      "name": "php-concurrency",
+      "author": "HoangNguyen0403",
+      "description": "Implement concurrency and non-blocking I/O in modern PHP. Use when implementing concurrent requests, async processing, or non-blocking I/O in PHP.",
+      "githubUrl": "https://github.com/HoangNguyen0403/agent-skills-standard/tree/develop/skills/php/php-concurrency",
+      "skillUrl": "https://skillsmp.com/creators/hoangnguyen0403/agent-skills-standard/skills-php-php-concurrency",
+      "stars": 508,
+      "updatedAt": "1776835389"
+    },
+    {
+      "id": "hoangnguyen0403-agent-skills-standard-skills-php-php-error-handling-skill-md",
+      "name": "php-error-handling",
+      "author": "HoangNguyen0403",
+      "description": "Implement modern PHP error and exception handling patterns. Use when implementing exception hierarchies, error handlers, or custom exceptions in PHP.",
+      "githubUrl": "https://github.com/HoangNguyen0403/agent-skills-standard/tree/develop/skills/php/php-error-handling",
+      "skillUrl": "https://skillsmp.com/creators/hoangnguyen0403/agent-skills-standard/skills-php-php-error-handling",
+      "stars": 508,
+      "updatedAt": "1776835389"
+    },
+    {
+      "id": "hoangnguyen0403-agent-skills-standard-skills-php-php-language-skill-md",
+      "name": "php-language",
+      "author": "HoangNguyen0403",
+      "description": "Apply core PHP language standards and modern 8.x features. Use when working with PHP 8.x features like enums, fibers, readonly properties, or named arguments.",
+      "githubUrl": "https://github.com/HoangNguyen0403/agent-skills-standard/tree/develop/skills/php/php-language",
+      "skillUrl": "https://skillsmp.com/creators/hoangnguyen0403/agent-skills-standard/skills-php-php-language",
+      "stars": 508,
+      "updatedAt": "1776835389"
+    },
+    {
+      "id": "hoangnguyen0403-agent-skills-standard-skills-php-php-security-skill-md",
+      "name": "php-security",
+      "author": "HoangNguyen0403",
+      "description": "PHP security standards for database access, password handling, and input validation. Use when securing PHP apps against SQL injection, XSS, or weak password storage.",
+      "githubUrl": "https://github.com/HoangNguyen0403/agent-skills-standard/tree/develop/skills/php/php-security",
+      "skillUrl": "https://skillsmp.com/creators/hoangnguyen0403/agent-skills-standard/skills-php-php-security",
+      "stars": 508,
+      "updatedAt": "1776879543"
+    },
+    {
+      "id": "hoangnguyen0403-agent-skills-standard-skills-php-php-testing-skill-md",
+      "name": "php-testing",
+      "author": "HoangNguyen0403",
+      "description": "Write unit and integration tests for PHP applications with PHPUnit and Pest. Use when writing PHPUnit unit tests or integration tests for PHP applications.",
+      "githubUrl": "https://github.com/HoangNguyen0403/agent-skills-standard/tree/develop/skills/php/php-testing",
+      "skillUrl": "https://skillsmp.com/creators/hoangnguyen0403/agent-skills-standard/skills-php-php-testing",
+      "stars": 508,
+      "updatedAt": "1779242971"
+    },
+    {
+      "id": "hoangnguyen0403-agent-skills-standard-skills-php-php-tooling-skill-md",
+      "name": "php-tooling",
+      "author": "HoangNguyen0403",
+      "description": "Configure PHP ecosystem tooling, dependency management, and static analysis. Use when managing Composer dependencies, running PHPStan, or configuring PHP build tools.",
+      "githubUrl": "https://github.com/HoangNguyen0403/agent-skills-standard/tree/develop/skills/php/php-tooling",
+      "skillUrl": "https://skillsmp.com/creators/hoangnguyen0403/agent-skills-standard/skills-php-php-tooling",
+      "stars": 508,
+      "updatedAt": "1779242971"
     },
     {
       "id": "vibeeval-vibecosystem-skills-docker-ops-skill-md",
@@ -3413,12 +4388,62 @@
       "updatedAt": "1770800004"
     },
     {
+      "id": "dokhacgiakhoa-antigravity-ide-agent-skills-kubernetes-architect-skill-md",
+      "name": "kubernetes-architect",
+      "author": "Dokhacgiakhoa",
+      "description": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Masters EKS/AKS/GKE, service mesh (Istio/Linkerd), progressive delivery, multi-tenancy, and platform engineering. Handles security, observability, cost optimization, and developer experience. Use PROACTIVELY for K8s architecture, GitOps implementation, or cloud-native platform design.",
+      "githubUrl": "https://github.com/Dokhacgiakhoa/antigravity-ide/tree/main/.agent/skills/kubernetes-architect",
+      "skillUrl": "https://skillsmp.com/creators/dokhacgiakhoa/antigravity-ide/agent-skills-kubernetes-architect",
+      "stars": 444,
+      "updatedAt": "1770800004"
+    },
+    {
+      "id": "dokhacgiakhoa-antigravity-ide-agent-skills-php-pro-skill-md",
+      "name": "php-pro",
+      "author": "Dokhacgiakhoa",
+      "description": "Write idiomatic PHP code with generators, iterators, SPL data structures, and modern OOP features. Use PROACTIVELY for high-performance PHP applications.",
+      "githubUrl": "https://github.com/Dokhacgiakhoa/antigravity-ide/tree/main/.agent/skills/php-pro",
+      "skillUrl": "https://skillsmp.com/creators/dokhacgiakhoa/antigravity-ide/agent-skills-php-pro",
+      "stars": 444,
+      "updatedAt": "1770800004"
+    },
+    {
+      "id": "dokhacgiakhoa-antigravity-ide-agent-skills-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "Dokhacgiakhoa",
+      "description": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks. Use PROACTIVELY for Ruby refactoring, optimization, or complex Ruby features.",
+      "githubUrl": "https://github.com/Dokhacgiakhoa/antigravity-ide/tree/main/.agent/skills/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/dokhacgiakhoa/antigravity-ide/agent-skills-ruby-pro",
+      "stars": 444,
+      "updatedAt": "1770800004"
+    },
+    {
+      "id": "pabpereza-pabpereza-claude-skills-kubernetes-specialist-skill-md",
+      "name": "kubernetes-specialist",
+      "author": "pabpereza",
+      "description": "Use when deploying or managing Kubernetes workloads. Invoke to create deployment manifests, configure pod security policies, set up service accounts, define network isolation rules, debug pod crashes, analyze resource limits, inspect container logs, or right-size workloads. Use for Helm charts, RBAC policies, NetworkPolicies, storage configuration, performance optimization, GitOps pipelines, and multi-cluster management.",
+      "githubUrl": "https://github.com/pabpereza/pabpereza/tree/main/.claude/skills/kubernetes-specialist",
+      "skillUrl": "https://skillsmp.com/creators/pabpereza/pabpereza/claude-skills-kubernetes-specialist",
+      "stars": 430,
+      "updatedAt": "1781078086"
+    },
+    {
       "id": "pabpereza-pabpereza-gemini-skills-docker-expert-skill-md",
       "name": "docker-expert",
       "author": "pabpereza",
       "description": "Docker containerization expert with deep knowledge of multi-stage builds, image optimization, container security, Docker Compose orchestration, and production deployment patterns. Use PROACTIVELY f...",
       "githubUrl": "https://github.com/pabpereza/pabpereza/tree/main/.gemini/skills/docker-expert",
       "skillUrl": "https://skillsmp.com/creators/pabpereza/pabpereza/gemini-skills-docker-expert",
+      "stars": 430,
+      "updatedAt": "1777405098"
+    },
+    {
+      "id": "pabpereza-pabpereza-gemini-skills-kubernetes-specialist-skill-md",
+      "name": "kubernetes-specialist",
+      "author": "pabpereza",
+      "description": "Use when deploying or managing Kubernetes workloads. Invoke to create deployment manifests, configure pod security policies, set up service accounts, define network isolation rules, debug pod crashes, analyze resource limits, inspect container logs, or right-size workloads. Use for Helm charts, RBAC policies, NetworkPolicies, storage configuration, performance optimization, GitOps pipelines, and multi-cluster management.",
+      "githubUrl": "https://github.com/pabpereza/pabpereza/tree/main/.gemini/skills/kubernetes-specialist",
+      "skillUrl": "https://skillsmp.com/creators/pabpereza/pabpereza/gemini-skills-kubernetes-specialist",
       "stars": 430,
       "updatedAt": "1777405098"
     },
@@ -3431,6 +4456,16 @@
       "skillUrl": "https://skillsmp.com/creators/spencerpauly/awesome-cursor-skills/resources-adding-docker",
       "stars": 425,
       "updatedAt": "1775831166"
+    },
+    {
+      "id": "spencerpauly-awesome-cursor-skills-resources-kubernetes-deploying-skill-md",
+      "name": "kubernetes-deploying",
+      "author": "spencerpauly",
+      "description": "Deploy applications to Kubernetes — Deployments, Services, Ingress, ConfigMaps, Secrets, health checks, and scaling.",
+      "githubUrl": "https://github.com/spencerpauly/awesome-cursor-skills/tree/main/resources/kubernetes-deploying",
+      "skillUrl": "https://skillsmp.com/creators/spencerpauly/awesome-cursor-skills/resources-kubernetes-deploying",
+      "stars": 425,
+      "updatedAt": "1775839510"
     },
     {
       "id": "majiayu000-claude-skill-registry-skills-data-go-docker-skill-md",
@@ -3473,6 +4508,16 @@
       "updatedAt": "1777790674"
     },
     {
+      "id": "pedronauck-skills-skills-community-kubernetes-specialist-skill-md",
+      "name": "kubernetes-specialist",
+      "author": "pedronauck",
+      "description": "Use when deploying or managing Kubernetes workloads. Invoke to create deployment manifests, configure pod security policies, set up service accounts, define network isolation rules, debug pod crashes, analyze resource limits, inspect container logs, or right-size workloads. Use for Helm charts, RBAC policies, NetworkPolicies, storage configuration, performance optimization, GitOps pipelines, and multi-cluster management.",
+      "githubUrl": "https://github.com/pedronauck/skills/tree/main/skills/community/kubernetes-specialist",
+      "skillUrl": "https://skillsmp.com/creators/pedronauck/skills/skills-community-kubernetes-specialist",
+      "stars": 404,
+      "updatedAt": "1778542283"
+    },
+    {
       "id": "eclipse-rdf4j-rdf4j-codex-skills-docker-jfr-benchmark-loop-skill-md",
       "name": "docker-jfr-benchmark-loop",
       "author": "eclipse-rdf4j",
@@ -3483,6 +4528,56 @@
       "updatedAt": "1776873564"
     },
     {
+      "id": "notque-vexjoy-agent-skills-engineering-php-quality-skill-md",
+      "name": "php-quality",
+      "author": "notque",
+      "description": "PHP code quality: PSR standards, strict types, framework idioms.",
+      "githubUrl": "https://github.com/notque/vexjoy-agent/tree/main/skills/engineering/php-quality",
+      "skillUrl": "https://skillsmp.com/creators/notque/vexjoy-agent/skills-engineering-php-quality",
+      "stars": 395,
+      "updatedAt": "1778089385"
+    },
+    {
+      "id": "notque-vexjoy-agent-skills-engineering-php-testing-skill-md",
+      "name": "php-testing",
+      "author": "notque",
+      "description": "PHP testing patterns: PHPUnit, test doubles, database testing.",
+      "githubUrl": "https://github.com/notque/vexjoy-agent/tree/main/skills/engineering/php-testing",
+      "skillUrl": "https://skillsmp.com/creators/notque/vexjoy-agent/skills-engineering-php-testing",
+      "stars": 395,
+      "updatedAt": "1781107589"
+    },
+    {
+      "id": "notque-vexjoy-agent-skills-infrastructure-kubernetes-debugging-skill-md",
+      "name": "kubernetes-debugging",
+      "author": "notque",
+      "description": "Kubernetes debugging for pod failures and networking.",
+      "githubUrl": "https://github.com/notque/vexjoy-agent/tree/main/skills/infrastructure/kubernetes-debugging",
+      "skillUrl": "https://skillsmp.com/creators/notque/vexjoy-agent/skills-infrastructure-kubernetes-debugging",
+      "stars": 395,
+      "updatedAt": "1778089385"
+    },
+    {
+      "id": "notque-vexjoy-agent-skills-infrastructure-kubernetes-security-skill-md",
+      "name": "kubernetes-security",
+      "author": "notque",
+      "description": "Kubernetes security: RBAC, PodSecurity, network policies.",
+      "githubUrl": "https://github.com/notque/vexjoy-agent/tree/main/skills/infrastructure/kubernetes-security",
+      "skillUrl": "https://skillsmp.com/creators/notque/vexjoy-agent/skills-infrastructure-kubernetes-security",
+      "stars": 395,
+      "updatedAt": "1778089385"
+    },
+    {
+      "id": "agentflocks-flocks-flocks-flockshub-plugins-skills-anthropic-cybersecurity-skills-implementing-network-policies-for-kubernetes-skill-md",
+      "name": "implementing-network-policies-for-kubernetes",
+      "author": "AgentFlocks",
+      "description": "Kubernetes NetworkPolicies provide pod-level network segmentation by defining ingress and egress rules that control traffic flow between pods, namespaces, and external endpoints. Combined with CNI plu",
+      "githubUrl": "https://github.com/AgentFlocks/flocks/tree/main/.flocks/flockshub/plugins/skills/Anthropic-Cybersecurity-Skills/implementing-network-policies-for-kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/agentflocks/flocks/flocks-flockshub-plugins-skills-anthropic-cybersecurity-skills-implementing-network-policies-for-kubernetes",
+      "stars": 375,
+      "updatedAt": "1777959906"
+    },
+    {
       "id": "agentflocks-flocks-flocks-flockshub-plugins-skills-anthropic-cybersecurity-skills-performing-docker-bench-security-assessment-skill-md",
       "name": "performing-docker-bench-security-assessment",
       "author": "AgentFlocks",
@@ -3491,6 +4586,26 @@
       "skillUrl": "https://skillsmp.com/creators/agentflocks/flocks/flocks-flockshub-plugins-skills-anthropic-cybersecurity-skills-performing-docker-bench-security-assessment",
       "stars": 375,
       "updatedAt": "1777959906"
+    },
+    {
+      "id": "agentflocks-flocks-flocks-flockshub-plugins-skills-anthropic-cybersecurity-skills-performing-kubernetes-penetration-testing-skill-md",
+      "name": "performing-kubernetes-penetration-testing",
+      "author": "AgentFlocks",
+      "description": "Kubernetes penetration testing systematically evaluates cluster security by simulating attacker techniques against the API server, kubelet, etcd, pods, RBAC, network policies, and secrets. Using tools",
+      "githubUrl": "https://github.com/AgentFlocks/flocks/tree/main/.flocks/flockshub/plugins/skills/Anthropic-Cybersecurity-Skills/performing-kubernetes-penetration-testing",
+      "skillUrl": "https://skillsmp.com/creators/agentflocks/flocks/flocks-flockshub-plugins-skills-anthropic-cybersecurity-skills-performing-kubernetes-penetration-testing",
+      "stars": 375,
+      "updatedAt": "1777959906"
+    },
+    {
+      "id": "m-sec-org-breachweave-packages-core-src-config-skills-builtin-php-payload-builder-skill-md",
+      "name": "php-payload-builder",
+      "author": "m-sec-org",
+      "description": "安全构造 PHP payload 的专项技能。解决 bash/shell 转义导致 PHP 代码损坏的问题，提供经过验证的 payload 模板。\n触发场景：用户需要通过 bash/shell 写入 PHP 文件（echo、printf、redis-cli -x、curl -d）、\n遇到 $_POST/$_GET 变量被 bash 展开、PHP 代码写入后不执行、disable_functions bypass、\n构造 webshell、构造诊断页、构造文件下载器、heredoc 写法、base64 编码写入时使用。",
+      "githubUrl": "https://github.com/m-sec-org/BreachWeave/tree/main/packages/core/src/config/skills/builtin/php-payload-builder",
+      "skillUrl": "https://skillsmp.com/creators/m-sec-org/breachweave/packages-core-src-config-skills-builtin-php-payload-builder",
+      "stars": 370,
+      "updatedAt": "1778057971"
     },
     {
       "id": "aiskillstore-marketplace-skills-autumnsgrove-docker-workflow-skill-md",
@@ -3543,6 +4658,36 @@
       "updatedAt": "1768870845"
     },
     {
+      "id": "aiskillstore-marketplace-skills-sickn33-kubernetes-deployment-skill-md",
+      "name": "kubernetes-deployment",
+      "author": "aiskillstore",
+      "description": "Kubernetes deployment workflow for container orchestration, Helm charts, service mesh, and production-ready K8s configurations.",
+      "githubUrl": "https://github.com/aiskillstore/marketplace/tree/main/skills/sickn33/kubernetes-deployment",
+      "skillUrl": "https://skillsmp.com/creators/aiskillstore/marketplace/skills-sickn33-kubernetes-deployment",
+      "stars": 360,
+      "updatedAt": "1772090340"
+    },
+    {
+      "id": "aiskillstore-marketplace-skills-sickn33-php-pro-skill-md",
+      "name": "php-pro",
+      "author": "aiskillstore",
+      "description": "Write idiomatic PHP code with generators, iterators, SPL data structures, and modern OOP features. Use PROACTIVELY for high-performance PHP applications.",
+      "githubUrl": "https://github.com/aiskillstore/marketplace/tree/main/skills/sickn33/php-pro",
+      "skillUrl": "https://skillsmp.com/creators/aiskillstore/marketplace/skills-sickn33-php-pro",
+      "stars": 360,
+      "updatedAt": "1772090340"
+    },
+    {
+      "id": "aiskillstore-marketplace-skills-sickn33-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "aiskillstore",
+      "description": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks. Use PROACTIVELY for Ruby refactoring, optimization, or complex Ruby features.",
+      "githubUrl": "https://github.com/aiskillstore/marketplace/tree/main/skills/sickn33/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/aiskillstore/marketplace/skills-sickn33-ruby-pro",
+      "stars": 360,
+      "updatedAt": "1772090340"
+    },
+    {
       "id": "cowork-os-cowork-os-resources-skills-docker-compose-ops-skill-md",
       "name": "docker-compose-ops",
       "author": "CoWork-OS",
@@ -3551,6 +4696,216 @@
       "skillUrl": "https://skillsmp.com/creators/cowork-os/cowork-os/resources-skills-docker-compose-ops",
       "stars": 360,
       "updatedAt": "1772301869"
+    },
+    {
+      "id": "cowork-os-cowork-os-resources-skills-kubernetes-ops-skill-md",
+      "name": "kubernetes-ops",
+      "author": "CoWork-OS",
+      "description": "Kubernetes cluster operations: kubectl commands, manifest generation, Helm charts, RBAC, debugging, and deployment strategies.",
+      "githubUrl": "https://github.com/CoWork-OS/CoWork-OS/tree/main/resources/skills/kubernetes-ops",
+      "skillUrl": "https://skillsmp.com/creators/cowork-os/cowork-os/resources-skills-kubernetes-ops",
+      "stars": 360,
+      "updatedAt": "1772301966"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-archive-extract-audit-skill-md",
+      "name": "php-archive-extract-audit",
+      "author": "0xShe",
+      "description": "PHP Web 归档解压（Zip Slip/路径穿越）审计工具。识别解压条目名如何与目标目录拼接、是否存在 base dir 约束缺失，输出可利用性分级、可观测 PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-archive-extract-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-archive-extract-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-audit-pipeline-skill-md",
+      "name": "php-audit-pipeline",
+      "author": "0xShe",
+      "description": "PHP Web 全链路白盒代码安全审计流水线（多文件版编排）。作为总编排参考，按 Sink 类型调用各子审计 skill（`php-route-mapper/php-auth-audit/php-route-tracer/php-*-audit`），并复用统一输出与分级标准。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-audit-pipeline",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-audit-pipeline",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-auth-audit-skill-md",
+      "name": "php-auth-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码鉴权机制审计工具。从源码中识别所有认证/鉴权实现并分析风险，输出路由-鉴权映射与漏洞分析（含 PoC 与修复建议）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-auth-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-auth-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-cmd-audit-skill-md",
+      "name": "php-cmd-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码命令注入审计工具。识别命令执行 Sink（exec/system/shell_exec 等），追踪用户输入进入命令拼接，输出可利用性分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-cmd-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-cmd-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-crypto-audit-skill-md",
+      "name": "php-crypto-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码加密与密钥安全审计工具。识别弱哈希/弱加密/硬编码密钥/签名校验缺陷，输出分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-crypto-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-crypto-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-deser-audit-skill-md",
+      "name": "php-deser-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码反序列化/对象注入审计工具。识别 unserialize 注入点与可控数据来源，追踪魔术方法链，输出可利用性分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-deser-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-deser-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-file-read-audit-skill-md",
+      "name": "php-file-read-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码任意文件读取/路径穿越审计工具。识别文件读取 Sink，追踪路径来源与校验逻辑，输出可利用性分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-file-read-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-file-read-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-ldap-audit-skill-md",
+      "name": "php-ldap-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码 LDAP 注入审计工具。识别用户可控数据进入 LDAP filter/DN 构造并被 ldap_search/ldap_read 执行，输出可利用性分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-ldap-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-ldap-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-nosql-audit-skill-md",
+      "name": "php-nosql-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码 NoSQL 注入审计工具。识别用户输入进入 MongoDB/DocumentDB 查询构造，分析是否存在 operator 注入（$gt/$ne/$where 等），输出分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-nosql-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-nosql-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-open-redirect-audit-skill-md",
+      "name": "php-open-redirect-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码开放重定向审计工具。识别用户可控重定向目的地进入 header Location/跳转函数，分析校验与 allowlist，输出分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-open-redirect-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-open-redirect-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-route-mapper-skill-md",
+      "name": "php-route-mapper",
+      "author": "0xShe",
+      "description": "PHP Web 源码路由与参数映射分析工具。从源码中提取所有入口路由与参数结构，输出完整请求模板与参数清单（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-route-mapper",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-route-mapper",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-session-cookie-audit-skill-md",
+      "name": "php-session-cookie-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码会话与 Cookie 安全审计工具。识别 session 固定、Cookie flags 不安全、JWT 验证缺陷与记住登录风险，输出分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-session-cookie-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-session-cookie-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-sql-audit-skill-md",
+      "name": "php-sql-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码 SQL 注入漏洞审计工具。从源码中识别所有 SQL 执行点并分析注入风险，输出可利用性分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-sql-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-sql-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-ssrf-audit-skill-md",
+      "name": "php-ssrf-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码 SSRF 审计工具。识别用户可控 URL/地址进入网络请求 Sink，追踪内网/协议/端口限制与回显，输出可利用性分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-ssrf-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-ssrf-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-thinkphp-audit-skill-md",
+      "name": "php-thinkphp-audit",
+      "author": "0xShe",
+      "description": "ThinkPHP 框架特效安全审计工具。针对 ThinkPHP 常见的鉴权/CSRF/模板转义/ORM 写入（Mass Assignment）/调试与配置暴露等机制进行白盒静态审计，并映射到通用漏洞类型体系（AUTH/CSRF/TPL/XSS/LOGIC/CFG/SESS/SQL 等）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-thinkphp-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-thinkphp-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-tpl-audit-skill-md",
+      "name": "php-tpl-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码模板注入/SSTI 审计工具。识别模板引擎渲染点与模板名/表达式可控性，追踪到 eval/执行链，输出可利用性分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-tpl-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-tpl-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-vuln-scanner-skill-md",
+      "name": "php-vuln-scanner",
+      "author": "0xShe",
+      "description": "PHP 组件版本漏洞检测工具。扫描 composer.json / composer.lock 或 jar/包元信息，匹配已知漏洞规则并输出报告（包含可能的触发点分析框架）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-vuln-scanner",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-vuln-scanner",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-wordpress-audit-skill-md",
+      "name": "php-wordpress-audit",
+      "author": "0xShe",
+      "description": "WordPress 框架特效安全审计工具。针对 WordPress 常见 nonce/capability/check_admin_referer、AJAX action、escape/sanitize、重定向、安全上传与远程请求等机制进行白盒静态审计，并映射到通用漏洞类型体系（AUTH/CSRF/XSS/SQL/CFG/SSRF 等）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-wordpress-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-wordpress-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "0xshe-php-code-audit-skill-php-xxe-audit-skill-md",
+      "name": "php-xxe-audit",
+      "author": "0xShe",
+      "description": "PHP Web 源码 XXE 审计工具。识别 XML 解析点与实体处理配置，追踪 XML 输入来源与回显，输出可利用性分级、PoC 与修复建议（禁止省略）。",
+      "githubUrl": "https://github.com/0xShe/PHP-Code-Audit-Skill/tree/main/php-xxe-audit",
+      "skillUrl": "https://skillsmp.com/creators/0xshe/php-code-audit-skill/php-xxe-audit",
+      "stars": 352,
+      "updatedAt": "1774332521"
+    },
+    {
+      "id": "cosmicstack-labs-mercury-agent-skills-categories-devops-kubernetes-patterns-skill-md",
+      "name": "kubernetes-patterns",
+      "author": "cosmicstack-labs",
+      "description": "Pods, deployments, services, ingress, RBAC, autoscaling, and production cluster best practices",
+      "githubUrl": "https://github.com/cosmicstack-labs/mercury-agent-skills/tree/main/categories/devops/kubernetes-patterns",
+      "skillUrl": "https://skillsmp.com/creators/cosmicstack-labs/mercury-agent-skills/categories-devops-kubernetes-patterns",
+      "stars": 352,
+      "updatedAt": "1778394571"
     },
     {
       "id": "clickhouse-clickhouse-js-skills-clickhouse-js-node-coding-skill-md",
@@ -3573,6 +4928,106 @@
       "updatedAt": "1781112753"
     },
     {
+      "id": "cnwu16-vedic-astro-skills-antigravity-skills-vedic-calculator-skill-md",
+      "name": "vedic-calculator",
+      "author": "CNWU16",
+      "description": "吠陀占星排盘计算引擎。当用户提供出生时间和地点，需要从零计算星盘数据时触发。输入出生日期、时间、地点，直接输出structured_data.md，跳过JHora排盘和PDF读取流程。当用户提到'直接排盘''计算星盘''不用jhora''快速排盘''算一下'等关键词时触发。也在vedic-reader判断无PDF输入时建议使用。",
+      "githubUrl": "https://github.com/CNWU16/vedic-astro-skills/tree/main/antigravity/skills/vedic-calculator",
+      "skillUrl": "https://skillsmp.com/creators/cnwu16/vedic-astro-skills/antigravity-skills-vedic-calculator",
+      "stars": 292,
+      "updatedAt": "1781682321"
+    },
+    {
+      "id": "cnwu16-vedic-astro-skills-antigravity-skills-vedic-core-skill-md",
+      "name": "vedic-core",
+      "author": "CNWU16",
+      "description": "吠陀占星核心分析引擎(KN Rao体系)。接收structured_data.md，执行P1-P12行星审计、分盘交叉分析、宫位诊断、十大板块人生总结。支持Q\u0026A追问模式回答用户任何人生问题。当用户提到'星盘审计''行星分析''P1-P12''完整分析''核心引擎''开始分析''帮我分析''看看运势''生成报告''打包报告'等关键词时触发。也在用户对已有星盘报告提问时触发。",
+      "githubUrl": "https://github.com/CNWU16/vedic-astro-skills/tree/main/antigravity/skills/vedic-core",
+      "skillUrl": "https://skillsmp.com/creators/cnwu16/vedic-astro-skills/antigravity-skills-vedic-core",
+      "stars": 292,
+      "updatedAt": "1781682321"
+    },
+    {
+      "id": "cnwu16-vedic-astro-skills-codex-skills-vedic-calculator-skill-md",
+      "name": "vedic-calculator",
+      "author": "CNWU16",
+      "description": "吠陀占星排盘计算引擎。当用户提供出生时间和地点，需要从零计算星盘数据时触发。输入出生日期、时间、地点，直接输出structured_data.md，跳过JHora排盘和PDF读取流程。当用户提到'直接排盘''计算星盘''不用jhora''快速排盘''算一下'等关键词时触发。也在vedic-reader判断无PDF输入时建议使用。",
+      "githubUrl": "https://github.com/CNWU16/vedic-astro-skills/tree/main/codex/skills/vedic-calculator",
+      "skillUrl": "https://skillsmp.com/creators/cnwu16/vedic-astro-skills/codex-skills-vedic-calculator",
+      "stars": 292,
+      "updatedAt": "1781682321"
+    },
+    {
+      "id": "cnwu16-vedic-astro-skills-codex-skills-vedic-core-skill-md",
+      "name": "vedic-core",
+      "author": "CNWU16",
+      "description": "吠陀占星核心分析引擎(KN Rao体系)。接收structured_data.md，执行P1-P12行星审计、分盘交叉分析、宫位诊断、十大板块人生总结。支持Q\u0026A追问模式回答用户任何人生问题。当用户提到'星盘审计''行星分析''P1-P12''完整分析''核心引擎''开始分析''帮我分析''看看运势''生成报告''打包报告'等关键词时触发。也在用户对已有星盘报告提问时触发。",
+      "githubUrl": "https://github.com/CNWU16/vedic-astro-skills/tree/main/codex/skills/vedic-core",
+      "skillUrl": "https://skillsmp.com/creators/cnwu16/vedic-astro-skills/codex-skills-vedic-core",
+      "stars": 292,
+      "updatedAt": "1781682321"
+    },
+    {
+      "id": "borghei-claude-skills-engineering-kubernetes-operator-skill-md",
+      "name": "kubernetes-operator",
+      "author": "borghei",
+      "description": "Design, build, and operate Kubernetes operators using the operator pattern. Use when extending Kubernetes with a custom controller for a domain object (database, message queue, ML pipeline, internal platform primitive), deciding between operator-SDK / Kubebuilder / controller-runtime / metacontroller, designing CRDs with proper schema and conversion, implementing reconciliation loops that are idempotent and converge, building status subresources for observability, or auditing an existing operator for anti-patterns (leaky abstractions, missing finalizers, no leader election, status as spec).",
+      "githubUrl": "https://github.com/borghei/Claude-Skills/tree/main/engineering/kubernetes-operator",
+      "skillUrl": "https://skillsmp.com/creators/borghei/claude-skills/engineering-kubernetes-operator",
+      "stars": 272,
+      "updatedAt": "1779915710"
+    },
+    {
+      "id": "shopify-rubydex-claude-skills-rubydex-mcp-benchmark-skill-md",
+      "name": "rubydex-mcp-benchmark",
+      "author": "Shopify",
+      "description": "Use when benchmarking rubydex MCP against plain Grep/Glob for Ruby code tasks. Guides A/B comparison setup, candidate selection, and metrics collection.",
+      "githubUrl": "https://github.com/Shopify/rubydex/tree/main/.claude/skills/rubydex-mcp-benchmark",
+      "skillUrl": "https://skillsmp.com/creators/shopify/rubydex/claude-skills-rubydex-mcp-benchmark",
+      "stars": 271,
+      "updatedAt": "1772147844"
+    },
+    {
+      "id": "aj-geddes-useful-ai-prompts-skills-kubernetes-deployment-skill-md",
+      "name": "kubernetes-deployment",
+      "author": "aj-geddes",
+      "description": "Deploy, manage, and scale containerized applications on Kubernetes clusters with best practices for production workloads, resource management, and rolling updates.",
+      "githubUrl": "https://github.com/aj-geddes/useful-ai-prompts/tree/main/skills/kubernetes-deployment",
+      "skillUrl": "https://skillsmp.com/creators/aj-geddes/useful-ai-prompts/skills-kubernetes-deployment",
+      "stars": 267,
+      "updatedAt": "1772609428"
+    },
+    {
+      "id": "aj-geddes-useful-ai-prompts-skills-ruby-rails-application-skill-md",
+      "name": "ruby-rails-application",
+      "author": "aj-geddes",
+      "description": "Develop Ruby on Rails applications with models, controllers, views, Active Record ORM, authentication, and RESTful routes. Use when building Rails applications, managing database relationships, and implementing MVC architecture.",
+      "githubUrl": "https://github.com/aj-geddes/useful-ai-prompts/tree/main/skills/ruby-rails-application",
+      "skillUrl": "https://skillsmp.com/creators/aj-geddes/useful-ai-prompts/skills-ruby-rails-application",
+      "stars": 267,
+      "updatedAt": "1772609428"
+    },
+    {
+      "id": "thesoftwarehouse-copilot-collections-github-skills-tsh-implementing-kubernetes-skill-md",
+      "name": "tsh-implementing-kubernetes",
+      "author": "TheSoftwareHouse",
+      "description": "Kubernetes deployment patterns, Helm charts, and cluster management. Use when deploying applications to K8s, designing workload configurations, implementing scaling strategies, or managing cluster resources.",
+      "githubUrl": "https://github.com/TheSoftwareHouse/copilot-collections/tree/main/.github/skills/tsh-implementing-kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/thesoftwarehouse/copilot-collections/github-skills-tsh-implementing-kubernetes",
+      "stars": 266,
+      "updatedAt": "1778067061"
+    },
+    {
+      "id": "lukasniessen-kubernetes-skill-skill-md",
+      "name": "kubernetes-skill",
+      "author": "LukasNiessen",
+      "description": "Prevent Kubernetes hallucinations by diagnosing and fixing failure modes: insecure workload defaults, resource starvation, network exposure, privilege sprawl, fragile rollouts, and API drift. Use when generating, reviewing, refactoring, or migrating manifests, Helm charts, Kustomize overlays, cluster policies, and platform-specific Kubernetes work for EKS, GKE, AKS, OpenShift, GitOps controllers, or observability stacks.",
+      "githubUrl": "https://github.com/LukasNiessen/kubernetes-skill",
+      "skillUrl": "https://skillsmp.com/creators/lukasniessen/kubernetes-skill/skill",
+      "stars": 243,
+      "updatedAt": "1780611463"
+    },
+    {
       "id": "boshi-xixixi-traeskill-trae-skills-05-backend-node-skill-md",
       "name": "backend-node-js-expert",
       "author": "boshi-xixixi",
@@ -3583,6 +5038,646 @@
       "updatedAt": "1778594265"
     },
     {
+      "id": "wcygan-dotfiles-config-claude-skills-kubernetes-skill-md",
+      "name": "kubernetes",
+      "author": "wcygan",
+      "description": "Kubernetes expert for cluster ops, manifests, kubectl debugging, RBAC, networking, workloads, storage. Auto-loads when kubectl/k8s mentioned with an action verb. Do NOT trigger on incidental \"service\"/\"pod\"/\"cluster\" or Terraform/Helm-only questions. Keywords kubernetes, kubectl, k8s, deployment, ingress, gateway api, networkpolicy, rbac, kustomize.",
+      "githubUrl": "https://github.com/wcygan/dotfiles/tree/main/config/claude/skills/kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/wcygan/dotfiles/config-claude-skills-kubernetes",
+      "stars": 192,
+      "updatedAt": "1777732213"
+    },
+    {
+      "id": "thebushidocollective-han-plugins-languages-ruby-skills-ruby-blocks-procs-lambdas-skill-md",
+      "name": "ruby-blocks-procs-lambdas",
+      "author": "TheBushidoCollective",
+      "description": "Use when working with Ruby blocks, procs, lambdas, and functional programming patterns including closures and higher-order functions.",
+      "githubUrl": "https://github.com/TheBushidoCollective/han/tree/main/plugins/languages/ruby/skills/ruby-blocks-procs-lambdas",
+      "skillUrl": "https://skillsmp.com/creators/thebushidocollective/han/plugins-languages-ruby-skills-ruby-blocks-procs-lambdas",
+      "stars": 168,
+      "updatedAt": "1770832038"
+    },
+    {
+      "id": "thebushidocollective-han-plugins-languages-ruby-skills-ruby-gems-and-bundler-skill-md",
+      "name": "ruby-gems-bundler",
+      "author": "TheBushidoCollective",
+      "description": "Use when working with Ruby gems, Bundler for dependency management, creating gemspecs, and publishing gems to RubyGems.",
+      "githubUrl": "https://github.com/TheBushidoCollective/han/tree/main/plugins/languages/ruby/skills/ruby-gems-and-bundler",
+      "skillUrl": "https://skillsmp.com/creators/thebushidocollective/han/plugins-languages-ruby-skills-ruby-gems-and-bundler",
+      "stars": 168,
+      "updatedAt": "1770832038"
+    },
+    {
+      "id": "thebushidocollective-han-plugins-languages-ruby-skills-ruby-metaprogramming-skill-md",
+      "name": "ruby-metaprogramming",
+      "author": "TheBushidoCollective",
+      "description": "Use when working with Ruby metaprogramming features including dynamic method definition, method_missing, class_eval, define_method, and reflection.",
+      "githubUrl": "https://github.com/TheBushidoCollective/han/tree/main/plugins/languages/ruby/skills/ruby-metaprogramming",
+      "skillUrl": "https://skillsmp.com/creators/thebushidocollective/han/plugins-languages-ruby-skills-ruby-metaprogramming",
+      "stars": 168,
+      "updatedAt": "1770832038"
+    },
+    {
+      "id": "thebushidocollective-han-plugins-languages-ruby-skills-ruby-object-oriented-programming-skill-md",
+      "name": "ruby-oop",
+      "author": "TheBushidoCollective",
+      "description": "Use when working with Ruby's object-oriented programming features including classes, modules, inheritance, mixins, and method visibility.",
+      "githubUrl": "https://github.com/TheBushidoCollective/han/tree/main/plugins/languages/ruby/skills/ruby-object-oriented-programming",
+      "skillUrl": "https://skillsmp.com/creators/thebushidocollective/han/plugins-languages-ruby-skills-ruby-object-oriented-programming",
+      "stars": 168,
+      "updatedAt": "1770832038"
+    },
+    {
+      "id": "thebushidocollective-han-plugins-languages-ruby-skills-ruby-standard-library-skill-md",
+      "name": "ruby-standard-library",
+      "author": "TheBushidoCollective",
+      "description": "Use when working with Ruby's standard library including Enumerable, File I/O, Time/Date, Regular Expressions, and core classes.",
+      "githubUrl": "https://github.com/TheBushidoCollective/han/tree/main/plugins/languages/ruby/skills/ruby-standard-library",
+      "skillUrl": "https://skillsmp.com/creators/thebushidocollective/han/plugins-languages-ruby-skills-ruby-standard-library",
+      "stars": 168,
+      "updatedAt": "1770832038"
+    },
+    {
+      "id": "thebushidocollective-han-plugins-tools-kubernetes-skills-kubernetes-manifests-skill-md",
+      "name": "kubernetes-manifests",
+      "author": "TheBushidoCollective",
+      "description": "Use when writing and deploying Kubernetes manifests for container orchestration.",
+      "githubUrl": "https://github.com/TheBushidoCollective/han/tree/main/plugins/tools/kubernetes/skills/kubernetes-manifests",
+      "skillUrl": "https://skillsmp.com/creators/thebushidocollective/han/plugins-tools-kubernetes-skills-kubernetes-manifests",
+      "stars": 168,
+      "updatedAt": "1770832021"
+    },
+    {
+      "id": "thebushidocollective-han-plugins-tools-kubernetes-skills-kubernetes-resources-skill-md",
+      "name": "kubernetes-resources",
+      "author": "TheBushidoCollective",
+      "description": "Use when managing Kubernetes resources including deployments, services, configmaps, and secrets.",
+      "githubUrl": "https://github.com/TheBushidoCollective/han/tree/main/plugins/tools/kubernetes/skills/kubernetes-resources",
+      "skillUrl": "https://skillsmp.com/creators/thebushidocollective/han/plugins-tools-kubernetes-skills-kubernetes-resources",
+      "stars": 168,
+      "updatedAt": "1770832021"
+    },
+    {
+      "id": "thebushidocollective-han-plugins-tools-kubernetes-skills-kubernetes-security-skill-md",
+      "name": "kubernetes-security",
+      "author": "TheBushidoCollective",
+      "description": "Use when implementing Kubernetes security best practices including RBAC, pod security policies, and network policies.",
+      "githubUrl": "https://github.com/TheBushidoCollective/han/tree/main/plugins/tools/kubernetes/skills/kubernetes-security",
+      "skillUrl": "https://skillsmp.com/creators/thebushidocollective/han/plugins-tools-kubernetes-skills-kubernetes-security",
+      "stars": 168,
+      "updatedAt": "1770832021"
+    },
+    {
+      "id": "neversight-learn-skills-dev-data-skills-md-1mangesh1-dev-skills-collection-kubernetes-skill-md",
+      "name": "kubernetes",
+      "author": "NeverSight",
+      "description": "Kubernetes and kubectl mastery for deployments, services, pods, debugging, and cluster management. Use when user asks to \"deploy to k8s\", \"create deployment\", \"debug pod\", \"kubectl commands\", \"scale service\", \"check pod logs\", \"create ingress\", or any Kubernetes tasks.",
+      "githubUrl": "https://github.com/NeverSight/learn-skills.dev/tree/main/data/skills-md/1mangesh1/dev-skills-collection/kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/neversight/learn-skills.dev/data-skills-md-1mangesh1-dev-skills-collection-kubernetes",
+      "stars": 163,
+      "updatedAt": "1774171736"
+    },
+    {
+      "id": "neversight-learn-skills-dev-data-skills-md-404kidwiz-claude-supercode-skills-kubernetes-specialist-skill-md",
+      "name": "kubernetes-specialist",
+      "author": "NeverSight",
+      "description": "Expert Kubernetes Specialist with deep expertise in container orchestration, cluster management, and cloud-native applications. Proficient in Kubernetes architecture, Helm charts, operators, and multi-cluster management across EKS, AKS, GKE, and on-premises deployments.",
+      "githubUrl": "https://github.com/NeverSight/learn-skills.dev/tree/main/data/skills-md/404kidwiz/claude-supercode-skills/kubernetes-specialist",
+      "skillUrl": "https://skillsmp.com/creators/neversight/learn-skills.dev/data-skills-md-404kidwiz-claude-supercode-skills-kubernetes-specialist",
+      "stars": 163,
+      "updatedAt": "1774267091"
+    },
+    {
+      "id": "neversight-learn-skills-dev-data-skills-md-adaptationio-skrillz-kubernetes-python-skill-md",
+      "name": "kubernetes-python",
+      "author": "NeverSight",
+      "description": "Kubernetes Python client for programmatic cluster management. Use when working with Kubernetes API, managing pods, deployments, services, namespaces, configmaps, secrets, jobs, CRDs, EKS clusters, watching resources, automating K8s operations, or building Kubernetes controllers.",
+      "githubUrl": "https://github.com/NeverSight/learn-skills.dev/tree/main/data/skills-md/adaptationio/skrillz/kubernetes-python",
+      "skillUrl": "https://skillsmp.com/creators/neversight/learn-skills.dev/data-skills-md-adaptationio-skrillz-kubernetes-python",
+      "stars": 163,
+      "updatedAt": "1774267052"
+    },
+    {
+      "id": "softspark-ai-toolkit-app-skills-ruby-patterns-skill-md",
+      "name": "ruby-patterns",
+      "author": "softspark",
+      "description": "Ruby/Rails: blocks, metaprogramming, ActiveRecord, Sidekiq, RSpec, Sorbet, Hanami. Triggers: Ruby, Rails, ActiveRecord, Sidekiq, RSpec, Gemfile, bundler, Hanami, Sorbet.",
+      "githubUrl": "https://github.com/softspark/ai-toolkit/tree/main/app/skills/ruby-patterns",
+      "skillUrl": "https://skillsmp.com/creators/softspark/ai-toolkit/app-skills-ruby-patterns",
+      "stars": 155,
+      "updatedAt": "1778066078"
+    },
+    {
+      "id": "softspark-ai-toolkit-app-skills-ruby-rules-skill-md",
+      "name": "ruby-rules",
+      "author": "softspark",
+      "description": "Ruby coding rules: style, patterns, security, testing. Triggers: .rb, Gemfile, .gemspec, Rails, ActiveRecord, Sidekiq, RSpec, Sorbet, rubocop.",
+      "githubUrl": "https://github.com/softspark/ai-toolkit/tree/main/app/skills/ruby-rules",
+      "skillUrl": "https://skillsmp.com/creators/softspark/ai-toolkit/app-skills-ruby-rules",
+      "stars": 155,
+      "updatedAt": "1778066078"
+    },
+    {
+      "id": "pramoddutta-qaskills-seed-skills-chaos-testing-kubernetes-skill-md",
+      "name": "kubernetes-chaos-testing",
+      "author": "PramodDutta",
+      "description": "Chaos testing for Kubernetes workloads using Chaos Mesh, Litmus, and custom fault injection for pod, network, and disk failures.",
+      "githubUrl": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/chaos-testing-kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/pramoddutta/qaskills/seed-skills-chaos-testing-kubernetes",
+      "stars": 148,
+      "updatedAt": "1772161257"
+    },
+    {
+      "id": "pramoddutta-qaskills-seed-skills-kubernetes-testing-skill-md",
+      "name": "kubernetes-testing-patterns",
+      "author": "PramodDutta",
+      "description": "Kubernetes deployment testing including manifest validation, Helm chart testing, pod health checks, network policy testing, and rollback verification.",
+      "githubUrl": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/kubernetes-testing",
+      "skillUrl": "https://skillsmp.com/creators/pramoddutta/qaskills/seed-skills-kubernetes-testing",
+      "stars": 148,
+      "updatedAt": "1772161257"
+    },
+    {
+      "id": "pramoddutta-qaskills-seed-skills-rails-testing-skill-md",
+      "name": "ruby-on-rails-testing",
+      "author": "PramodDutta",
+      "description": "Rails application testing with RSpec, FactoryBot, Capybara, system tests, request specs, model specs, and Rails-specific testing conventions.",
+      "githubUrl": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/rails-testing",
+      "skillUrl": "https://skillsmp.com/creators/pramoddutta/qaskills/seed-skills-rails-testing",
+      "stars": 148,
+      "updatedAt": "1772161257"
+    },
+    {
+      "id": "pramoddutta-qaskills-seed-skills-ruby-testunit-skill-md",
+      "name": "ruby-testunit",
+      "author": "PramodDutta",
+      "description": "Classic xUnit-style Ruby testing with Test::Unit covering assertions, fixtures, test case organization, mocking patterns, and lifecycle hooks for reliable Ruby application testing.",
+      "githubUrl": "https://github.com/PramodDutta/qaskills/tree/main/seed-skills/ruby-testunit",
+      "skillUrl": "https://skillsmp.com/creators/pramoddutta/qaskills/seed-skills-ruby-testunit",
+      "stars": 148,
+      "updatedAt": "1774362527"
+    },
+    {
+      "id": "mindrally-skills-kubernetes-skill-md",
+      "name": "kubernetes",
+      "author": "Mindrally",
+      "description": "Expert in Kubernetes and DevOps with infrastructure-as-code and cloud-native patterns",
+      "githubUrl": "https://github.com/Mindrally/skills/tree/main/kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/mindrally/skills/kubernetes",
+      "stars": 141,
+      "updatedAt": "1769210431"
+    },
+    {
+      "id": "mindrally-skills-ruby-rails-skill-md",
+      "name": "ruby-rails",
+      "author": "Mindrally",
+      "description": "Expert in Ruby and Rails development with conventions and best practices",
+      "githubUrl": "https://github.com/Mindrally/skills/tree/main/ruby-rails",
+      "skillUrl": "https://skillsmp.com/creators/mindrally/skills/ruby-rails",
+      "stars": 141,
+      "updatedAt": "1769210431"
+    },
+    {
+      "id": "mindrally-skills-ruby-skill-md",
+      "name": "ruby",
+      "author": "Mindrally",
+      "description": "Ruby development guidelines covering idiomatic code style, Ruby 3.x features, testing with RSpec, and best practices for building maintainable Ruby applications.",
+      "githubUrl": "https://github.com/Mindrally/skills/tree/main/ruby",
+      "skillUrl": "https://skillsmp.com/creators/mindrally/skills/ruby",
+      "stars": 141,
+      "updatedAt": "1769210431"
+    },
+    {
+      "id": "olasunkanmi-se-codebuddy-skills-kubernetes-skill-md",
+      "name": "kubernetes",
+      "author": "olasunkanmi-SE",
+      "description": "Manage Kubernetes clusters via the kubectl CLI.",
+      "githubUrl": "https://github.com/olasunkanmi-SE/codebuddy/tree/main/skills/kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/olasunkanmi-se/codebuddy/skills-kubernetes",
+      "stars": 132,
+      "updatedAt": "1772938902"
+    },
+    {
+      "id": "st0012-ruby-skills-plugins-ruby-skills-skills-ruby-resource-map-skill-md",
+      "name": "ruby-resource-map",
+      "author": "st0012",
+      "description": "Use when working in a Ruby project - provides authoritative sources for documentation, typing, and tooling",
+      "githubUrl": "https://github.com/st0012/ruby-skills/tree/master/plugins/ruby-skills/skills/ruby-resource-map",
+      "skillUrl": "https://skillsmp.com/creators/st0012/ruby-skills/plugins-ruby-skills-skills-ruby-resource-map",
+      "stars": 119,
+      "updatedAt": "1775388329"
+    },
+    {
+      "id": "st0012-ruby-skills-plugins-ruby-skills-skills-ruby-test-frameworks-skill-md",
+      "name": "ruby-test-frameworks",
+      "author": "st0012",
+      "description": "Use when writing or running tests in a Ruby project that uses minitest or test-unit. These frameworks have deceptively similar APIs with critical naming differences that cause NoMethodError at runtime. Consult this before writing assertions, running specific tests, or using setup/teardown lifecycle methods.",
+      "githubUrl": "https://github.com/st0012/ruby-skills/tree/master/plugins/ruby-skills/skills/ruby-test-frameworks",
+      "skillUrl": "https://skillsmp.com/creators/st0012/ruby-skills/plugins-ruby-skills-skills-ruby-test-frameworks",
+      "stars": 119,
+      "updatedAt": "1775388329"
+    },
+    {
+      "id": "st0012-ruby-skills-plugins-ruby-skills-skills-ruby-version-manager-skill-md",
+      "name": "ruby-version-manager",
+      "author": "st0012",
+      "description": "Use at session start for Ruby projects (Gemfile, .ruby-version, or .tool-versions present). Detect version manager BEFORE running ruby, bundle, gem, rake, rails, rspec, or any Ruby command.",
+      "githubUrl": "https://github.com/st0012/ruby-skills/tree/master/plugins/ruby-skills/skills/ruby-version-manager",
+      "skillUrl": "https://skillsmp.com/creators/st0012/ruby-skills/plugins-ruby-skills-skills-ruby-version-manager",
+      "stars": 119,
+      "updatedAt": "1769298237"
+    },
+    {
+      "id": "openhands-extensions-skills-kubernetes-skill-md",
+      "name": "kubernetes",
+      "author": "OpenHands",
+      "description": "Set up and manage local Kubernetes clusters using KIND (Kubernetes IN Docker). Use when testing Kubernetes applications locally or developing cloud-native workloads.",
+      "githubUrl": "https://github.com/OpenHands/extensions/tree/main/skills/kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/openhands/extensions/skills-kubernetes",
+      "stars": 114,
+      "updatedAt": "1776975579"
+    },
+    {
+      "id": "nateberkopec-dotfiles-files-home-claude-skills-ruby-flog-flay-setup-skill-md",
+      "name": "ruby-flog-flay-setup",
+      "author": "nateberkopec",
+      "description": "Install standardized flog/flay Rake tasks and a pre-commit hook that runs bundle exec rake for Ruby projects. Use when adding or normalizing code complexity and duplication checks.",
+      "githubUrl": "https://github.com/nateberkopec/dotfiles/tree/main/files/home/.claude/skills/ruby-flog-flay-setup",
+      "skillUrl": "https://skillsmp.com/creators/nateberkopec/dotfiles/files-home-claude-skills-ruby-flog-flay-setup",
+      "stars": 109,
+      "updatedAt": "1767661273"
+    },
+    {
+      "id": "jaccen-awesome-gaussian-skills-skills-cad-mesh-3dgs-skill-md",
+      "name": "cad-mesh-3dgs",
+      "author": "jaccen",
+      "description": "Bridge CAD, Mesh, and 3DGS representations. Covers mesh↔3DGS conversion, surface extraction, CAD reverse engineering, B-rep/parametric reconstruction. Analyzes 55+ methods.",
+      "githubUrl": "https://github.com/jaccen/Awesome-Gaussian-Skills/tree/main/skills/cad-mesh-3dgs",
+      "skillUrl": "https://skillsmp.com/creators/jaccen/awesome-gaussian-skills/skills-cad-mesh-3dgs",
+      "stars": 105,
+      "updatedAt": "1781683577"
+    },
+    {
+      "id": "seb1n-awesome-ai-agent-skills-devops-and-infrastructure-kubernetes-deployment-skill-md",
+      "name": "kubernetes-deployment",
+      "author": "seb1n",
+      "description": "Deploy, manage, and scale applications on Kubernetes clusters using manifests, Helm charts, and autoscaling configurations.",
+      "githubUrl": "https://github.com/seb1n/awesome-ai-agent-skills/tree/main/devops-and-infrastructure/kubernetes-deployment",
+      "skillUrl": "https://skillsmp.com/creators/seb1n/awesome-ai-agent-skills/devops-and-infrastructure-kubernetes-deployment",
+      "stars": 102,
+      "updatedAt": "1770916990"
+    },
+    {
+      "id": "baotoq-micro-commerce-agents-skills-kubernetes-architect-skill-md",
+      "name": "kubernetes-architect",
+      "author": "baotoq",
+      "description": "Expert Kubernetes architect specializing in cloud-native infrastructure, advanced GitOps workflows (ArgoCD/Flux), and enterprise container orchestration. Masters EKS/AKS/GKE, service mesh (Istio/Linkerd), progressive delivery, multi-tenancy, and platform engineering. Handles security, observability, cost optimization, and developer experience. Use PROACTIVELY for K8s architecture, GitOps implementation, or cloud-native platform design.",
+      "githubUrl": "https://github.com/baotoq/micro-commerce/tree/master/.agents/skills/kubernetes-architect",
+      "skillUrl": "https://skillsmp.com/creators/baotoq/micro-commerce/agents-skills-kubernetes-architect",
+      "stars": 98,
+      "updatedAt": "1772978213"
+    },
+    {
+      "id": "mybono-ai-orchestrator-skills-kubernetes-operations-skill-md",
+      "name": "kubernetes-operations",
+      "author": "Mybono",
+      "description": "Kubernetes operations including manifests, Helm charts, operators, troubleshooting, and resource management",
+      "githubUrl": "https://github.com/Mybono/ai-orchestrator/tree/main/skills/kubernetes-operations",
+      "skillUrl": "https://skillsmp.com/creators/mybono/ai-orchestrator/skills-kubernetes-operations",
+      "stars": 97,
+      "updatedAt": "1775664985"
+    },
+    {
+      "id": "eliasoulkadi-shokunin-pack-skills-kubernetes-skill-md",
+      "name": "kubernetes",
+      "author": "EliasOulkadi",
+      "description": "Deploy, manage, and debug Kubernetes in production — Deployments, Services, Gateway API, Service Mesh (Istio/Linkerd/Cilium), eBPF observability (Cilium Hubble), security hardening (Pod Security Standards, OPA/Kyverno, seccomp, runtime security with Falco/Tetragon), Helm, HPA, PDB, topology spread, and debugging. Use when user asks to write K8s manifests, deploy to a cluster, debug pods, set up Gateway API, configure autoscaling, or harden cluster security. Do NOT use for Dockerfiles (use docker), CI/CD pipeline design (use ci-cd), or Terraform infrastructure (use terraform).",
+      "githubUrl": "https://github.com/EliasOulkadi/shokunin/tree/master/.pack/skills/kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/eliasoulkadi/shokunin/pack-skills-kubernetes",
+      "stars": 95,
+      "updatedAt": "1778927178"
+    },
+    {
+      "id": "dynatrace-dynatrace-for-ai-skills-dt-obs-kubernetes-skill-md",
+      "name": "dt-obs-kubernetes",
+      "author": "Dynatrace",
+      "description": "Kubernetes cluster, pod, node, and workload monitoring. Use when analyzing K8s health, resource optimization, pod failures, OOMKills, scheduling, or security posture. Also use for Kubernetes operational events like pod restarts, OOM events, evictions, and cluster event history. Trigger: \"Kubernetes pods\", \"K8s cluster health\", \"OOMKill\", \"pod restarts\", \"container CPU\", \"namespace resource usage\", \"over-provisioned pods\", \"privileged containers\", \"pod placement\", \"K8s node capacity\", \"running containers by cluster\", \"workload scheduling\", \"pod evictions\", \"K8s labels and annotations\", \"kubernetes events\", \"pod restart events\", \"OOM events\", \"K8s event history\". Do NOT use for explaining existing queries, product documentation questions, AWS-specific resource queries, service-level RED metrics, distributed tracing, or log analysis — use the relevant skill instead.",
+      "githubUrl": "https://github.com/Dynatrace/dynatrace-for-ai/tree/main/skills/dt-obs-kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/dynatrace/dynatrace-for-ai/skills-dt-obs-kubernetes",
+      "stars": 92,
+      "updatedAt": "1778510910"
+    },
+    {
+      "id": "omer-metin-skills-for-antigravity-skills-kubernetes-deployment-skill-md",
+      "name": "kubernetes-deployment",
+      "author": "omer-metin",
+      "description": "World-class Kubernetes operations - deployments, debugging, Helm charts, and the battle scars from managing clusters that serve millions of requestsUse when \"kubernetes, k8s, kubectl, helm, pod, deployment, service, ingress, configmap, secret, statefulset, daemonset, hpa, pvc, crashloopbackoff, imagepullbackoff, oomkilled, liveness probe, readiness probe, kubernetes, k8s, containers, docker, helm, deployment, devops, cloud-native\" mentioned.",
+      "githubUrl": "https://github.com/omer-metin/skills-for-antigravity/tree/main/skills/kubernetes-deployment",
+      "skillUrl": "https://skillsmp.com/creators/omer-metin/skills-for-antigravity/skills-kubernetes-deployment",
+      "stars": 92,
+      "updatedAt": "1769091276"
+    },
+    {
+      "id": "omer-metin-skills-for-antigravity-skills-kubernetes-skill-md",
+      "name": "kubernetes",
+      "author": "omer-metin",
+      "description": "Kubernetes is the operating system for the cloud. It schedules containers, handles networking, manages storage, and keeps your apps running. But K8s has a steep learning curve - abstractions on abstractions on abstractions.  This skill covers the core concepts (Pods, Deployments, Services), production patterns (health checks, resource limits, HPA), and the gotchas that catch everyone (namespace confusion, service discovery, secret management).  2025 reality: You probably don't need to run your own cluster. Use managed K8s (EKS, GKE, AKS) unless you have a very good reason not to. Focus on writing good manifests, not managing etcd. Use when \"kubernetes, k8s, kubectl, deployment manifest, helm chart, kustomize, pod, service yaml, ingress, horizontal pod autoscaler, hpa, kubernetes, k8s, containers, orchestration, devops, cloud-native, helm, kustomize\" mentioned.",
+      "githubUrl": "https://github.com/omer-metin/skills-for-antigravity/tree/main/skills/kubernetes",
+      "skillUrl": "https://skillsmp.com/creators/omer-metin/skills-for-antigravity/skills-kubernetes",
+      "stars": 92,
+      "updatedAt": "1769091276"
+    },
+    {
+      "id": "sergiodxa-agent-skills-skills-ruby-on-rails-best-practices-skill-md",
+      "name": "ruby-on-rails-best-practices",
+      "author": "sergiodxa",
+      "description": "Ruby on Rails architecture and coding patterns from Basecamp. Use when writing, reviewing, or refactoring Rails code to follow proven conventions for models, controllers, jobs, and concerns. Triggers on tasks involving Rails models, concerns, controllers, background jobs, or Turbo/Hotwire.",
+      "githubUrl": "https://github.com/sergiodxa/agent-skills/tree/main/skills/ruby-on-rails-best-practices",
+      "skillUrl": "https://skillsmp.com/creators/sergiodxa/agent-skills/skills-ruby-on-rails-best-practices",
+      "stars": 89,
+      "updatedAt": "1769809623"
+    },
+    {
+      "id": "rajnaveen344-ruby-fast-lsp-agents-skills-ruby-index-skill-md",
+      "name": "ruby-index",
+      "author": "rajnaveen344",
+      "description": "Debug the Ruby Index tree view, inheritance graph, exported JSON, jq workflows, mixin resolution, included_by, and MRO.",
+      "githubUrl": "https://github.com/rajnaveen344/ruby-fast-lsp/tree/main/.agents/skills/ruby-index",
+      "skillUrl": "https://skillsmp.com/creators/rajnaveen344/ruby-fast-lsp/agents-skills-ruby-index",
+      "stars": 83,
+      "updatedAt": "1778758175"
+    },
+    {
+      "id": "paulrberg-agent-skills-skills-cli-cast-skill-md",
+      "name": "cli-cast",
+      "author": "PaulRBerg",
+      "description": "Use for Foundry cast/on-chain actions: send tx, call contract, sign message, cast send/call/wallet, encode/decode ABI/calldata, or RPC interactions. For read-only balances/history, prefer evm-chains.",
+      "githubUrl": "https://github.com/PaulRBerg/agent-skills/tree/main/skills/cli-cast",
+      "skillUrl": "https://skillsmp.com/creators/paulrberg/agent-skills/skills-cli-cast",
+      "stars": 62,
+      "updatedAt": "1781702514"
+    },
+    {
+      "id": "paulrberg-agent-skills-skills-cli-gh-skill-md",
+      "name": "cli-gh",
+      "author": "PaulRBerg",
+      "description": "Use for GitHub CLI automation: gh commands, repo info, workflow triggers, GitHub search, codespaces, PR status, issues, repo browsing, or command-line GitHub tasks.",
+      "githubUrl": "https://github.com/PaulRBerg/agent-skills/tree/main/skills/cli-gh",
+      "skillUrl": "https://skillsmp.com/creators/paulrberg/agent-skills/skills-cli-gh",
+      "stars": 62,
+      "updatedAt": "1781699375"
+    },
+    {
+      "id": "paulrberg-agent-skills-skills-cli-just-skill-md",
+      "name": "cli-just",
+      "author": "PaulRBerg",
+      "description": "Use for just/justfile task automation: create justfiles, write recipes, configure settings, add modules/attributes, or set up command-runner workflows.",
+      "githubUrl": "https://github.com/PaulRBerg/agent-skills/tree/main/skills/cli-just",
+      "skillUrl": "https://skillsmp.com/creators/paulrberg/agent-skills/skills-cli-just",
+      "stars": 62,
+      "updatedAt": "1781700457"
+    },
+    {
+      "id": "diegosouzapw-awesome-omni-skills-skills-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "diegosouzapw",
+      "description": "ruby-pro workflow skill. Use this skill when the user needs Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks and the operator should preserve the upstream workflow, copied support files, and provenance before merging or handing off.",
+      "githubUrl": "https://github.com/diegosouzapw/awesome-omni-skills/tree/main/skills/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/diegosouzapw/awesome-omni-skills/skills-ruby-pro",
+      "stars": 56,
+      "updatedAt": "1780377020"
+    },
+    {
+      "id": "diegosouzapw-awesome-omni-skills-skills-ruby-pro-v2-skill-md",
+      "name": "ruby-pro-v2",
+      "author": "diegosouzapw",
+      "description": "ruby-pro workflow skill. Use this skill when the user needs Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks and the operator should preserve the upstream workflow, copied support files, and provenance before merging or handing off.",
+      "githubUrl": "https://github.com/diegosouzapw/awesome-omni-skills/tree/main/skills/ruby-pro-v2",
+      "skillUrl": "https://skillsmp.com/creators/diegosouzapw/awesome-omni-skills/skills-ruby-pro-v2",
+      "stars": 56,
+      "updatedAt": "1780377020"
+    },
+    {
+      "id": "benjaminastera-antigravity-awesome-skills-skills-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "benjaminasterA",
+      "description": "\"Write idiomatic Ruby code with metaprogramming, Rails patterns, and\"",
+      "githubUrl": "https://github.com/benjaminasterA/antigravity-awesome-skills/tree/main/skills/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/benjaminastera/antigravity-awesome-skills/skills-ruby-pro",
+      "stars": 52,
+      "updatedAt": "1771620400"
+    },
+    {
+      "id": "comeonoliver-skillshub-skills-github-awesome-copilot-ruby-mcp-server-generator-skill-md",
+      "name": "ruby-mcp-server-generator",
+      "author": "ComeOnOliver",
+      "description": "Generate a complete Model Context Protocol server project in Ruby using the official MCP Ruby SDK gem.",
+      "githubUrl": "https://github.com/ComeOnOliver/skillshub/tree/main/skills/github/awesome-copilot/ruby-mcp-server-generator",
+      "skillUrl": "https://skillsmp.com/creators/comeonoliver/skillshub/skills-github-awesome-copilot-ruby-mcp-server-generator",
+      "stars": 52,
+      "updatedAt": "1774287824"
+    },
+    {
+      "id": "dlt-hub-dlthub-ai-workbench-claude-skills-create-eval-skill-md",
+      "name": "create-eval",
+      "author": "dlt-hub",
+      "description": "Create trigger evaluation setup for a toolkit skill. Use when the user wants to test whether a skill's description triggers correctly, set up eval workspaces, or generate trigger test queries for a skill. Use when user says 'create eval', 'test triggers', 'eval skill', or wants to measure skill triggering accuracy.",
+      "githubUrl": "https://github.com/dlt-hub/dlthub-ai-workbench/tree/master/.claude/skills/create-eval",
+      "skillUrl": "https://skillsmp.com/creators/dlt-hub/dlthub-ai-workbench/claude-skills-create-eval",
+      "stars": 49,
+      "updatedAt": "1781690291"
+    },
+    {
+      "id": "yurukusa-cc-safe-setup-skill-md",
+      "name": "cc-safe-setup",
+      "author": "yurukusa",
+      "description": "Safety hooks for Claude Code — 700 pre-built hooks that prevent file deletion, credential leaks, git disasters, and token waste during autonomous AI coding sessions. 9,200+ tests. Install with npx cc-safe-setup.",
+      "githubUrl": "https://github.com/yurukusa/cc-safe-setup",
+      "skillUrl": "https://skillsmp.com/creators/yurukusa/cc-safe-setup/skill",
+      "stars": 48,
+      "updatedAt": "1781700127"
+    },
+    {
+      "id": "diegosouzapw-awesome-omni-skill-skills-data-ai-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "diegosouzapw",
+      "description": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and\nperformance optimization. Specializes in Ruby on Rails, gem development, and\ntesting frameworks. Use PROACTIVELY for Ruby refactoring, optimization, or\ncomplex Ruby features.",
+      "githubUrl": "https://github.com/diegosouzapw/awesome-omni-skill/tree/main/skills/data-ai/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/diegosouzapw/awesome-omni-skill/skills-data-ai-ruby-pro",
+      "stars": 47,
+      "updatedAt": "1772252303"
+    },
+    {
+      "id": "inugamidev-ultrathink-oss-claude-skills-ruby-rails-skill-md",
+      "name": "ruby-rails",
+      "author": "InugamiDev",
+      "description": "Ruby on Rails framework patterns — ActiveRecord, controllers, concerns, service objects, background jobs, and API mode",
+      "githubUrl": "https://github.com/InugamiDev/ultrathink-oss/tree/main/.claude/skills/ruby-rails",
+      "skillUrl": "https://skillsmp.com/creators/inugamidev/ultrathink-oss/claude-skills-ruby-rails",
+      "stars": 44,
+      "updatedAt": "1775453446"
+    },
+    {
+      "id": "majesticlabs-dev-majestic-marketplace-plugins-majestic-rails-skills-ruby-coder-skill-md",
+      "name": "ruby-coder",
+      "author": "majesticlabs-dev",
+      "description": "This skill guides writing of new Ruby code following modern Ruby 3.x syntax, Sandi Metz's 4 Rules for Developers, and idiomatic Ruby best practices. Use when creating new Ruby files, writing Ruby methods, or refactoring Ruby code to ensure adherence to clarity, simplicity, and maintainability standards.",
+      "githubUrl": "https://github.com/majesticlabs-dev/majestic-marketplace/tree/master/plugins/majestic-rails/skills/ruby-coder",
+      "skillUrl": "https://skillsmp.com/creators/majesticlabs-dev/majestic-marketplace/plugins-majestic-rails-skills-ruby-coder",
+      "stars": 39,
+      "updatedAt": "1771253428"
+    },
+    {
+      "id": "tserentserenov-fmt-exocortex-template-claude-skills-consent-skill-md",
+      "name": "consent",
+      "author": "TserenTserenov",
+      "description": "Управление consent в learning.tracking_consent — opt-in / opt-out / status / revoke. Обязательное условие для работы stage_evaluator worker (WP-253 Блок 2). GDPR-совместимо.",
+      "githubUrl": "https://github.com/TserenTserenov/FMT-exocortex-template/tree/main/.claude/skills/consent",
+      "skillUrl": "https://skillsmp.com/creators/tserentserenov/fmt-exocortex-template/claude-skills-consent",
+      "stars": 35,
+      "updatedAt": "1781702506"
+    },
+    {
+      "id": "steveclarke-dotfiles-ai-skills-ruby-cli-skill-md",
+      "name": "ruby-cli",
+      "author": "steveclarke",
+      "description": "Build Ruby CLI tools with Thor and Zeitwerk. Use for new Ruby CLI gems, adding commands, refactoring, or 'Thor CLI', 'command-line tool in Ruby'.",
+      "githubUrl": "https://github.com/steveclarke/dotfiles/tree/master/ai/skills/ruby-cli",
+      "skillUrl": "https://skillsmp.com/creators/steveclarke/dotfiles/ai-skills-ruby-cli",
+      "stars": 34,
+      "updatedAt": "1779379925"
+    },
+    {
+      "id": "faqndo97-ai-skills-ruby-llm-skill-md",
+      "name": "ruby-llm",
+      "author": "faqndo97",
+      "description": "Build AI-powered Ruby applications with RubyLLM. Full lifecycle - chat, tools, streaming, Rails integration, embeddings, and production deployment. Covers all providers (OpenAI, Anthropic, Gemini, etc.) with one unified API.",
+      "githubUrl": "https://github.com/faqndo97/ai-skills/tree/main/ruby-llm",
+      "skillUrl": "https://skillsmp.com/creators/faqndo97/ai-skills/ruby-llm",
+      "stars": 32,
+      "updatedAt": "1770059246"
+    },
+    {
+      "id": "faqndo97-ai-skills-ruby-on-rails-skill-md",
+      "name": "ruby-on-rails",
+      "author": "faqndo97",
+      "description": "Build Ruby on Rails features from scratch through production. Full lifecycle - build, debug, test, optimize, refactor. Follows Vanilla Rails philosophy (37signals/DHH), SOLID principles, and Rails 8 patterns.",
+      "githubUrl": "https://github.com/faqndo97/ai-skills/tree/main/ruby-on-rails",
+      "skillUrl": "https://skillsmp.com/creators/faqndo97/ai-skills/ruby-on-rails",
+      "stars": 32,
+      "updatedAt": "1770059246"
+    },
+    {
+      "id": "sorah-config-claude-marketplace-plugins-sorah-guides-skills-ruby-skill-md",
+      "name": "ruby",
+      "author": "sorah",
+      "description": "This skill should be used when writing or reviewing Ruby code, or when the project uses \"Ruby\", \"RSpec\", \"service objects\", \"Struct\", \"Data class\", or Ruby class/module patterns. Provides Ruby coding conventions, patterns, and best practices. Project-specific conventions always take priority.",
+      "githubUrl": "https://github.com/sorah/config/tree/master/claude/marketplace/plugins/sorah-guides/skills/ruby",
+      "skillUrl": "https://skillsmp.com/creators/sorah/config/claude-marketplace-plugins-sorah-guides-skills-ruby",
+      "stars": 31,
+      "updatedAt": "1771796314"
+    },
+    {
+      "id": "sorah-config-claude-marketplace-plugins-sorah-spec-skills-ruby-skill-md",
+      "name": "ruby",
+      "author": "sorah",
+      "description": "This skill should be used when conducting spec interviews or implementing specs for Ruby projects, or when the spec mentions \"Ruby\", \"RSpec\", \"service objects\", \"Struct\", or Ruby class/module patterns. Provides Ruby-specific interview and implementation checklist items.",
+      "githubUrl": "https://github.com/sorah/config/tree/master/claude/marketplace/plugins/sorah-spec/skills/ruby",
+      "skillUrl": "https://skillsmp.com/creators/sorah/config/claude-marketplace-plugins-sorah-spec-skills-ruby",
+      "stars": 31,
+      "updatedAt": "1771796314"
+    },
+    {
+      "id": "activeinferenceinstitute-activeinferants-0-context-computer-languages-ruby-skill-md",
+      "name": "active-inference-in-ruby",
+      "author": "ActiveInferenceInstitute",
+      "description": "Ruby implementation of Active Inference with belief updating, free energy minimization, and policy selection",
+      "githubUrl": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts/tree/main/0_CONTEXT/Computer_Languages/Ruby",
+      "skillUrl": "https://skillsmp.com/creators/activeinferenceinstitute/activeinferants/0-context-computer-languages-ruby",
+      "stars": 29,
+      "updatedAt": "1773265055"
+    },
+    {
+      "id": "personamanagmentlayer-pcl-stdlib-languages-ruby-expert-skill-md",
+      "name": "ruby-expert",
+      "author": "personamanagmentlayer",
+      "description": "Expert-level Ruby development with Rails, modern features, testing, and best practices",
+      "githubUrl": "https://github.com/personamanagmentlayer/pcl/tree/main/stdlib/languages/ruby-expert",
+      "skillUrl": "https://skillsmp.com/creators/personamanagmentlayer/pcl/stdlib-languages-ruby-expert",
+      "stars": 28,
+      "updatedAt": "1768860297"
+    },
+    {
+      "id": "anhvu1107-all-agent-skill-agent-skills-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "Anhvu1107",
+      "description": "ALWAYS use this when the request matches Ruby PRO: Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization.",
+      "githubUrl": "https://github.com/Anhvu1107/all-agent-skill/tree/main/.agent/skills/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/anhvu1107/all-agent-skill/agent-skills-ruby-pro",
+      "stars": 25,
+      "updatedAt": "1776717456"
+    },
+    {
+      "id": "krishnakanthb13-antigravity-awesome-skills-skills-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "krishnakanthb13",
+      "description": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks.",
+      "githubUrl": "https://github.com/krishnakanthb13/antigravity-awesome-skills/tree/main/skills/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/krishnakanthb13/antigravity-awesome-skills/skills-ruby-pro",
+      "stars": 25,
+      "updatedAt": "1772354305"
+    },
+    {
+      "id": "herdiansah-antigravity-skills-master-agent-skills-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "herdiansah",
+      "description": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks. Use PROACTIVELY for Ruby refactoring, optimization, or complex Ruby features.",
+      "githubUrl": "https://github.com/herdiansah/Antigravity-Skills-Master/tree/main/.agent/skills/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/herdiansah/antigravity-skills-master/agent-skills-ruby-pro",
+      "stars": 24,
+      "updatedAt": "1768901260"
+    },
+    {
+      "id": "shubchynskyi-garda-agent-orchestrator-template-skill-packs-backend-polyglot-skills-ruby-on-rails-app-skill-md",
+      "name": "ruby-on-rails-app",
+      "author": "Shubchynskyi",
+      "description": "Domain skill for Ruby on Rails backend applications. Use when the repository contains a Rails app with controllers, models, Active Record migrations, background jobs, or API serialization layers. Triggers: Rails, RoR, Active Record, Sidekiq, controller, migration, service object. Negative triggers: standalone Ruby gems with no Rails dependency, Sinatra-only apps.",
+      "githubUrl": "https://github.com/Shubchynskyi/garda-agent-orchestrator/tree/master/template/skill-packs/backend-polyglot/skills/ruby-on-rails-app",
+      "skillUrl": "https://skillsmp.com/creators/shubchynskyi/garda-agent-orchestrator/template-skill-packs-backend-polyglot-skills-ruby-on-rails-app",
+      "stars": 20,
+      "updatedAt": "1776064979"
+    },
+    {
+      "id": "stevegeek-claude-ruby-plugins-plugins-ruby-rbs-skills-ruby-rbs-skill-md",
+      "name": "ruby-rbs",
+      "author": "stevegeek",
+      "description": "Comprehensive skill for Ruby RBS type signatures. Use for writing inline type annotations in Ruby files, creating standalone .rbs signature files, scaffolding types, or setting up Steep type checking. Covers both inline syntax (rbs-inline) and standalone RBS file format.",
+      "githubUrl": "https://github.com/stevegeek/claude-ruby-plugins/tree/main/plugins/ruby-rbs/skills/ruby-rbs",
+      "skillUrl": "https://skillsmp.com/creators/stevegeek/claude-ruby-plugins/plugins-ruby-rbs-skills-ruby-rbs",
+      "stars": 18,
+      "updatedAt": "1765232177"
+    },
+    {
+      "id": "kursku-skills-packs-global-skillshare-import-wave-010-ruby-pro-skill-md",
+      "name": "ruby-pro",
+      "author": "kursku",
+      "description": "Write idiomatic Ruby code with metaprogramming, Rails patterns, and performance optimization. Specializes in Ruby on Rails, gem development, and testing frameworks.",
+      "githubUrl": "https://github.com/kursku/skills/tree/master/packs/global-skillshare-import/wave-010/ruby-pro",
+      "skillUrl": "https://skillsmp.com/creators/kursku/skills/packs-global-skillshare-import-wave-010-ruby-pro",
+      "stars": 17,
+      "updatedAt": "1774568539"
+    },
+    {
+      "id": "miles990-claude-software-skills-programming-languages-ruby-skill-md",
+      "name": "ruby",
+      "author": "miles990",
+      "description": "Ruby programming patterns and idioms",
+      "githubUrl": "https://github.com/miles990/claude-software-skills/tree/main/programming-languages/ruby",
+      "skillUrl": "https://skillsmp.com/creators/miles990/claude-software-skills/programming-languages-ruby",
+      "stars": 17,
+      "updatedAt": "1767839681"
+    },
+    {
       "id": "jshsakura-awesome-opencode-skills-skills-node-specialist-skill-md",
       "name": "node-specialist",
       "author": "jshsakura",
@@ -3591,6 +5686,46 @@
       "skillUrl": "https://skillsmp.com/creators/jshsakura/awesome-opencode-skills/skills-node-specialist",
       "stars": 16,
       "updatedAt": "1780197905"
+    },
+    {
+      "id": "abelrguezr-hacktricks-skills-skills-network-services-pentesting-pentesting-web-ruby-tricks-skill-md",
+      "name": "ruby-rails-pentest",
+      "author": "abelrguezr",
+      "description": "Ruby on Rails and Ruby application security testing. Use this skill whenever you're pentesting Ruby applications, Rails apps, or need to check for Ruby-specific vulnerabilities like file upload RCE, Active Storage exploits, Rack middleware issues, ReDoS attacks, cookie forgery, or log injection. Trigger this for any Ruby/Rails security assessment, vulnerability research, or when analyzing Gemfile.lock for vulnerable versions.",
+      "githubUrl": "https://github.com/abelrguezr/hacktricks-skills/tree/main/skills/network-services-pentesting/pentesting-web/ruby-tricks",
+      "skillUrl": "https://skillsmp.com/creators/abelrguezr/hacktricks-skills/skills-network-services-pentesting-pentesting-web-ruby-tricks-skill-md",
+      "stars": 15,
+      "updatedAt": "1774276172"
+    },
+    {
+      "id": "abelrguezr-hacktricks-skills-skills-pentesting-web-deserialization-ruby-class-pollution-skill-md",
+      "name": "ruby-class-pollution",
+      "author": "abelrguezr",
+      "description": "Ruby class pollution vulnerability analysis and exploitation. Use this skill whenever the user needs to understand, identify, or test Ruby class pollution vulnerabilities in applications. This includes merge-on-attributes attacks, privilege escalation through method injection, RCE via instance_eval, and class variable poisoning. Trigger when users mention Ruby deserialization, class pollution, deep_merge vulnerabilities, Hashie, ActiveSupport, or need to test Ruby applications for object mutation attacks.",
+      "githubUrl": "https://github.com/abelrguezr/hacktricks-skills/tree/main/skills/pentesting-web/deserialization/ruby-class-pollution",
+      "skillUrl": "https://skillsmp.com/creators/abelrguezr/hacktricks-skills/skills-pentesting-web-deserialization-ruby-class-pollution-skill-md",
+      "stars": 15,
+      "updatedAt": "1774276172"
+    },
+    {
+      "id": "forceinjection-domain-driven-design-skills-relative-skills-claude-skill-registry-skills-testing-ruby-testing-arowinski-dotfiles-dede110e-skill-md",
+      "name": "ruby-testing",
+      "author": "ForceInjection",
+      "description": "Ruby/RSpec testing guidelines and workflow following project conventions. Use when writing or improving Ruby tests.",
+      "githubUrl": "https://github.com/ForceInjection/domain-driven-design-skills/tree/main/relative-skills/claude-skill-registry/skills/testing/ruby-testing-arowinski-dotfiles-dede110e",
+      "skillUrl": "https://skillsmp.com/creators/forceinjection/domain-driven-design-skills/relative-skills-claude-skill-registry-skills-testing-ruby-testing-arowinski-dotfiles-dede110e",
+      "stars": 15,
+      "updatedAt": "1778209624"
+    },
+    {
+      "id": "maroffo-claude-forge-skills-ruby-skill-md",
+      "name": "ruby",
+      "author": "maroffo",
+      "description": "Ruby gem development with modern tooling, testing, and publishing. Use when working with .gemspec, Rakefile, or user asks about gem structure, RSpec for gems, Bundler, or gem publishing. Not for Rails apps (use rails skill).",
+      "githubUrl": "https://github.com/maroffo/claude-forge/tree/main/skills/ruby",
+      "skillUrl": "https://skillsmp.com/creators/maroffo/claude-forge/skills-ruby",
+      "stars": 15,
+      "updatedAt": "1776445201"
     },
     {
       "id": "agentskillexchange-skills-skills-apostrophecms-full-stack-nodejs-cms-in-context-editing-skill-md",
@@ -3693,6 +5828,26 @@
       "updatedAt": "1779089965"
     },
     {
+      "id": "memgraph-documentation-skills-check-release-milestone-skill-md",
+      "name": "check-before-release",
+      "author": "memgraph",
+      "description": "Run before every release to ensure all merged memgraph PRs have a docs label assigned, have changelog entries, have docs pages where required, that all changed text is free of spelling and grammar issues, and that existing documentation cross-links the new content. Use when preparing a release branch, before merging into the main branch, or when asked to \"check before release\". Also use standalone when asked to audit docs labels on a milestone.",
+      "githubUrl": "https://github.com/memgraph/documentation/tree/main/skills/check-release-milestone",
+      "skillUrl": "https://skillsmp.com/creators/memgraph/documentation/skills-check-release-milestone",
+      "stars": 13,
+      "updatedAt": "1781695441"
+    },
+    {
+      "id": "memgraph-documentation-skills-write-changelog-item-skill-md",
+      "name": "write-changelog-item",
+      "author": "memgraph",
+      "description": "Create/write the changelog item / release note for a given Github PR and update the docs release PR description.",
+      "githubUrl": "https://github.com/memgraph/documentation/tree/main/skills/write-changelog-item",
+      "skillUrl": "https://skillsmp.com/creators/memgraph/documentation/skills-write-changelog-item",
+      "stars": 13,
+      "updatedAt": "1781695441"
+    },
+    {
       "id": "gabrielmoreira-agent-skills-mirror-mirrors-repos-ecnu-icalk-autoskill-skillbank-convskill-english-gpt4-8-glm4-7-integrate-node-js-telegraf-service-into-python-telebot-skill-md",
       "name": "integrate-node-js-telegraf-service-into-python-telebot",
       "author": "gabrielmoreira",
@@ -3733,6 +5888,16 @@
       "updatedAt": "1777659464"
     },
     {
+      "id": "danielraffel-pulp-agents-skills-ci-skill-md",
+      "name": "ci",
+      "author": "danielraffel",
+      "description": "Local and cloud CI for Pulp — validate branches, create PRs, merge on green. Handles \"push to main\", \"ship this\", \"run CI\", \"check PR\", and \"list PRs\".",
+      "githubUrl": "https://github.com/danielraffel/pulp/tree/main/.agents/skills/ci",
+      "skillUrl": "https://skillsmp.com/creators/danielraffel/pulp/agents-skills-ci",
+      "stars": 8,
+      "updatedAt": "1781688606"
+    },
+    {
       "id": "modbender-skill-library-mcp-data-crypto-market-data-skill-md",
       "name": "crypto-stock-market-data-node-js",
       "author": "modbender",
@@ -3743,6 +5908,36 @@
       "updatedAt": "1772822037"
     },
     {
+      "id": "tabnine-skills-plugins-claude-ctx-skills-ctx-skill-md",
+      "name": "ctx",
+      "author": "tabnine",
+      "description": "Query the Context Engine knowledge graph — semantic + lexical search, graph adjacency traversal, and CVE triage/resolution. Use when searching the codebase or graph, exploring what an entity is connected to, or working on security issues.",
+      "githubUrl": "https://github.com/tabnine/skills/tree/main/plugins/claude/ctx/skills/ctx",
+      "skillUrl": "https://skillsmp.com/creators/tabnine/skills/plugins-claude-ctx-skills-ctx",
+      "stars": 7,
+      "updatedAt": "1781693665"
+    },
+    {
+      "id": "tabnine-skills-plugins-cursor-ctx-skills-ctx-skill-md",
+      "name": "ctx",
+      "author": "tabnine",
+      "description": "Query the Context Engine knowledge graph — semantic + lexical search, graph adjacency traversal, and CVE triage/resolution. Use when searching the codebase or graph, exploring what an entity is connected to, or working on security issues.",
+      "githubUrl": "https://github.com/tabnine/skills/tree/main/plugins/cursor/ctx/skills/ctx",
+      "skillUrl": "https://skillsmp.com/creators/tabnine/skills/plugins-cursor-ctx-skills-ctx",
+      "stars": 7,
+      "updatedAt": "1781693665"
+    },
+    {
+      "id": "akashai7-stenographer-mode-github-skills-caveman-skill-md",
+      "name": "caveman",
+      "author": "AkashAi7",
+      "description": "Ultra-compressed communication mode. Cuts token usage by dropping filler, articles, and soft phrasing while keeping technical accuracy. Use when user says \"caveman mode\", \"talk like caveman\", \"use caveman\", \"less tokens\", \"be brief\", or invokes /caveman. Supports levels: lite, full, ultra.",
+      "githubUrl": "https://github.com/AkashAi7/stenographer-mode/tree/main/.github/skills/caveman",
+      "skillUrl": "https://skillsmp.com/creators/akashai7/stenographer-mode/github-skills-caveman",
+      "stars": 6,
+      "updatedAt": "1781682797"
+    },
+    {
       "id": "kourou25-xugudb-dev-skills-skills-xugudb-nodejs-skill-md",
       "name": "node-js",
       "author": "kourou25",
@@ -3751,6 +5946,66 @@
       "skillUrl": "https://skillsmp.com/creators/kourou25/xugudb-dev-skills/skills-xugudb-nodejs",
       "stars": 4,
       "updatedAt": "1775550331"
+    },
+    {
+      "id": "orodruinlabs-nazgul-skills-context-skill-md",
+      "name": "nazgul-context",
+      "author": "OrodruinLabs",
+      "description": "Collect targeted codebase context for a specific objective type. Use before planning to deeply understand the code that will be affected.",
+      "githubUrl": "https://github.com/OrodruinLabs/nazgul/tree/main/skills/context",
+      "skillUrl": "https://skillsmp.com/creators/orodruinlabs/nazgul/skills-context",
+      "stars": 4,
+      "updatedAt": "1781692109"
+    },
+    {
+      "id": "hairpin01-repo-mcub-fork-openagent-skills-mcub-modules-creator-skill-md",
+      "name": "mcub-modules-creator",
+      "author": "hairpin01",
+      "description": "Create and update debug MCUB userbot modules in app-debug using the MCUB module API, class-style modules, and inline form/callback docs.",
+      "githubUrl": "https://github.com/hairpin01/repo-MCUB-fork/tree/main/OpenAgent/skills/MCUB-modules-creator",
+      "skillUrl": "https://skillsmp.com/creators/hairpin01/repo-mcub-fork/openagent-skills-mcub-modules-creator",
+      "stars": 3,
+      "updatedAt": "1781685958"
+    },
+    {
+      "id": "pekral-cursor-rules-skills-code-review-bugsnag-skill-md",
+      "name": "code-review-bugsnag",
+      "author": "pekral",
+      "description": "Use when run code review for a Bugsnag error and publish results to the linked GitHub PR and the Bugsnag error",
+      "githubUrl": "https://github.com/pekral/cursor-rules/tree/master/skills/code-review-bugsnag",
+      "skillUrl": "https://skillsmp.com/creators/pekral/cursor-rules/skills-code-review-bugsnag",
+      "stars": 3,
+      "updatedAt": "1781686880"
+    },
+    {
+      "id": "pekral-cursor-rules-skills-code-review-github-skill-md",
+      "name": "code-review-github",
+      "author": "pekral",
+      "description": "Use when perform code review for GitHub pull requests and post findings as PR comments plus a non-technical summary to every linked issue",
+      "githubUrl": "https://github.com/pekral/cursor-rules/tree/master/skills/code-review-github",
+      "skillUrl": "https://skillsmp.com/creators/pekral/cursor-rules/skills-code-review-github",
+      "stars": 3,
+      "updatedAt": "1781686880"
+    },
+    {
+      "id": "pekral-cursor-rules-skills-code-review-jira-skill-md",
+      "name": "code-review-jira",
+      "author": "pekral",
+      "description": "Use when run code review for JIRA issues and publish results to GitHub PR and JIRA",
+      "githubUrl": "https://github.com/pekral/cursor-rules/tree/master/skills/code-review-jira",
+      "skillUrl": "https://skillsmp.com/creators/pekral/cursor-rules/skills-code-review-jira",
+      "stars": 3,
+      "updatedAt": "1781686912"
+    },
+    {
+      "id": "pekral-cursor-rules-skills-code-review-skill-md",
+      "name": "code-review",
+      "author": "pekral",
+      "description": "Use when senior PHP code review focused on architecture, business logic, and risk detection. Read-only.",
+      "githubUrl": "https://github.com/pekral/cursor-rules/tree/master/skills/code-review",
+      "skillUrl": "https://skillsmp.com/creators/pekral/cursor-rules/skills-code-review",
+      "stars": 3,
+      "updatedAt": "1781682380"
     },
     {
       "id": "janpereira-dev-ngautopilot-plugins-ngautopilot-javascript-skills-javascript-async-error-handling-nodejs-async-error-handling-v18-skill-md",
@@ -3793,6 +6048,16 @@
       "updatedAt": "1772294218"
     },
     {
+      "id": "zphilip-clawboard-skills-mobile-control-skill-md",
+      "name": "mobile-control",
+      "author": "zphilip",
+      "description": "Controls a PHYSICAL ANDROID PHONE connected via USB — NOT the PC, NOT the desktop, NOT a web browser.\nThis skill operates the phone screen step-by-step: it takes a screenshot, sends it to a local VLM\n(GUI-Owl on port 8810), gets back one action (tap/swipe/type/scroll), executes it via ADB, then\nrepeats.\n\n**Response format:** Emits JSONL to stdout — `{\"type\":\"progress\",...}` lines for each step\n(narrate these in real time) followed by a final `{\"type\":\"result\",...}` line.  All diagnostic\nlogs go to stderr.  Read stdout line-by-line, parse JSON, dispatch on `\"type\"`.\n\nUSE when: user says \"on my phone\", \"open [app]\", \"send WeChat message\", \"set alarm\", \"navigate home\",\n\"search in [app]\", \"play music on phone\", \"take a screenshot of my phone\", or any task that requires\nphysically interacting with Android UI.\n\nDO NOT USE for: PC/desktop tasks, web browsing on the host machine, iOS (iPhone/iPad), file transfers\n(use adb pull/push), anything that doesn't require tapping the phone screen.",
+      "githubUrl": "https://github.com/zphilip/ClawBoard/tree/main/skills/mobile-control",
+      "skillUrl": "https://skillsmp.com/creators/zphilip/clawboard/skills-mobile-control",
+      "stars": 2,
+      "updatedAt": "1781686487"
+    },
+    {
       "id": "avbel-ai-skills-skills-manual-testing-node-js-skill-md",
       "name": "manual-testing-node-js",
       "author": "avbel",
@@ -3813,6 +6078,36 @@
       "updatedAt": "1778329649"
     },
     {
+      "id": "hoanganhduc-ai-agents-skills-canonical-skills-calibre-skill-md",
+      "name": "calibre",
+      "author": "hoanganhduc",
+      "description": "Use when the user wants to search, retrieve, send, add, update, sync, export, convert, or clean books from the vendored Codex Calibre library runtime.",
+      "githubUrl": "https://github.com/hoanganhduc/ai-agents-skills/tree/main/canonical/skills/calibre",
+      "skillUrl": "https://skillsmp.com/creators/hoanganhduc/ai-agents-skills/canonical-skills-calibre",
+      "stars": 1,
+      "updatedAt": "1781684062"
+    },
+    {
+      "id": "leeovery-agntc-claude-skills-continue-feature-skill-md",
+      "name": "continue-feature",
+      "author": "leeovery",
+      "description": "Continue a feature through the pipeline. Routes to the next phase (specification, planning, or implementation) based on artifact state. Can be invoked manually or from plan mode bridges.",
+      "githubUrl": "https://github.com/leeovery/agntc/tree/main/.claude/skills/continue-feature",
+      "skillUrl": "https://skillsmp.com/creators/leeovery/agntc/claude-skills-continue-feature",
+      "stars": 1,
+      "updatedAt": "1781695061"
+    },
+    {
+      "id": "m4yers-dotfiles-targets-kiro-skills-curator-skill-md",
+      "name": "curator",
+      "author": "m4yers",
+      "description": "Ingests a URL or file into an Obsidian vault. Use when the user says \"curator\", \"curator-ingest\", or provides a URL or local file path to add to ~/Obsidian/MahVault. Do NOT use for personal zettels — those are human-only.",
+      "githubUrl": "https://github.com/m4yers/dotfiles/tree/master/targets/kiro/skills/curator",
+      "skillUrl": "https://skillsmp.com/creators/m4yers/dotfiles/targets-kiro-skills-curator",
+      "stars": 1,
+      "updatedAt": "1781688747"
+    },
+    {
       "id": "mikecheng1208-battletree-agents-skills-backend-node-js-expert-skill-md",
       "name": "backend-node-js-expert",
       "author": "MikeCheng1208",
@@ -3821,6 +6116,36 @@
       "skillUrl": "https://skillsmp.com/creators/mikecheng1208/battletree/agents-skills-backend-node-js-expert",
       "stars": 1,
       "updatedAt": "1780470018"
+    },
+    {
+      "id": "osmontero-opencode-skills-skills-configuring-opencode-skill-md",
+      "name": "configuring-opencode",
+      "author": "osmontero",
+      "description": "Use when configuring opencode: providers, models, agents, skills, commands, permissions, themes, keybinds, LSP servers, MCP servers, formatters, and all runtime settings. Triggers include requests to set up opencode, configure a provider, add a model, create an agent, personalize opencode, set permissions, configure agents, change themes, add keybinds, set up rules, configure LSP or MCP servers, or anything related to opencode.json, tui.json, or opencode.jsonc configuration.",
+      "githubUrl": "https://github.com/osmontero/opencode-skills/tree/main/skills/configuring-opencode",
+      "skillUrl": "https://skillsmp.com/creators/osmontero/opencode-skills/skills-configuring-opencode",
+      "stars": 1,
+      "updatedAt": "1781695566"
+    },
+    {
+      "id": "sandermuller-boost-skills-resources-boost-skills-code-review-skill-md",
+      "name": "code-review",
+      "author": "SanderMuller",
+      "description": "Structured review of recent code changes across functionality, UX/UI, design, code quality, security, testing — produces a prioritized findings list. Activates when: the user asks to review implementation, review changes, review code, audit code, check for improvements, or when user mentions: review, audit, improvements, code quality, code review.",
+      "githubUrl": "https://github.com/SanderMuller/boost-skills/tree/main/resources/boost/skills/code-review",
+      "skillUrl": "https://skillsmp.com/creators/sandermuller/boost-skills/resources-boost-skills-code-review",
+      "stars": 1,
+      "updatedAt": "1781681823"
+    },
+    {
+      "id": "stlwolf-ai-development-hub-canonical-skills-code-path-exhaustion-skill-md",
+      "name": "code-path-exhaustion",
+      "author": "stlwolf",
+      "description": "エラー/バグ調査で、入力→出力のコードパスに未読区間がある限り外部要因（インフラ差異等）の仮説に進まない。外部要因に飛ぼうとするとき、原因が再現しないと判断しそうなときに使用する。仮説を tmp/hypothesis-NNN.md に外部化し、コードパスの read-state を可視化する。",
+      "githubUrl": "https://github.com/stlwolf/ai-development-hub/tree/master/canonical/skills/code-path-exhaustion",
+      "skillUrl": "https://skillsmp.com/creators/stlwolf/ai-development-hub/canonical-skills-code-path-exhaustion",
+      "stars": 1,
+      "updatedAt": "1781703090"
     },
     {
       "id": "velt-js-agent-skills-skills-velt-node-sdk-best-practices-skill-md",
