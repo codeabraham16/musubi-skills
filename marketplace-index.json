@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-10-12T13:50:10Z",
+  "generated": "2026-10-19T11:30:15Z",
   "seeds": [
     "Go",
     "Python",
@@ -24,7 +24,7 @@
       "description": "Continuously audit, live-test, and stress-test the current OpenClaw codebase across at least ten independently scoped subsystem lanes; default to 100 independently verified, landed root-cause fixes, maintain an evidence-backed report, and announce each merged pull request immediately. Use for OpenClaw-wide autonomous QA, live-provider campaigns, gateway, CLI, web, plugin, native-app, scenario, packaging, and extended soak testing.",
       "githubUrl": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/auto-qa",
       "skillUrl": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-auto-qa",
-      "stars": 391533,
+      "stars": 392094,
       "updatedAt": "1786893904"
     },
     {
@@ -34,7 +34,7 @@
       "description": "Structured Codex, Claude, Amp, Pi, or Kimi code review when explicitly requested.",
       "githubUrl": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/autoreview",
       "skillUrl": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-autoreview",
-      "stars": 391533,
+      "stars": 392094,
       "updatedAt": "1788351039"
     },
     {
@@ -44,7 +44,7 @@
       "description": "Use when running QA Lab channel message flow evidence.",
       "githubUrl": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/channel-message-flows",
       "skillUrl": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-channel-message-flows",
-      "stars": 391533,
+      "stars": 392094,
       "updatedAt": "1783054109"
     },
     {
@@ -54,7 +54,7 @@
       "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
       "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/codebase-design",
       "skillUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-codebase-design",
-      "stars": 285798,
+      "stars": 292968,
       "updatedAt": "1789633798"
     },
     {
@@ -64,7 +64,7 @@
       "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
       "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/engineering/grill-with-docs",
       "skillUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-engineering-grill-with-docs",
-      "stars": 285798,
+      "stars": 292968,
       "updatedAt": "1786826920"
     },
     {
@@ -74,8 +74,28 @@
       "description": "Pursue a long-running goal in a single session by co-ordinating subagents.",
       "githubUrl": "https://github.com/mattpocock/skills/tree/main/skills/in-progress/chief-of-staff",
       "skillUrl": "https://skillsmp.com/creators/mattpocock/skills/skills-in-progress-chief-of-staff",
-      "stars": 285798,
+      "stars": 292968,
       "updatedAt": "1791294082"
+    },
+    {
+      "id": "affaan-m-ecc-agents-skills-change-impact-skill-md",
+      "name": "change-impact",
+      "author": "affaan-m",
+      "description": "Perform evidence-backed impact analysis before changing code, data, interfaces, or governance documents, then compare the planned impact with the actual diff after implementation. Covers call paths, data and schema, API contracts, tests, documentation, ADRs, deployment, migration, and rollback. Use for cross-module or high-risk changes, database migrations, authentication, public interfaces, blast-radius questions, pre-change checks, and post-implementation alignment.",
+      "githubUrl": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/change-impact",
+      "skillUrl": "https://skillsmp.com/creators/affaan-m/ecc/agents-skills-change-impact",
+      "stars": 279616,
+      "updatedAt": "1790930047"
+    },
+    {
+      "id": "affaan-m-ecc-agents-skills-context-and-decisions-skill-md",
+      "name": "context-and-decisions",
+      "author": "affaan-m",
+      "description": "Govern stable domain context with a narrowly scoped CONTEXT.md when needed, and route hard-to-reverse decisions to ECC's existing architecture-decision-records skill. Use when domain terms require repeated explanation, one term has multiple meanings, unclear language causes module-boundary mistakes, or domain semantics must remain separate from architecture decisions.",
+      "githubUrl": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/context-and-decisions",
+      "skillUrl": "https://skillsmp.com/creators/affaan-m/ecc/agents-skills-context-and-decisions",
+      "stars": 279616,
+      "updatedAt": "1790929886"
     },
     {
       "id": "affaan-m-ecc-agents-skills-docs-governance-skill-md",
@@ -84,28 +104,18 @@
       "description": "Route broad documentation-governance requests to existing ECC skills and run an opt-in, read-only audit of mapped documentation roles, links, ADR indexes, and evidence references. Use when a user asks for documentation governance, project-knowledge organization, documentation integrity, or a deterministic docs audit without naming a narrower skill.",
       "githubUrl": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/docs-governance",
       "skillUrl": "https://skillsmp.com/creators/affaan-m/ecc/agents-skills-docs-governance",
-      "stars": 276549,
+      "stars": 279616,
       "updatedAt": "1791588817"
     },
     {
-      "id": "affaan-m-ecc-agents-skills-ecc-conventions-skill-md",
-      "name": "ecc-conventions",
-      "author": "affaan-m",
-      "description": "Development conventions and patterns for ECC. JavaScript project with conventional commits.",
-      "githubUrl": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/ecc-conventions",
-      "skillUrl": "https://skillsmp.com/creators/affaan-m/ecc/agents-skills-ecc-conventions",
-      "stars": 276549,
-      "updatedAt": "1790895041"
-    },
-    {
-      "id": "affaan-m-ecc-agents-skills-mcp-server-patterns-skill-md",
-      "name": "mcp-server-patterns",
-      "author": "affaan-m",
-      "description": "Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 or official MCP docs for latest API. Use when building or debugging an MCP server — tools, resources, prompts, validation, or transport choice.",
-      "githubUrl": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/mcp-server-patterns",
-      "skillUrl": "https://skillsmp.com/creators/affaan-m/ecc/agents-skills-mcp-server-patterns",
-      "stars": 276549,
-      "updatedAt": "1789771861"
+      "id": "morluto-rea-agents-skills-reverse-engineer-anything-skill-md",
+      "name": "reverse-engineer-anything",
+      "author": "morluto",
+      "description": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA. Use shipped-artifact or requested runtime evidence to explain features, compare versions, decompile code, or guide a reconstruction. Skip REA for ordinary source-repository architecture analysis.",
+      "githubUrl": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything",
+      "skillUrl": "https://skillsmp.com/creators/morluto/rea/agents-skills-reverse-engineer-anything",
+      "stars": 273922,
+      "updatedAt": "1792069500"
     },
     {
       "id": "nousresearch-hermes-agent-optional-skills-data-science-jupyter-notebook-skill-md",
@@ -114,7 +124,7 @@
       "description": "Iterative Python via live Jupyter kernel (hamelnb).",
       "githubUrl": "https://github.com/NousResearch/hermes-agent/tree/main/optional-skills/data-science/jupyter-notebook",
       "skillUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/optional-skills-data-science-jupyter-notebook",
-      "stars": 252739,
+      "stars": 254141,
       "updatedAt": "1789839866"
     },
     {
@@ -124,7 +134,7 @@
       "description": "Manage Docker containers, images, volumes, and Compose.",
       "githubUrl": "https://github.com/NousResearch/hermes-agent/tree/main/optional-skills/devops/docker-management",
       "skillUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/optional-skills-devops-docker-management",
-      "stars": 252739,
+      "stars": 254141,
       "updatedAt": "1786211121"
     },
     {
@@ -134,7 +144,7 @@
       "description": "Modify or debug s6 services in the Hermes Docker image.",
       "githubUrl": "https://github.com/NousResearch/hermes-agent/tree/main/optional-skills/devops/hermes-s6-container-supervision",
       "skillUrl": "https://skillsmp.com/creators/nousresearch/hermes-agent/optional-skills-devops-hermes-s6-container-supervision",
-      "stars": 252739,
+      "stars": 254141,
       "updatedAt": "1785606754"
     },
     {
@@ -144,7 +154,7 @@
       "description": "Use when you want to verify compiler changes and commit with the correct convention. Runs tests, lint, and format, then commits with the [compiler] or [rust-compiler] prefix.",
       "githubUrl": "https://github.com/react/react/tree/main/compiler/.claude/skills/compiler-commit",
       "skillUrl": "https://skillsmp.com/creators/react/react/compiler-claude-skills-compiler-commit",
-      "stars": 250862,
+      "stars": 251152,
       "updatedAt": "1781041986"
     },
     {
@@ -154,7 +164,7 @@
       "description": "Orchestrate the Rust compiler port end-to-end. Discovers the current frontier, fixes failing passes, ports new passes, reviews, and commits in a loop.",
       "githubUrl": "https://github.com/react/react/tree/main/compiler/.claude/skills/compiler-orchestrator",
       "skillUrl": "https://skillsmp.com/creators/react/react/compiler-claude-skills-compiler-orchestrator",
-      "stars": 250862,
+      "stars": 251152,
       "updatedAt": "1781041986"
     },
     {
@@ -164,7 +174,7 @@
       "description": "Port a compiler pass from TypeScript to Rust. Gathers context, plans the port, implements in a subagent with test-fix loop, then reviews.",
       "githubUrl": "https://github.com/react/react/tree/main/compiler/.claude/skills/compiler-port",
       "skillUrl": "https://skillsmp.com/creators/react/react/compiler-claude-skills-compiler-port",
-      "stars": 250862,
+      "stars": 251152,
       "updatedAt": "1781041986"
     },
     {
@@ -174,8 +184,8 @@
       "description": "Design, review, and diagnose DeepSeek Harness tests and fixtures that can fail nondeterministically under CI concurrency, shared host resources, clocks, process-global state, subprocesses, network listeners, or asynchronous teardown. Use when adding or changing tests with those risks, investigating flaky CI, or reviewing test isolation; use dsh-pre-push-checks separately to select outgoing commands.",
       "githubUrl": "https://github.com/deepseek-ai/deepseek-harness/tree/master/.agents/skills/dsh-ci-test-reliability",
       "skillUrl": "https://skillsmp.com/creators/deepseek-ai/deepseek-harness/agents-skills-dsh-ci-test-reliability",
-      "stars": 247445,
-      "updatedAt": "1787982899"
+      "stars": 250596,
+      "updatedAt": "1791558236"
     },
     {
       "id": "anomalyco-opencode-opencode-skills-effect-skill-md",
@@ -184,8 +194,18 @@
       "description": "Work with Effect v4 TypeScript code in this repo",
       "githubUrl": "https://github.com/anomalyco/opencode/tree/dev/.opencode/skills/effect",
       "skillUrl": "https://skillsmp.com/creators/anomalyco/opencode/opencode-skills-effect",
-      "stars": 212705,
+      "stars": 214005,
       "updatedAt": "1786764347"
+    },
+    {
+      "id": "anomalyco-opencode-packages-plugins-figma-skills-figma-use-skill-md",
+      "name": "figma-use",
+      "author": "anomalyco",
+      "description": "**MANDATORY prerequisite** — you MUST invoke this skill BEFORE every `use_figma` tool call. NEVER call `use_figma` directly without loading this skill first. Skipping it causes common, hard-to-debug failures. Trigger whenever the user wants to perform a write action or a unique read action that requires JavaScript execution in the Figma file context — e.g. create/edit/delete nodes, set up variables or tokens, build components and variants, modify auto-layout or fills, bind variables to properties, or inspect file structure programmatically.",
+      "githubUrl": "https://github.com/anomalyco/opencode/tree/dev/packages/plugins/figma/skills/figma-use",
+      "skillUrl": "https://skillsmp.com/creators/anomalyco/opencode/packages-plugins-figma-skills-figma-use",
+      "stars": 214005,
+      "updatedAt": "1791873439"
     },
     {
       "id": "n8n-io-n8n-agents-skills-nathan-skill-md",
@@ -194,7 +214,7 @@
       "description": "Deploy a temporary n8n test instance (or generate a local docker run command) via the internal \"Nathan\" bot, from the repo instead of Slack. Use after opening a PR to offer the user a live test instance, or whenever someone asks to spin up / deploy a test instance for a branch.",
       "githubUrl": "https://github.com/n8n-io/n8n/tree/master/.agents/skills/nathan",
       "skillUrl": "https://skillsmp.com/creators/n8n-io/n8n/agents-skills-nathan",
-      "stars": 206150,
+      "stars": 207388,
       "updatedAt": "1790566752"
     },
     {
@@ -204,7 +224,7 @@
       "description": "Comprehensive setup steps to help the user create complete project structures in a VS Code workspace. This tool is designed for full project initialization and scaffolding, not for creating individual files. When to use this tool: when the user wants to create a new complete project from scratch; when setting up entire project frameworks (TypeScript projects, React apps, Node.js servers, etc.); when initializing Model Context Protocol (MCP) servers with full structure; when creating VS Code extensions with proper scaffolding; when setting up Next.js, Vite, or other framework-based projects; when the user asks for \"new project\", \"create a workspace\", or \"set up a [framework] project\"; when you need to establish a complete development environment with dependencies, config files, and folder structure. When NOT to use this tool: when creating single files or small code snippets; when adding individual files to existing projects; when making modifications to existing codebases; when the user asks to \"create a file",
       "githubUrl": "https://github.com/microsoft/vscode/tree/main/extensions/copilot/assets/prompts/skills/project-setup-info-context7",
       "skillUrl": "https://skillsmp.com/creators/microsoft/vscode/extensions-copilot-assets-prompts-skills-project-setup-info-context7",
-      "stars": 193581,
+      "stars": 193700,
       "updatedAt": "1773668466"
     },
     {
@@ -214,7 +234,7 @@
       "description": "Comprehensive setup steps to help the user create complete project structures in a VS Code workspace; this tool is designed for full project initialization and scaffolding, not for creating individual files. When to use this tool: user wants to create a new complete project from scratch; setting up entire project frameworks (TypeScript projects, React apps, Node.js servers, etc.); initializing Model Context Protocol (MCP) servers with full structure; creating VS Code extensions with proper scaffolding; setting up Next.js, Vite, or other framework-based projects; user asks for \"new project\", \"create a workspace\", \"set up a [framework] project\"; need to establish a complete development environment with dependencies, config files, and folder structure. When NOT to use this tool: creating single files or small code snippets; adding individual files to existing projects; making modifications to existing codebases; user asks to \"create a file\" or \"add a component\"; simple code examples or demonstrations; debugging ",
       "githubUrl": "https://github.com/microsoft/vscode/tree/main/extensions/copilot/assets/prompts/skills/project-setup-info-local",
       "skillUrl": "https://skillsmp.com/creators/microsoft/vscode/extensions-copilot-assets-prompts-skills-project-setup-info-local",
-      "stars": 193581,
+      "stars": 193700,
       "updatedAt": "1773668466"
     },
     {
@@ -224,7 +244,7 @@
       "description": "E2E manual testing of PRs/branches using docker compose, agent-browser, and API calls. TRIGGER when user asks to manually test a PR, test a feature end-to-end, or run integration tests against a running system.",
       "githubUrl": "https://github.com/Significant-Gravitas/AutoGPT/tree/master/.claude/skills/pr-test",
       "skillUrl": "https://skillsmp.com/creators/significant-gravitas/autogpt/claude-skills-pr-test",
-      "stars": 187518,
+      "stars": 187603,
       "updatedAt": "1788610742"
     },
     {
@@ -234,7 +254,7 @@
       "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
       "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
       "skillUrl": "https://skillsmp.com/creators/anthropics/skills/skills-mcp-builder",
-      "stars": 180470,
+      "stars": 181414,
       "updatedAt": "1776721096"
     },
     {
@@ -244,7 +264,7 @@
       "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
       "githubUrl": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
       "skillUrl": "https://skillsmp.com/creators/anthropics/skills/skills-xlsx",
-      "stars": 180470,
+      "stars": 181414,
       "updatedAt": "1784256457"
     },
     {
@@ -254,7 +274,7 @@
       "description": "Add JavaScript behavior to a Bootstrap 6 component. Use when writing a component's TypeScript source, extending BaseComponent, wiring the data API, adding events or config options, or integrating Floating UI or a third-party library.",
       "githubUrl": "https://github.com/twbs/bootstrap/tree/main/skills/bootstrap-component-js",
       "skillUrl": "https://skillsmp.com/creators/twbs/bootstrap/skills-bootstrap-component-js",
-      "stars": 174813,
+      "stars": 174859,
       "updatedAt": "1785276702"
     },
     {
@@ -264,7 +284,7 @@
       "description": "Include and bundle Bootstrap 6's CSS and JavaScript in a project using Parcel. Use when setting up Bootstrap with Parcel, bundling Bootstrap's Sass and JS through Parcel, or creating a Parcel-based Bootstrap project.",
       "githubUrl": "https://github.com/twbs/bootstrap/tree/main/skills/bootstrap-parcel",
       "skillUrl": "https://skillsmp.com/creators/twbs/bootstrap/skills-bootstrap-parcel",
-      "stars": 174813,
+      "stars": 174859,
       "updatedAt": "1791477423"
     },
     {
@@ -274,7 +294,7 @@
       "description": "Migrate a project from Bootstrap 4 to Bootstrap 6. Use when upgrading from Bootstrap 4, jumping two major versions, or updating v4 class names, data attributes, forms, and JavaScript across the v4-to-v5 and v5-to-v6 steps.",
       "githubUrl": "https://github.com/twbs/bootstrap/tree/main/skills/bootstrap-v4-v6-migration",
       "skillUrl": "https://skillsmp.com/creators/twbs/bootstrap/skills-bootstrap-v4-v6-migration",
-      "stars": 174813,
+      "stars": 174859,
       "updatedAt": "1790658440"
     },
     {
@@ -284,7 +304,7 @@
       "description": "Use when writing or changing Vitest or React Testing Library tests under `web/` or `packages/dify-ui/`, or when the user explicitly requests frontend test strategy, including evaluation of an existing strategy. Do not use for frontend code-review-only requests, general testability discussion, Python tests, or Cucumber/Playwright E2E.",
       "githubUrl": "https://github.com/langgenius/dify/tree/main/.agents/skills/frontend-testing",
       "skillUrl": "https://skillsmp.com/creators/langgenius/dify/agents-skills-frontend-testing",
-      "stars": 158150,
+      "stars": 158593,
       "updatedAt": "1788614920"
     },
     {
@@ -294,8 +314,8 @@
       "description": "Use when implementing or refactoring React/TypeScript components and the task requires decisions about component ownership, feature boundaries, state, data flow, effects, or interaction ownership. Do not use for review-only requests, test-only work, copy-only edits, or styling-only changes.",
       "githubUrl": "https://github.com/langgenius/dify/tree/main/.agents/skills/how-to-write-component",
       "skillUrl": "https://skillsmp.com/creators/langgenius/dify/agents-skills-how-to-write-component",
-      "stars": 158150,
-      "updatedAt": "1791607251"
+      "stars": 158593,
+      "updatedAt": "1792027214"
     },
     {
       "id": "langflow-ai-langflow-agents-skills-ibm-a11y-route-scan-skill-md",
@@ -304,7 +324,7 @@
       "description": "Batch-scan Langflow frontend routes for accessibility issues using the Python IBM Equal Access scanner (scripts/a11y/a11y_scan.py) and produce JSON/Markdown/HTML reports. Scans the default-loaded state of each route only (use explicit state files for modals). Use when asked to scan one or more routes, produce an accessibility report for pages, or batch-check static routes. Reports findings only — does not fix code, run Playwright/axe tests, or perform a formal Level 1 audit; see ibm-a11y-testing-guide, ibm-a11y-level1-audit, and ibm-a11y-pr-remediation for those.",
       "githubUrl": "https://github.com/langflow-ai/langflow/tree/main/.agents/skills/ibm-a11y-route-scan",
       "skillUrl": "https://skillsmp.com/creators/langflow-ai/langflow/agents-skills-ibm-a11y-route-scan",
-      "stars": 155500,
+      "stars": 155724,
       "updatedAt": "1787194173"
     },
     {
@@ -344,7 +364,7 @@
       "description": "Find and explore Windows desktop APIs. Use when building features that need platform capabilities — camera, file access, notifications, UI controls, AI/ML, sensors, networking, etc. Discovers the right API for a task and retrieves full type details (methods, properties, events, enumeration values).",
       "githubUrl": "https://github.com/microsoft/PowerToys/tree/main/.github/skills/winmd-api-search",
       "skillUrl": "https://skillsmp.com/creators/microsoft/powertoys/github-skills-winmd-api-search",
-      "stars": 139183,
+      "stars": 139365,
       "updatedAt": "1773195332"
     },
     {
@@ -384,7 +404,7 @@
       "description": "Documentation reference for using Browser Use Cloud — the hosted API and SDK for browser automation. Use this skill whenever the user needs help with the Cloud REST API (v2, v3, or v4), browser-use-sdk (Python or TypeScript), X-Browser-Use-API-Key authentication, cloud sessions, browser profiles, profile sync, CDP WebSocket connections, stealth browsers, residential proxies, CAPTCHA handling, webhooks, workspaces, skills marketplace, liveUrl streaming, pricing, or integration patterns (chat UI, subagent, adding browser tools to existing agents). Also trigger for questions about n8n/Make/Zapier integration, Playwright/ Puppeteer/Selenium on cloud infrastructure, or 1Password vault integration. Do NOT use this for the open-source Python library (Agent, Browser, Tools config) — use the open-source skill instead.",
       "githubUrl": "https://github.com/browser-use/browser-use/tree/main/skills/cloud",
       "skillUrl": "https://skillsmp.com/creators/browser-use/browser-use/skills-cloud",
-      "stars": 117632,
+      "stars": 118145,
       "updatedAt": "1790985746"
     },
     {
@@ -394,28 +414,8 @@
       "description": "Documentation reference for writing Python code using the browser-use open-source library. Use this skill whenever the user needs help with Agent, Browser, or Tools configuration, is writing code that imports from browser_use, asks about @sandbox deployment, supported LLM models, Actor API, custom tools, lifecycle hooks, MCP server setup, or monitoring/observability with Laminar or OpenLIT. Also trigger for questions about browser-use installation, prompting strategies, or sensitive data handling. Do NOT use this for Cloud API/SDK usage or pricing — use the cloud skill instead. Do NOT use this for directly automating a browser via CLI commands — use the browser-use skill instead.",
       "githubUrl": "https://github.com/browser-use/browser-use/tree/main/skills/open-source",
       "skillUrl": "https://skillsmp.com/creators/browser-use/browser-use/skills-open-source",
-      "stars": 117632,
+      "stars": 118145,
       "updatedAt": "1791308530"
-    },
-    {
-      "id": "microsoft-typescript-github-skills-api-client-skill-md",
-      "name": "api-client",
-      "author": "microsoft",
-      "description": "Instructions for working on the API client in ./packages/typescript",
-      "githubUrl": "https://github.com/microsoft/typescript/tree/main/.github/skills/api-client",
-      "skillUrl": "https://skillsmp.com/creators/microsoft/typescript/github-skills-api-client",
-      "stars": 111408,
-      "updatedAt": "1791161848"
-    },
-    {
-      "id": "microsoft-typescript-github-skills-compiler-and-fourslash-tests-skill-md",
-      "name": "compiler-and-fourslash-tests",
-      "author": "microsoft",
-      "description": "How to write, run, and debug compiler tests and fourslash (LSP) tests in the TypeScript repository. Covers test file formats, directives, markers, baseline management, and the fourslash verification API.",
-      "githubUrl": "https://github.com/microsoft/typescript/tree/main/.github/skills/compiler-and-fourslash-tests",
-      "skillUrl": "https://skillsmp.com/creators/microsoft/typescript/github-skills-compiler-and-fourslash-tests",
-      "stars": 111408,
-      "updatedAt": "1789173158"
     },
     {
       "id": "supabase-supabase-agents-skills-clickhouse-logs-queries-skill-md",
@@ -424,7 +424,7 @@
       "description": "Write, review, and migrate Supabase logs queries against the ClickHouse-backed `logs` table (the `logs.all.otel` analytics endpoint). Use this whenever a task involves Logs Explorer SQL, the `log_attributes` map, querying a log `source` (edge_logs, postgres_logs, auth_logs, etc.), translating an old BigQuery `cross join unnest(metadata)` logs query to ClickHouse, or wiring analytics log SQL in `apps/studio/data/logs` and `apps/studio/components/interfaces/Settings/Logs`. Reach for it even when the user just says \"logs query\", \"Logs Explorer\", or pastes a BigQuery logs query to convert, not only when they name ClickHouse.",
       "githubUrl": "https://github.com/supabase/supabase/tree/master/.agents/skills/clickhouse-logs-queries",
       "skillUrl": "https://skillsmp.com/creators/supabase/supabase/agents-skills-clickhouse-logs-queries",
-      "stars": 111363,
+      "stars": 111616,
       "updatedAt": "1788443909"
     },
     {
@@ -434,7 +434,7 @@
       "description": "Restructure, reorder, and improve existing Supabase docs pages under apps/docs: clarity, connective text, section grouping, and brevity. Use when asked to edit, reorganize, restructure, tighten prose, add glue between sections, or split a page edit into stacked PRs. Not for net-new feature drafts, which belong to write-the-docs, and not for PR triage or verification, which belong to review-the-docs.",
       "githubUrl": "https://github.com/supabase/supabase/tree/master/.agents/skills/edit-the-docs",
       "skillUrl": "https://skillsmp.com/creators/supabase/supabase/agents-skills-edit-the-docs",
-      "stars": 111363,
+      "stars": 111616,
       "updatedAt": "1790392318"
     },
     {
@@ -444,8 +444,28 @@
       "description": "Use whenever code will build, return, fetch, or execute SQL that runs against a user's real Postgres database — even when the request reads like an ordinary feature or bug fix and never says \"security,\" \"injection,\" or \"SafeSqlFragment.\" This covers: writing or editing any pg-meta function, query builder, or endpoint that builds/returns SQL for database objects (tables, views, functions, DB triggers, indexes, RLS policies); interpolating a schema/table/column/search/route-param value into SQL text; storing, fetching, or re-running SQL that round-trips from the database (a policy's definition, a function/view definition, a snippet's saved content); and any \"Run\"/\"Apply\"/\"Execute\" action that sends SQL to a project's database (SQL editor run-selection, policy editor apply, snippet runner). Load this BEFORE writing such code, not only when reviewing a finished diff. Skip only for changes that never touch SQL text or execution — styling, unrelated data hooks, non-SQL form validation, or UI layout work.",
       "githubUrl": "https://github.com/supabase/supabase/tree/master/.agents/skills/safe-sql-execution",
       "skillUrl": "https://skillsmp.com/creators/supabase/supabase/agents-skills-safe-sql-execution",
-      "stars": 111363,
+      "stars": 111616,
       "updatedAt": "1788443909"
+    },
+    {
+      "id": "microsoft-typescript-github-skills-api-client-skill-md",
+      "name": "api-client",
+      "author": "microsoft",
+      "description": "Instructions for working on the API client in ./packages/typescript",
+      "githubUrl": "https://github.com/microsoft/typescript/tree/main/.github/skills/api-client",
+      "skillUrl": "https://skillsmp.com/creators/microsoft/typescript/github-skills-api-client",
+      "stars": 111420,
+      "updatedAt": "1791161848"
+    },
+    {
+      "id": "microsoft-typescript-github-skills-compiler-and-fourslash-tests-skill-md",
+      "name": "compiler-and-fourslash-tests",
+      "author": "microsoft",
+      "description": "How to write, run, and debug compiler tests and fourslash (LSP) tests in the TypeScript repository. Covers test file formats, directives, markers, baseline management, and the fourslash verification API.",
+      "githubUrl": "https://github.com/microsoft/typescript/tree/main/.github/skills/compiler-and-fourslash-tests",
+      "skillUrl": "https://skillsmp.com/creators/microsoft/typescript/github-skills-compiler-and-fourslash-tests",
+      "stars": 111420,
+      "updatedAt": "1789173158"
     },
     {
       "id": "denoland-deno-claude-skills-lint-all-skill-md",
@@ -454,7 +474,7 @@
       "description": "Lint all code (Rust + JS/TS). Use before opening a PR when Rust code was changed.",
       "githubUrl": "https://github.com/denoland/deno/tree/main/.claude/skills/lint-all",
       "skillUrl": "https://skillsmp.com/creators/denoland/deno/claude-skills-lint-all",
-      "stars": 108753,
+      "stars": 108698,
       "updatedAt": "1778316038"
     },
     {
@@ -464,7 +484,7 @@
       "description": "Lint JS/TS code only. Use before opening a PR when only JavaScript or TypeScript files were changed (no Rust).",
       "githubUrl": "https://github.com/denoland/deno/tree/main/.claude/skills/lint-js",
       "skillUrl": "https://skillsmp.com/creators/denoland/deno/claude-skills-lint-js",
-      "stars": 108753,
+      "stars": 108698,
       "updatedAt": "1778316038"
     },
     {
@@ -474,8 +494,18 @@
       "description": "Tests in real browsers via Chrome DevTools MCP. Use when building or debugging anything that runs in a browser. Use when you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data. Requires the chrome-devtools MCP server to be configured.",
       "githubUrl": "https://github.com/addyosmani/agent-skills/tree/main/skills/browser-testing-with-devtools",
       "skillUrl": "https://skillsmp.com/creators/addyosmani/agent-skills/skills-browser-testing-with-devtools",
-      "stars": 104808,
+      "stars": 107075,
       "updatedAt": "1781148003"
+    },
+    {
+      "id": "paperclipai-paperclip-packages-skills-catalog-catalog-optional-browser-agent-browser-skill-md",
+      "name": "agent-browser",
+      "author": "paperclipai",
+      "description": "Drive a real browser to inspect or interact with a web page or app — navigate, take screenshots, read console and network, fill simple forms — for verification tasks, not unattended automation.",
+      "githubUrl": "https://github.com/paperclipai/paperclip/tree/master/packages/skills-catalog/catalog/optional/browser/agent-browser",
+      "skillUrl": "https://skillsmp.com/creators/paperclipai/paperclip/packages-skills-catalog-catalog-optional-browser-agent-browser",
+      "stars": 102861,
+      "updatedAt": "1779989631"
     },
     {
       "id": "nexu-io-open-design-design-templates-dating-web-skill-md",
@@ -484,7 +514,7 @@
       "description": "A consumer-feeling dating / matchmaking dashboard — left rail navigation,\nticker bar of community signals, headline KPIs, a 30-day mutual-matches\nbar chart, and a match-rate trend block. Editorial typography, restrained\naccent. Use when the brief asks for a \"dating site\", \"matchmaking\",\n\"community dashboard\", \"social network dashboard\", or any consumer\nproduct where the data is the story.",
       "githubUrl": "https://github.com/nexu-io/open-design/tree/main/design-templates/dating-web",
       "skillUrl": "https://skillsmp.com/creators/nexu-io/open-design/design-templates-dating-web",
-      "stars": 100534,
+      "stars": 101372,
       "updatedAt": "1785160968"
     },
     {
@@ -494,7 +524,7 @@
       "description": "A consumer-feeling dating / matchmaking dashboard — left rail navigation,\nticker bar of community signals, headline KPIs, a 30-day mutual-matches\nbar chart, and a match-rate trend block. Editorial typography, restrained\naccent. Use when the brief asks for a \"dating site\", \"matchmaking\",\n\"community dashboard\", \"social network dashboard\", or any consumer\nproduct where the data is the story.",
       "githubUrl": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/examples/dating-web",
       "skillUrl": "https://skillsmp.com/creators/nexu-io/open-design/plugins-official-examples-dating-web",
-      "stars": 100534,
+      "stars": 101372,
       "updatedAt": "1787036985"
     },
     {
@@ -504,18 +534,8 @@
       "description": "Audit a python-pptx export against its source HTML deck, identify layout/content drift (footer overflow, cropped content, missing italic/em, lost styling, off-rhythm spacing), and re-export with strict footer-rail + cursor-flow layout discipline. Use this skill whenever the user has a .pptx that was generated from an HTML slide deck and asks to compare/audit/verify/fix the export — including phrases like \"compare ppt with html\", \"fidelity audit\", \"fix the pptx\", \"ppt is cut off\", \"footer overlap\", \"italic missing in pptx\", \"re-export the deck\", \"pptx-html-fidelity-audit\", or any case where a python-pptx → HTML round-trip needs verification or repair. Also trigger when the user shows you a deck.html and a deck.pptx side by side and is debugging visual differences.",
       "githubUrl": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/examples/pptx-html-fidelity-audit",
       "skillUrl": "https://skillsmp.com/creators/nexu-io/open-design/plugins-official-examples-pptx-html-fidelity-audit",
-      "stars": 100534,
+      "stars": 101372,
       "updatedAt": "1787036985"
-    },
-    {
-      "id": "paperclipai-paperclip-packages-skills-catalog-catalog-optional-browser-agent-browser-skill-md",
-      "name": "agent-browser",
-      "author": "paperclipai",
-      "description": "Drive a real browser to inspect or interact with a web page or app — navigate, take screenshots, read console and network, fill simple forms — for verification tasks, not unattended automation.",
-      "githubUrl": "https://github.com/paperclipai/paperclip/tree/master/packages/skills-catalog/catalog/optional/browser/agent-browser",
-      "skillUrl": "https://skillsmp.com/creators/paperclipai/paperclip/packages-skills-catalog-catalog-optional-browser-agent-browser",
-      "stars": 100099,
-      "updatedAt": "1779989631"
     },
     {
       "id": "mui-material-ui-skills-material-ui-theming-skill-md",
@@ -524,7 +544,7 @@
       "description": "Guides Material UI theming and design tokens (createTheme, ThemeProvider, palette, colorSchemes, cssVariables, theme.vars, dark mode, TypeScript augmentation). Use when building or extending a theme, toggling light/dark, or aligning tokens across an app.",
       "githubUrl": "https://github.com/mui/material-ui/tree/master/skills/material-ui-theming",
       "skillUrl": "https://skillsmp.com/creators/mui/material-ui/skills-material-ui-theming",
-      "stars": 99190,
+      "stars": 99210,
       "updatedAt": "1782725489"
     },
     {
@@ -534,7 +554,7 @@
       "description": "Core module implementation for claude-flow v3. Implements DDD domains, clean architecture patterns, dependency injection, and modular TypeScript codebase with comprehensive testing.",
       "githubUrl": "https://github.com/ruvnet/RuView/tree/main/.claude/skills/v3-core-implementation",
       "skillUrl": "https://skillsmp.com/creators/ruvnet/ruview/claude-skills-v3-core-implementation",
-      "stars": 97284,
+      "stars": 98230,
       "updatedAt": "1768273876"
     },
     {
@@ -544,7 +564,7 @@
       "description": "Zero-to-sensing path picker for RuView (WiFi-DensePose) — pick docker-demo, repo-build, or live-esp32 and run the next concrete step.",
       "githubUrl": "https://github.com/ruvnet/RuView/tree/main/harness/ruview/.claude/skills/onboard",
       "skillUrl": "https://skillsmp.com/creators/ruvnet/ruview/harness-ruview-claude-skills-onboard",
-      "stars": 97284,
+      "stars": 98230,
       "updatedAt": "1783012275"
     },
     {
@@ -554,18 +574,18 @@
       "description": "Onboarding and first-run for RuView (WiFi-DensePose) — Docker demo with simulated data, repo build, and the fastest path to a live sensing dashboard. Use when someone is new to RuView or wants the shortest path to \"it works on my machine\".",
       "githubUrl": "https://github.com/ruvnet/RuView/tree/main/plugins/ruview/skills/ruview-quickstart",
       "skillUrl": "https://skillsmp.com/creators/ruvnet/ruview/plugins-ruview-skills-ruview-quickstart",
-      "stars": 97284,
+      "stars": 98230,
       "updatedAt": "1778535556"
     },
     {
-      "id": "oven-sh-bun-claude-skills-implementing-jsc-classes-cpp-skill-md",
-      "name": "implementing-jsc-classes-cpp",
-      "author": "oven-sh",
-      "description": "Implements JavaScript classes in C++ using JavaScriptCore. Use when creating new JS classes with C++ bindings, prototypes, or constructors.",
-      "githubUrl": "https://github.com/oven-sh/bun/tree/main/.claude/skills/implementing-jsc-classes-cpp",
-      "skillUrl": "https://skillsmp.com/creators/oven-sh/bun/claude-skills-implementing-jsc-classes-cpp",
-      "stars": 96193,
-      "updatedAt": "1787273663"
+      "id": "leonxlnx-taste-skill-skills-gpt-tasteskill-skill-md",
+      "name": "gpt-taste",
+      "author": "Leonxlnx",
+      "description": "Elite UX/UI \u0026 Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for layout variance, strict AIDA page structure, wide editorial typography (bans 6-line wraps), gapless bento grids, strict GSAP ScrollTriggers (pinning, stacking, scrubbing), inline micro-images, and massive section spacing.",
+      "githubUrl": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/gpt-tasteskill",
+      "skillUrl": "https://skillsmp.com/creators/leonxlnx/taste-skill/skills-gpt-tasteskill",
+      "stars": 97410,
+      "updatedAt": "1782064622"
     },
     {
       "id": "oven-sh-bun-claude-skills-implementing-jsc-classes-rust-skill-md",
@@ -574,7 +594,7 @@
       "description": "Creates JavaScript classes using Bun's Rust bindings generator (.classes.ts). Use when implementing new JS APIs in Rust with JSC integration, prototypes, or constructors.",
       "githubUrl": "https://github.com/oven-sh/bun/tree/main/.claude/skills/implementing-jsc-classes-rust",
       "skillUrl": "https://skillsmp.com/creators/oven-sh/bun/claude-skills-implementing-jsc-classes-rust",
-      "stars": 96193,
+      "stars": 96251,
       "updatedAt": "1782366479"
     },
     {
@@ -584,18 +604,18 @@
       "description": "JSC GC reference for Bun. Use for use-after-free, JS object leaks, \"collected too early\", or when touching WriteBarrier, visitChildren, visitAdditionalChildren, JSRef, JSC::Strong/Weak, hasPendingActivity, ensureStillAlive, addOpaqueRoot, reportExtraMemoryAllocated, IsoSubspace, HeapAnalyzer, finalize.",
       "githubUrl": "https://github.com/oven-sh/bun/tree/main/.claude/skills/javascriptcore-garbage-collector",
       "skillUrl": "https://skillsmp.com/creators/oven-sh/bun/claude-skills-javascriptcore-garbage-collector",
-      "stars": 96193,
+      "stars": 96251,
       "updatedAt": "1782366479"
     },
     {
-      "id": "leonxlnx-taste-skill-skills-gpt-tasteskill-skill-md",
-      "name": "gpt-taste",
-      "author": "Leonxlnx",
-      "description": "Elite UX/UI \u0026 Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for layout variance, strict AIDA page structure, wide editorial typography (bans 6-line wraps), gapless bento grids, strict GSAP ScrollTriggers (pinning, stacking, scrubbing), inline micro-images, and massive section spacing.",
-      "githubUrl": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/gpt-tasteskill",
-      "skillUrl": "https://skillsmp.com/creators/leonxlnx/taste-skill/skills-gpt-tasteskill",
-      "stars": 94653,
-      "updatedAt": "1776544834"
+      "id": "oven-sh-bun-claude-skills-rust-system-calls-skill-md",
+      "name": "rust-system-calls",
+      "author": "oven-sh",
+      "description": "Guides using bun_sys for system calls and file I/O in Rust. Use when implementing file operations, opening fds, or any syscall path instead of std::fs or libc.",
+      "githubUrl": "https://github.com/oven-sh/bun/tree/main/.claude/skills/rust-system-calls",
+      "skillUrl": "https://skillsmp.com/creators/oven-sh/bun/claude-skills-rust-system-calls",
+      "stars": 96251,
+      "updatedAt": "1782366479"
     },
     {
       "id": "stirling-tools-stirling-pdf-claude-skills-feature-walkthrough-skill-md",
@@ -604,8 +624,38 @@
       "description": "Explain the full logic and process of the current branch end-to-end so someone with no prior knowledge of the task can understand, review, and reproduce it. Scopes the change from the branch diff, traces the flow across every layer it touches (frontend tool/hook/component, Java controller/service/endpoint, Python engine, config, i18n, tests), and produces a self-contained walkthrough document with Mermaid diagrams (sequence/flow/architecture), annotated file map with clickable references, before/after behavior, screenshots where a UI is involved, a \"try it locally\" section, and edge cases/risks. Use when asked for a feature or branch walkthrough, \"explain what this branch does\", a design/logic writeup, PR reviewer onboarding, or a hand-off doc. Pass --html to also emit a rendered HTML version; --no-screens to skip screenshots.",
       "githubUrl": "https://github.com/Stirling-Tools/Stirling-PDF/tree/main/.claude/skills/feature-walkthrough",
       "skillUrl": "https://skillsmp.com/creators/stirling-tools/stirling-pdf/claude-skills-feature-walkthrough",
-      "stars": 93992,
+      "stars": 94295,
       "updatedAt": "1783504015"
+    },
+    {
+      "id": "storybookjs-storybook-agents-skills-fix-linting-types-on-pr-skill-md",
+      "name": "fix-linting-types-on-pr",
+      "author": "storybookjs",
+      "description": "Checks out a PR (including fork PRs), fixes all linting and TypeScript errors, then pushes the changes back. Use when asked to fix lint, types, or TS errors on a PR.",
+      "githubUrl": "https://github.com/storybookjs/storybook/tree/next/.agents/skills/fix-linting-types-on-pr",
+      "skillUrl": "https://skillsmp.com/creators/storybookjs/storybook/agents-skills-fix-linting-types-on-pr",
+      "stars": 91316,
+      "updatedAt": "1789322782"
+    },
+    {
+      "id": "modelcontextprotocol-servers-claude-skills-release-skill-md",
+      "name": "release",
+      "author": "modelcontextprotocol",
+      "description": "Cut a milestone release: the release issue, the preparation PRs on v2/main (audit, changesets Version Packages, Python CalVer), the pure v2/main to main merge PR with its release ledger, then the GitHub Release a maintainer publishes.",
+      "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/.claude/skills/release",
+      "skillUrl": "https://skillsmp.com/creators/modelcontextprotocol/servers/claude-skills-release",
+      "stars": 91295,
+      "updatedAt": "1791651207"
+    },
+    {
+      "id": "modelcontextprotocol-servers-claude-skills-testing-skill-md",
+      "name": "testing",
+      "author": "modelcontextprotocol",
+      "description": "Write, place and run tests for a server in this repo. Use when choosing between driving the server through an MCP client and calling its functions directly; when writing a protocol-level test for a TypeScript or Python server; when choosing the command that runs one suite or a coverage report; or when a test is skipped or passes against a stale build.",
+      "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/.claude/skills/testing",
+      "skillUrl": "https://skillsmp.com/creators/modelcontextprotocol/servers/claude-skills-testing",
+      "stars": 91295,
+      "updatedAt": "1791156198"
     },
     {
       "id": "home-assistant-core-claude-skills-bump-dependency-skill-md",
@@ -618,44 +668,14 @@
       "updatedAt": "1785829998"
     },
     {
-      "id": "storybookjs-storybook-agents-skills-fix-linting-types-on-pr-skill-md",
-      "name": "fix-linting-types-on-pr",
-      "author": "storybookjs",
-      "description": "Checks out a PR (including fork PRs), fixes all linting and TypeScript errors, then pushes the changes back. Use when asked to fix lint, types, or TS errors on a PR.",
-      "githubUrl": "https://github.com/storybookjs/storybook/tree/next/.agents/skills/fix-linting-types-on-pr",
-      "skillUrl": "https://skillsmp.com/creators/storybookjs/storybook/agents-skills-fix-linting-types-on-pr",
-      "stars": 91240,
-      "updatedAt": "1789322782"
-    },
-    {
-      "id": "modelcontextprotocol-servers-claude-skills-release-skill-md",
-      "name": "release",
-      "author": "modelcontextprotocol",
-      "description": "Cut a milestone release: the release issue, the preparation PRs on v2/main (audit, changesets Version Packages, Python CalVer), the pure v2/main to main merge PR with its release ledger, then the GitHub Release a maintainer publishes.",
-      "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/.claude/skills/release",
-      "skillUrl": "https://skillsmp.com/creators/modelcontextprotocol/servers/claude-skills-release",
-      "stars": 91144,
-      "updatedAt": "1791651207"
-    },
-    {
-      "id": "modelcontextprotocol-servers-claude-skills-testing-skill-md",
-      "name": "testing",
-      "author": "modelcontextprotocol",
-      "description": "Write, place and run tests for a server in this repo. Use when choosing between driving the server through an MCP client and calling its functions directly; when writing a protocol-level test for a TypeScript or Python server; when choosing the command that runs one suite or a coverage report; or when a test is skipped or passes against a stale build.",
-      "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/.claude/skills/testing",
-      "skillUrl": "https://skillsmp.com/creators/modelcontextprotocol/servers/claude-skills-testing",
-      "stars": 91144,
-      "updatedAt": "1791156198"
-    },
-    {
       "id": "openhands-openhands-agents-skills-e2e-testing-skill-md",
       "name": "e2e-testing",
       "author": "OpenHands",
       "description": "This skill should be used when the user asks to \"add an E2E test\", \"run live E2E\", \"run mock-LLM tests\", \"debug Playwright CI\", \"test the Docker image\", or changes tests/e2e, Playwright configs, E2E workflows, artifacts, or test reporting.",
       "githubUrl": "https://github.com/OpenHands/OpenHands/tree/main/.agents/skills/e2e-testing",
       "skillUrl": "https://skillsmp.com/creators/openhands/openhands/agents-skills-e2e-testing",
-      "stars": 90597,
-      "updatedAt": "1791502140"
+      "stars": 91017,
+      "updatedAt": "1792102676"
     },
     {
       "id": "openhands-openhands-agents-skills-local-stack-runtime-skill-md",
@@ -664,8 +684,8 @@
       "description": "This skill should be used when the user asks to \"change the dev stack\", \"add a runtime service\", \"change the launcher\", \"update Docker\", \"bump Agent Server\", \"change ingress routing\", or changes scripts/dev-*.mjs, runtime-services metadata, config/defaults.json, Docker, automation startup, process shutdown, or local authentication.",
       "githubUrl": "https://github.com/OpenHands/OpenHands/tree/main/.agents/skills/local-stack-runtime",
       "skillUrl": "https://skillsmp.com/creators/openhands/openhands/agents-skills-local-stack-runtime",
-      "stars": 90597,
-      "updatedAt": "1791579035"
+      "stars": 91017,
+      "updatedAt": "1792076214"
     },
     {
       "id": "d4vinci-scrapling-agent-skill-scrapling-skill-skill-md",
@@ -674,8 +694,18 @@
       "description": "Scrape web pages using Scrapling with anti-bot bypass (like Cloudflare Turnstile), stealth headless browsing, spiders framework, adaptive scraping, and JavaScript rendering. Use when asked to scrape, crawl, or extract data from websites; web_fetch fails; the site has anti-bot protections; write Python code to scrape/crawl; or write spiders.",
       "githubUrl": "https://github.com/D4Vinci/Scrapling/tree/main/agent-skill/Scrapling-Skill",
       "skillUrl": "https://skillsmp.com/creators/d4vinci/scrapling/agent-skill-scrapling-skill",
-      "stars": 86812,
+      "stars": 87929,
       "updatedAt": "1787506110"
+    },
+    {
+      "id": "tt-a1i-archify-archify-skill-md",
+      "name": "archify",
+      "author": "tt-a1i",
+      "description": "Create validated architecture, workflow, sequence, data-flow, lifecycle/state, entity-relationship, class/interface, tree, timeline, and execution waterfall diagrams as explorable standalone HTML with inline SVG, dark/light themes, optional motion, and image/SVG/WebM export. Accept plain-language requirements or Mermaid; inspect repository evidence for code-backed diagrams. Use when visualizing infrastructure, cloud/security networks, API calls, data pipelines, ETL/ELT, state machines, database schemas, class contracts, module hierarchies, incident/release histories, or request and agent-run timings. Also use for everyday subjects with steps, parts, relationships, or states: leave and travel plans, applications and approvals, renting conversations, money or document flows, and order progress. Not for numeric charts or dashboards.",
+      "githubUrl": "https://github.com/tt-a1i/archify/tree/main/archify",
+      "skillUrl": "https://skillsmp.com/creators/tt-a1i/archify/archify",
+      "stars": 84054,
+      "updatedAt": "1791909003"
     },
     {
       "id": "bytedance-deer-flow-agent-skills-blocking-io-guard-skill-md",
@@ -684,7 +714,7 @@
       "description": "Ensure async-path backend code that could block the asyncio event loop is protected by a teeth-verified runtime anchor in tests/blocking_io/. Use when changing backend Python under app/, packages/harness/deerflow/, or scripts/, when running a blocking-IO triage round over the whole repo, or when a reviewer/CI asks for blocking-IO coverage. Runs a deterministic scan (changed-lines or full-repo), routes each candidate, drafts/extends an anchor, and proves it fails when the blocking IO regresses.",
       "githubUrl": "https://github.com/bytedance/deer-flow/tree/main/.agent/skills/blocking-io-guard",
       "skillUrl": "https://skillsmp.com/creators/bytedance/deer-flow/agent-skills-blocking-io-guard",
-      "stars": 83689,
+      "stars": 83927,
       "updatedAt": "1781230838"
     },
     {
@@ -694,7 +724,7 @@
       "description": "End-to-end smoke test skill for DeerFlow. Guides through: 1) Pulling latest code, 2) Docker OR Local installation and deployment (user preference, default to Local if Docker network issues), 3) Service availability verification, 4) Health check, 5) Final test report. Use when the user says \"run smoke test\", \"smoke test deployment\", \"verify installation\", \"test service availability\", \"end-to-end test\", or similar.",
       "githubUrl": "https://github.com/bytedance/deer-flow/tree/main/.agent/skills/smoke-test",
       "skillUrl": "https://skillsmp.com/creators/bytedance/deer-flow/agent-skills-smoke-test",
-      "stars": 83689,
+      "stars": 83927,
       "updatedAt": "1791271966"
     },
     {
@@ -704,38 +734,8 @@
       "description": "Use this skill when the user uploads Excel (.xlsx/.xls) or CSV files and wants to perform data analysis, generate statistics, create summaries, pivot tables, SQL queries, or any form of structured data exploration. Supports multi-sheet Excel workbooks, aggregation, filtering, joins, and exporting results to CSV/JSON/Markdown.",
       "githubUrl": "https://github.com/bytedance/deer-flow/tree/main/skills/public/data-analysis",
       "skillUrl": "https://skillsmp.com/creators/bytedance/deer-flow/skills-public-data-analysis",
-      "stars": 83689,
+      "stars": 83927,
       "updatedAt": "1776736398"
-    },
-    {
-      "id": "lobehub-lobehub-agents-skills-db-migrations-skill-md",
-      "name": "db-migrations",
-      "author": "lobehub",
-      "description": "Use for Drizzle migration rollout, online indexes, backfills, idempotent SQL and migration regeneration or rebase conflicts.",
-      "githubUrl": "https://github.com/lobehub/lobehub/tree/canary/.agents/skills/db-migrations",
-      "skillUrl": "https://skillsmp.com/creators/lobehub/lobehub/agents-skills-db-migrations",
-      "stars": 83141,
-      "updatedAt": "1790404601"
-    },
-    {
-      "id": "lobehub-lobehub-agents-skills-run-eval-harbor-skill-md",
-      "name": "run-eval-harbor",
-      "author": "lobehub",
-      "description": "Run and diagnose existing Harbor or FrontierHarness evaluations against local production LobeHub or LobeHub Cloud, on a local Docker host, SSH worker, or Runta. Use for eval infrastructure, target preflight, lh CLI injection, Harbor smoke or job runs, resume, and failure triage. Excludes authoring Harbor tasks and product acceptance.",
-      "githubUrl": "https://github.com/lobehub/lobehub/tree/canary/.agents/skills/run-eval-harbor",
-      "skillUrl": "https://skillsmp.com/creators/lobehub/lobehub/agents-skills-run-eval-harbor",
-      "stars": 83141,
-      "updatedAt": "1791603775"
-    },
-    {
-      "id": "lobehub-lobehub-agents-skills-split-micro-app-skill-md",
-      "name": "split-micro-app",
-      "author": "lobehub",
-      "description": "Use for standalone micro apps: React Router SSR/SSG, Cloud overlays, Workers, CDN/R2, SEO/OG, gateway routes, previews, Docker integration and SSR bundle isolation.",
-      "githubUrl": "https://github.com/lobehub/lobehub/tree/canary/.agents/skills/split-micro-app",
-      "skillUrl": "https://skillsmp.com/creators/lobehub/lobehub/agents-skills-split-micro-app",
-      "stars": 83141,
-      "updatedAt": "1790588297"
     },
     {
       "id": "rtk-ai-rtk-claude-skills-code-simplifier-skill-md",
@@ -744,7 +744,7 @@
       "description": "Review RTK Rust code for idiomatic simplification. Detects over-engineering, unnecessary allocations, verbose patterns. Applies Rust idioms without changing behavior.",
       "githubUrl": "https://github.com/rtk-ai/rtk/tree/develop/.claude/skills/code-simplifier",
       "skillUrl": "https://skillsmp.com/creators/rtk-ai/rtk/claude-skills-code-simplifier",
-      "stars": 82959,
+      "stars": 83529,
       "updatedAt": "1785172677"
     },
     {
@@ -754,7 +754,7 @@
       "description": "Rust design patterns for RTK. Newtype, Builder, RAII, Trait Objects, State Machine. Applied to CLI filter modules. Use when designing new modules or refactoring existing ones.",
       "githubUrl": "https://github.com/rtk-ai/rtk/tree/develop/.claude/skills/design-patterns",
       "skillUrl": "https://skillsmp.com/creators/rtk-ai/rtk/claude-skills-design-patterns",
-      "stars": 82959,
+      "stars": 83529,
       "updatedAt": "1774887754"
     },
     {
@@ -764,18 +764,38 @@
       "description": "Enforces TDD (Red-Green-Refactor) for Rust development. Auto-triggers on implementation, testing, refactoring, and bug fixing tasks. Provides Rust-idiomatic testing patterns with anyhow/thiserror, cfg(test), and Arrange-Act-Assert workflow.",
       "githubUrl": "https://github.com/rtk-ai/rtk/tree/develop/.claude/skills/rtk-tdd",
       "skillUrl": "https://skillsmp.com/creators/rtk-ai/rtk/claude-skills-rtk-tdd",
-      "stars": 82959,
+      "stars": 83529,
       "updatedAt": "1790375219"
     },
     {
-      "id": "tt-a1i-archify-archify-skill-md",
-      "name": "archify",
-      "author": "tt-a1i",
-      "description": "Create polished, validated architecture, workflow, sequence, data-flow, and lifecycle/state diagrams as explorable standalone HTML with inline SVG, dark/light themes, optional trace motion, and PNG/JPEG/WebP/SVG/WebM export. Accept plain-language requirements or pasted Mermaid flowchart, sequenceDiagram, and stateDiagram input; inspect repository evidence when the diagram must reflect real code. Use when the user asks to visualize system architecture, infrastructure, cloud/security/network topology, technical workflows, API call sequences, request lifecycles, data pipelines, ETL/ELT, data lineage, state machines, or to convert/beautify Mermaid. Also use for everyday subjects with steps, parts, relationships, or states: a leave or travel plan, an application or approval process, a back-and-forth such as renting, where money or documents go, or where an application or order stands. Not for numeric charts or dashboards.",
-      "githubUrl": "https://github.com/tt-a1i/archify/tree/main/archify",
-      "skillUrl": "https://skillsmp.com/creators/tt-a1i/archify/archify",
-      "stars": 81929,
-      "updatedAt": "1791483047"
+      "id": "lobehub-lobehub-agents-skills-db-migrations-skill-md",
+      "name": "db-migrations",
+      "author": "lobehub",
+      "description": "Use for Drizzle migration rollout, online indexes, backfills, idempotent SQL and migration regeneration or rebase conflicts.",
+      "githubUrl": "https://github.com/lobehub/lobehub/tree/canary/.agents/skills/db-migrations",
+      "skillUrl": "https://skillsmp.com/creators/lobehub/lobehub/agents-skills-db-migrations",
+      "stars": 83263,
+      "updatedAt": "1790404601"
+    },
+    {
+      "id": "lobehub-lobehub-agents-skills-run-eval-harbor-skill-md",
+      "name": "run-eval-harbor",
+      "author": "lobehub",
+      "description": "Run and diagnose existing Harbor or FrontierHarness evaluations against local production LobeHub or LobeHub Cloud, on a local Docker host, SSH worker, or Runta. Use for eval infrastructure, target preflight, lh CLI injection, Harbor smoke or job runs, resume, and failure triage. Excludes authoring Harbor tasks and product acceptance.",
+      "githubUrl": "https://github.com/lobehub/lobehub/tree/canary/.agents/skills/run-eval-harbor",
+      "skillUrl": "https://skillsmp.com/creators/lobehub/lobehub/agents-skills-run-eval-harbor",
+      "stars": 83263,
+      "updatedAt": "1791603775"
+    },
+    {
+      "id": "lobehub-lobehub-agents-skills-split-micro-app-skill-md",
+      "name": "split-micro-app",
+      "author": "lobehub",
+      "description": "Use for standalone micro apps: React Router SSR/SSG, Cloud overlays, Workers, CDN/R2, SEO/OG, gateway routes, previews, Docker integration and SSR bundle isolation.",
+      "githubUrl": "https://github.com/lobehub/lobehub/tree/canary/.agents/skills/split-micro-app",
+      "skillUrl": "https://skillsmp.com/creators/lobehub/lobehub/agents-skills-split-micro-app",
+      "stars": 83263,
+      "updatedAt": "1790588297"
     },
     {
       "id": "netdata-netdata-agents-skills-collectors-authoring-skill-md",
@@ -784,7 +804,7 @@
       "description": "Author, modify, or review Netdata collectors across Go, IBM, C, Rust and external plugins. Start here for collector lifecycle, metric identity, missing data, cost, cardinality, SNMP/Prometheus profiles, statsd, logs, topology, flow/OTEL ingestion and Functions. Routes to domain and framework guidance. Operator queries use the query skills.",
       "githubUrl": "https://github.com/netdata/netdata/tree/master/.agents/skills/collectors-authoring",
       "skillUrl": "https://skillsmp.com/creators/netdata/netdata/agents-skills-collectors-authoring",
-      "stars": 80887,
+      "stars": 80969,
       "updatedAt": "1790539908"
     },
     {
@@ -794,7 +814,7 @@
       "description": "Design or review go.d collector and discoverer contracts, including capability scope, options, metric meaning and identity, vnodes, Functions, ownership, remote writes and durable state. Also author or review DynCfg config_schema.json forms. Contract-preserving fixes and migrations use framework guidance; integration prose uses the metadata skill.",
       "githubUrl": "https://github.com/netdata/netdata/tree/master/.agents/skills/collectors-go-design",
       "skillUrl": "https://skillsmp.com/creators/netdata/netdata/agents-skills-collectors-go-design",
-      "stars": 80887,
+      "stars": 80969,
       "updatedAt": "1791139447"
     },
     {
@@ -804,18 +824,18 @@
       "description": "Query or explain direct Netdata Agent APIs and Functions; review direct-query recipes or helpers; troubleshoot bearer authentication. Use query-netdata-cloud for Cloud-proxied calls.",
       "githubUrl": "https://github.com/netdata/netdata/tree/master/docs/netdata-ai/skills/query-netdata-agents",
       "skillUrl": "https://skillsmp.com/creators/netdata/netdata/docs-netdata-ai-skills-query-netdata-agents",
-      "stars": 80887,
+      "stars": 80969,
       "updatedAt": "1789225341"
     },
     {
       "id": "grafana-grafana-claude-skills-frontend-testing-strategy-skill-md",
       "name": "frontend-testing-strategy",
       "author": "grafana",
-      "description": "Write unit and E2E tests for Grafana frontend code (React/TypeScript, any package or feature area) to the conventions this repo expects. Use when adding, backfilling, or reviewing frontend tests; when a test only asserts \"it rendered\" or \"it's defined\"; when reviewing AI-generated tests for slop; or when a frontend test is flaky. For visualization panels and grafana-ui viz components specifically, also load the `panel-testing-strategy` skill.",
+      "description": "Write and run unit and E2E tests for Grafana frontend code (React/TypeScript, any package or feature area) to the conventions this repo expects. Use when running Playwright E2E tests; when adding, backfilling, or reviewing frontend tests; when a test only asserts \"it rendered\" or \"it's defined\"; when reviewing AI-generated tests for slop; or when a frontend test is flaky. For visualization panels and grafana-ui viz components specifically, also load the `panel-testing-strategy` skill.",
       "githubUrl": "https://github.com/grafana/grafana/tree/main/.claude/skills/frontend-testing-strategy",
       "skillUrl": "https://skillsmp.com/creators/grafana/grafana/claude-skills-frontend-testing-strategy",
-      "stars": 77250,
-      "updatedAt": "1790028812"
+      "stars": 77304,
+      "updatedAt": "1792071789"
     },
     {
       "id": "microsoft-ai-agents-for-beginners-agents-skills-azure-openai-to-responses-skill-md",
@@ -824,7 +844,7 @@
       "description": "Migrate Python apps from Azure OpenAI Chat Completions to the Responses API. Covers AzureOpenAI/AsyncAzureOpenAI client migration to the v1 endpoint, streaming, tools, structured output, multi-turn, EntraID auth, and model compatibility checks. Python-focused, Azure OpenAI-specific. USE FOR: migrate to responses API, switch from chat completions, openai responses, upgrade openai SDK, responses API migration, move from completions to responses, gpt-5 migration, azure openai python migration, chat completions to responses, AzureOpenAI to OpenAI client, python azure openai upgrade. DO NOT USE FOR: building new apps from scratch (start with responses directly), Node/TypeScript/C#/Java/Go migrations (this skill is Python-only), Azure infrastructure setup (use azure-prepare), deploying models (use microsoft-foundry).",
       "githubUrl": "https://github.com/microsoft/ai-agents-for-beginners/tree/main/.agents/skills/azure-openai-to-responses",
       "skillUrl": "https://skillsmp.com/creators/microsoft/ai-agents-for-beginners/agents-skills-azure-openai-to-responses",
-      "stars": 76922,
+      "stars": 77249,
       "updatedAt": "1783967506"
     },
     {
@@ -834,7 +854,7 @@
       "description": "Migrate Python apps from Azure OpenAI Chat Completions to the Responses API. Covers AzureOpenAI/AsyncAzureOpenAI client migration to the v1 endpoint, streaming, tools, structured output, multi-turn, EntraID auth, and model compatibility checks. Python-focused, Azure OpenAI-specific. USE FOR: migrate to responses API, switch from chat completions, openai responses, upgrade openai SDK, responses API migration, move from completions to responses, gpt-5 migration, azure openai python migration, chat completions to responses, AzureOpenAI to OpenAI client, python azure openai upgrade. DO NOT USE FOR: building new apps from scratch (start with responses directly), Node/TypeScript/C#/Java/Go migrations (this skill is Python-only), Azure infrastructure setup (use azure-prepare), deploying models (use microsoft-foundry).",
       "githubUrl": "https://github.com/microsoft/ai-agents-for-beginners/tree/main/translations/en/.agents/skills/azure-openai-to-responses",
       "skillUrl": "https://skillsmp.com/creators/microsoft/ai-agents-for-beginners/translations-en-agents-skills-azure-openai-to-responses",
-      "stars": 76922,
+      "stars": 77249,
       "updatedAt": "1783978996"
     },
     {
@@ -844,28 +864,8 @@
       "description": "Migrasi aplikasi Python dari Azure OpenAI Chat Completions ke Responses API. Meliputi migrasi klien AzureOpenAI/AsyncAzureOpenAI ke endpoint v1, penstriman, alat, output berstruktur, multi-sesi, pengesahan EntraID, dan pemeriksaan keserasian model. Berfokus pada Python dan khusus untuk Azure OpenAI. GUNA UNTUK: migrasi ke responses API, bertukar dari chat completions, openai responses, peningkatan openai SDK, migrasi responses API, berpindah dari completions ke responses, migrasi gpt-5, migrasi python azure openai, chat completions ke responses, AzureOpenAI ke klien OpenAI, peningkatan python azure openai. JANGAN GUNA UNTUK: membina aplikasi baru dari awal (mulakan terus dengan responses), migrasi Node/TypeScript/C#/Java/Go (kemahiran ini hanya untuk Python), persediaan infrastruktur Azure (guna azure-prepare), penyebaran model (guna microsoft-foundry).",
       "githubUrl": "https://github.com/microsoft/ai-agents-for-beginners/tree/main/translations/ms/.agents/skills/azure-openai-to-responses",
       "skillUrl": "https://skillsmp.com/creators/microsoft/ai-agents-for-beginners/translations-ms-agents-skills-azure-openai-to-responses",
-      "stars": 76922,
+      "stars": 77249,
       "updatedAt": "1784160352"
-    },
-    {
-      "id": "thedaviddias-front-end-checklist-skills-no-explicit-any-skill-md",
-      "name": "no-explicit-any",
-      "author": "thedaviddias",
-      "description": "Use when reviewing TypeScript files for type safety regressions, during code review of functions that handle external data, or when the codebase has ESLint warnings for @typescript-eslint/no-explicit-any.",
-      "githubUrl": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/no-explicit-any",
-      "skillUrl": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-no-explicit-any",
-      "stars": 74431,
-      "updatedAt": "1791149245"
-    },
-    {
-      "id": "thedaviddias-front-end-checklist-skills-typescript-strict-mode-skill-md",
-      "name": "typescript-strict-mode",
-      "author": "thedaviddias",
-      "description": "Use when setting up a new TypeScript project, auditing an existing tsconfig.json, or reviewing code where null-reference errors or implicit any types are present.",
-      "githubUrl": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/typescript-strict-mode",
-      "skillUrl": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-typescript-strict-mode",
-      "stars": 74431,
-      "updatedAt": "1791149245"
     },
     {
       "id": "ruvnet-ruflo-agents-skills-embeddings-skill-md",
@@ -874,8 +874,18 @@
       "description": "Vector embeddings with HNSW indexing, sql.js persistence, and hyperbolic support. 75x faster with agentic-flow integration. Use when: semantic search, pattern matching, similarity queries, knowledge retrieval. Skip when: exact text matching, simple lookups, no semantic understanding needed.",
       "githubUrl": "https://github.com/ruvnet/ruflo/tree/main/.agents/skills/embeddings",
       "skillUrl": "https://skillsmp.com/creators/ruvnet/ruflo/agents-skills-embeddings",
-      "stars": 74338,
+      "stars": 75283,
       "updatedAt": "1770484668"
+    },
+    {
+      "id": "ruvnet-ruflo-agents-skills-v3-core-implementation-skill-md",
+      "name": "v3-core-implementation",
+      "author": "ruvnet",
+      "description": "Core module implementation for claude-flow v3. Implements DDD domains, clean architecture patterns, dependency injection, and modular TypeScript codebase with comprehensive testing.",
+      "githubUrl": "https://github.com/ruvnet/ruflo/tree/main/.agents/skills/v3-core-implementation",
+      "skillUrl": "https://skillsmp.com/creators/ruvnet/ruflo/agents-skills-v3-core-implementation",
+      "stars": 75283,
+      "updatedAt": "1770485431"
     },
     {
       "id": "ruvnet-ruflo-plugins-ruflo-business-pods-skills-pod-sales-skill-md",
@@ -884,18 +894,18 @@
       "description": "Run one tick of the sales business-pod (ADR-164 §4.1, Phase 2). Loads templates/sales.json, validates it against the pod-schema, resolves agents against ruflo's agent registry, reserves budget via the Phase-2 file-based stub ledger (atomic SQLite tracker is Phase 3 per ADR-164.1), constructs per-agent dry-run prompts, posts a summary envelope to room \"sales\" via the federation_bbs_publish JSONL backing store, and emits a structured {podName, tickId, agentsRan, totalUsd, envelopeId, status} line for /loop ingestion. Dry-run by default; --live is reserved for Phase 3.",
       "githubUrl": "https://github.com/ruvnet/ruflo/tree/main/plugins/ruflo-business-pods/skills/pod-sales",
       "skillUrl": "https://skillsmp.com/creators/ruvnet/ruflo/plugins-ruflo-business-pods-skills-pod-sales",
-      "stars": 74338,
+      "stars": 75283,
       "updatedAt": "1782772108"
     },
     {
-      "id": "ruvnet-ruflo-plugins-ruflo-migrations-skills-migrate-create-skill-md",
-      "name": "migrate-create",
-      "author": "ruvnet",
-      "description": "Create a new sequentially numbered database migration with up/down SQL files",
-      "githubUrl": "https://github.com/ruvnet/ruflo/tree/main/plugins/ruflo-migrations/skills/migrate-create",
-      "skillUrl": "https://skillsmp.com/creators/ruvnet/ruflo/plugins-ruflo-migrations-skills-migrate-create",
-      "stars": 74338,
-      "updatedAt": "1784257589"
+      "id": "thedaviddias-front-end-checklist-skills-typescript-strict-mode-skill-md",
+      "name": "typescript-strict-mode",
+      "author": "thedaviddias",
+      "description": "Use when setting up a new TypeScript project, auditing an existing tsconfig.json, or reviewing code where null-reference errors or implicit any types are present.",
+      "githubUrl": "https://github.com/thedaviddias/Front-End-Checklist/tree/main/skills/typescript-strict-mode",
+      "skillUrl": "https://skillsmp.com/creators/thedaviddias/front-end-checklist/skills-typescript-strict-mode",
+      "stars": 74476,
+      "updatedAt": "1791149245"
     },
     {
       "id": "code-yeongyu-oh-my-openagent-agents-skills-codex-qa-skill-md",
@@ -904,7 +914,7 @@
       "description": "QA the omo Codex Light edition (lazycodex / packages/omo-codex) itself, in strict isolation so ONLY our plugin is exercised, never the user's real ~/.codex. The first-party method drives the real `codex app-server` against an isolated CODEX_HOME plus a LOCAL mock model (no real API call), and proves a plugin hook fired by asserting hook/started + hook/completed notifications. Also: isolated install verification, per-component hook probes, a tmux TUI smoke, and runtime log observation (RUST_LOG / logs SQLite / /debug-config). Ships tested helper scripts each with a --self-test. Use whenever someone changes anything under packages/omo-codex or wants to QA, smoke-test, verify, or debug the Codex plugin, its hooks/components, the installer/config.toml, the app-server flow, or the Codex TUI. Triggers: codex qa, qa codex, codex-qa, test codex plugin, verify codex hook, codex app-server, lazycodex qa, isolated CODEX_HOME, prove codex hook fired, codex tui test.",
       "githubUrl": "https://github.com/code-yeongyu/oh-my-openagent/tree/dev/.agents/skills/codex-qa",
       "skillUrl": "https://skillsmp.com/creators/code-yeongyu/oh-my-openagent/agents-skills-codex-qa",
-      "stars": 69956,
+      "stars": 70088,
       "updatedAt": "1790135805"
     },
     {
@@ -914,7 +924,7 @@
       "description": "QA opencode itself, per case: verify the CLI/terminal (opencode run, db, serve, export), prove a specific plugin hook/action/event fired via the SSE event stream, smoke-test the TUI under tmux, and investigate sessions in opencode's SQLite DB by id, title/name, or message text. Ships tested helper scripts (each with a --self-test) plus per-domain references. Use whenever someone wants to QA, smoke-test, verify, or debug opencode's CLI, HTTP server, plugin hooks/events, or TUI, or to find/inspect opencode sessions in the database. Triggers: opencode qa, qa opencode, test opencode, verify opencode hook, opencode session db, find opencode session by id/name/text, opencode tui test, opencode server health, opencode event stream.",
       "githubUrl": "https://github.com/code-yeongyu/oh-my-openagent/tree/dev/.agents/skills/opencode-qa",
       "skillUrl": "https://skillsmp.com/creators/code-yeongyu/oh-my-openagent/agents-skills-opencode-qa",
-      "stars": 69956,
+      "stars": 70088,
       "updatedAt": "1788335837"
     },
     {
@@ -924,8 +934,18 @@
       "description": "Applies strict, modern language practice (typed errors, exhaustive match, tests that can fail) for Python, Rust, TypeScript, and Go. Use for work on .py, .rs, .ts, or .go files.",
       "githubUrl": "https://github.com/code-yeongyu/oh-my-openagent/tree/dev/packages/shared-skills/skills/programming",
       "skillUrl": "https://skillsmp.com/creators/code-yeongyu/oh-my-openagent/packages-shared-skills-skills-programming",
-      "stars": 69956,
+      "stars": 70088,
       "updatedAt": "1790153396"
+    },
+    {
+      "id": "usestrix-strix-skills-managed-pentesting-with-strix-skill-md",
+      "name": "managed-pentesting-with-strix",
+      "author": "usestrix",
+      "description": "Run a managed pentest of a web app, API, repository, or local workspace on the app.strix.ai platform with the `strix cloud` CLI or REST API — no local Docker or LLM key needed. Safely review and upload local source, register assets, launch and poll scans, triage vulnerabilities, export SARIF, download compliance reports, start PR reviews, buy credits, and set up schedules or webhooks. Use for managed, continuous, scheduled, team-tracked, or sandboxed-agent security testing.",
+      "githubUrl": "https://github.com/usestrix/strix/tree/main/skills/managed-pentesting-with-strix",
+      "skillUrl": "https://skillsmp.com/creators/usestrix/strix/skills-managed-pentesting-with-strix",
+      "stars": 68863,
+      "updatedAt": "1788292832"
     },
     {
       "id": "openinterpreter-openinterpreter-codex-skills-path-types-skill-md",
@@ -934,7 +954,7 @@
       "description": "Choose Rust types for operating system paths across the Codex repository. Use when defining new path-bearing types or explicitly migrating existing ones.",
       "githubUrl": "https://github.com/openinterpreter/openinterpreter/tree/main/.codex/skills/path-types",
       "skillUrl": "https://skillsmp.com/creators/openinterpreter/openinterpreter/codex-skills-path-types",
-      "stars": 68548,
+      "stars": 68583,
       "updatedAt": "1781824579"
     },
     {
@@ -944,18 +964,8 @@
       "description": "Update Codex's pinned `v8` / `rusty_v8` versions, validate the release-candidate path, and investigate failed V8 canary or artifact builds. Use when asked to bump V8, update `rusty_v8` artifacts, prepare or validate a V8 release candidate, check `v8-canary`, or diagnose why a V8 version update no longer builds.",
       "githubUrl": "https://github.com/openinterpreter/openinterpreter/tree/main/.codex/skills/update-v8-version",
       "skillUrl": "https://skillsmp.com/creators/openinterpreter/openinterpreter/codex-skills-update-v8-version",
-      "stars": 68548,
+      "stars": 68583,
       "updatedAt": "1779165185"
-    },
-    {
-      "id": "usestrix-strix-skills-managed-pentesting-with-strix-skill-md",
-      "name": "managed-pentesting-with-strix",
-      "author": "usestrix",
-      "description": "Run a managed pentest of a web app, API, repository, or local workspace on the app.strix.ai platform with the `strix cloud` CLI or REST API — no local Docker or LLM key needed. Safely review and upload local source, register assets, launch and poll scans, triage vulnerabilities, export SARIF, download compliance reports, start PR reviews, buy credits, and set up schedules or webhooks. Use for managed, continuous, scheduled, team-tracked, or sandboxed-agent security testing.",
-      "githubUrl": "https://github.com/usestrix/strix/tree/main/skills/managed-pentesting-with-strix",
-      "skillUrl": "https://skillsmp.com/creators/usestrix/strix/skills-managed-pentesting-with-strix",
-      "stars": 67916,
-      "updatedAt": "1788292832"
     },
     {
       "id": "warpdotdev-warp-agents-skills-rust-unit-tests-skill-md",
@@ -964,7 +974,7 @@
       "description": "Write, improve, and run Rust unit tests in the warp Rust codebase.",
       "githubUrl": "https://github.com/warpdotdev/warp/tree/master/.agents/skills/rust-unit-tests",
       "skillUrl": "https://skillsmp.com/creators/warpdotdev/warp/agents-skills-rust-unit-tests",
-      "stars": 65422,
+      "stars": 65471,
       "updatedAt": "1789498049"
     },
     {
@@ -974,7 +984,7 @@
       "description": "Triage and remediate security vulnerabilities across Warp infrastructure. Checks Dependabot alerts (GitHub), GCP Artifact Registry container scanning, and Docker Scout for public images. Use when the user asks to check for vulnerabilities, triage CVEs, fix dependency issues, update base images, or remediate security alerts.",
       "githubUrl": "https://github.com/warpdotdev/warp/tree/master/resources/channel-gated-skills/dogfood/triage-vulnerabilities",
       "skillUrl": "https://skillsmp.com/creators/warpdotdev/warp/resources-channel-gated-skills-dogfood-triage-vulnerabilities",
-      "stars": 65422,
+      "stars": 65471,
       "updatedAt": "1777383813"
     },
     {
@@ -984,7 +994,7 @@
       "description": "GUI desktop app only. Run and author Warp Rust integration tests (the `crates/integration` harness) that capture screenshots and video via `TestStep::with_start_recording()` / `with_take_screenshot()`, including mouse and keyboard event overlays. TRIGGER only for the integration-test recording pipeline: recording or screenshotting a named integration test, authoring a test that captures video/screenshots, or reviewing artifacts a test produced. SKIP for any general request to screenshot or record the running Warp app or a UI flow — capture those with the computer use tool's built-in screen recording / screenshots, not this skill.",
       "githubUrl": "https://github.com/warpdotdev/warp/tree/master/.warp/skills/gui-integration-test-video",
       "skillUrl": "https://skillsmp.com/creators/warpdotdev/warp/warp-skills-gui-integration-test-video",
-      "stars": 65422,
+      "stars": 65471,
       "updatedAt": "1783725820"
     },
     {
@@ -994,7 +1004,7 @@
       "description": "Update Remotion's ffmpeg-next Git revision to a published rust-ffmpeg commit, refresh Cargo.lock, rebuild all supported compositor binaries, validate the monorepo, and open a draft pull request. Use for the final step of the rust-ffmpeg binary update chain.",
       "githubUrl": "https://github.com/remotion-dev/remotion/tree/main/.agents/skills/update-remotion-rust-ffmpeg",
       "skillUrl": "https://skillsmp.com/creators/remotion-dev/remotion/agents-skills-update-remotion-rust-ffmpeg",
-      "stars": 63234,
+      "stars": 64425,
       "updatedAt": "1784199572"
     },
     {
@@ -1004,7 +1014,7 @@
       "description": "Guidelines, architecture, C++/Rust FFI bindings, development conventions, and build workflows for the Magisk native codebase (native/ subproject). Use when working on, modifying, building, debugging, or testing native C, C++, and Rust code in native/ (including magisk, magiskinit, magiskboot, magiskpolicy, resetprop, zygisk, and native crates/modules).",
       "githubUrl": "https://github.com/topjohnwu/Magisk/tree/master/.agents/skills/magisk-native",
       "skillUrl": "https://skillsmp.com/creators/topjohnwu/magisk/agents-skills-magisk-native",
-      "stars": 63199,
+      "stars": 63286,
       "updatedAt": "1787722975"
     },
     {
@@ -1014,7 +1024,7 @@
       "description": "Use this skill whenever the user mentions Horizon by name in a Laravel context. Covers the full Horizon lifecycle: installing Horizon (horizon:install, Sail setup), configuring config/horizon.php (supervisor blocks, queue assignments, balancing strategies, minProcesses/maxProcesses), fixing the dashboard (authorization via Gate::define viewHorizon, blank metrics, horizon:snapshot scheduling), and troubleshooting production issues (worker crashes, timeout chain ordering, LongWaitDetected notifications, waits config). Also covers job tagging and silencing. Do not use for generic Laravel queues without Horizon, SQS or database drivers, standalone Redis setup, Linux supervisord, Telescope, or job batching.",
       "githubUrl": "https://github.com/coollabsio/coolify/tree/main/.agents/skills/configuring-horizon",
       "skillUrl": "https://skillsmp.com/creators/coollabsio/coolify/agents-skills-configuring-horizon",
-      "stars": 62854,
+      "stars": 63030,
       "updatedAt": "1781171922"
     },
     {
@@ -1024,7 +1034,7 @@
       "description": "ACTIVATE when the user works on authentication in Laravel. This includes login, registration, password reset, email verification, two-factor authentication (2FA/TOTP/QR codes/recovery codes), passkeys, profile updates, password confirmation, or any auth-related routes and controllers. Activate when the user mentions Fortify, auth, authentication, login, register, signup, forgot password, verify email, 2FA, passkeys, WebAuthn, or references app/Actions/Fortify/, CreateNewUser, UpdateUserProfileInformation, FortifyServiceProvider, config/fortify.php, or auth guards. Fortify is the frontend-agnostic authentication backend for Laravel that registers all auth routes and controllers. Also activate when building SPA or headless authentication, customizing login redirects, overriding response contracts like LoginResponse, or configuring login throttling. Do NOT activate for Laravel Passport (OAuth2 API tokens), Socialite (OAuth social login), or non-auth Laravel features.",
       "githubUrl": "https://github.com/coollabsio/coolify/tree/main/.agents/skills/fortify-development",
       "skillUrl": "https://skillsmp.com/creators/coollabsio/coolify/agents-skills-fortify-development",
-      "stars": 62854,
+      "stars": 63030,
       "updatedAt": "1781171922"
     },
     {
@@ -1034,7 +1044,7 @@
       "description": "Apply this skill whenever writing, reviewing, or refactoring Laravel PHP code. This includes creating or modifying controllers, models, migrations, form requests, policies, jobs, scheduled commands, service classes, and Eloquent queries. Triggers for N+1 and query performance issues, caching strategies, authorization and security patterns, validation, error handling, queue and job configuration, route definitions, and architectural decisions. Also use for Laravel code reviews and refactoring existing Laravel code to follow best practices. Covers any task involving Laravel backend PHP code patterns.",
       "githubUrl": "https://github.com/coollabsio/coolify/tree/main/.agents/skills/laravel-best-practices",
       "skillUrl": "https://skillsmp.com/creators/coollabsio/coolify/agents-skills-laravel-best-practices",
-      "stars": 62854,
+      "stars": 63030,
       "updatedAt": "1790839907"
     },
     {
@@ -1042,9 +1052,9 @@
       "name": "rust-string-enums",
       "author": "BerriAI",
       "description": "Define or refactor Rust string-valued enums and their Serde adapters in litellm-rust, using Strum and serde_with while preserving parsing, wire values, and schemas",
-      "githubUrl": "https://github.com/berriai/litellm/tree/main/litellm-rust/.agents/skills/rust-string-enums",
+      "githubUrl": "https://github.com/BerriAI/litellm/tree/main/litellm-rust/.agents/skills/rust-string-enums",
       "skillUrl": "https://skillsmp.com/creators/berriai/litellm/litellm-rust-agents-skills-rust-string-enums",
-      "stars": 60964,
+      "stars": 61358,
       "updatedAt": "1791494689"
     },
     {
@@ -1052,9 +1062,9 @@
       "name": "rust-tracing",
       "author": "BerriAI",
       "description": "Add or change Rust diagnostic tracing in litellm-rust, including route spans, subscriber layers, and Python logger delivery",
-      "githubUrl": "https://github.com/berriai/litellm/tree/main/litellm-rust/.agents/skills/rust-tracing",
+      "githubUrl": "https://github.com/BerriAI/litellm/tree/main/litellm-rust/.agents/skills/rust-tracing",
       "skillUrl": "https://skillsmp.com/creators/berriai/litellm/litellm-rust-agents-skills-rust-tracing",
-      "stars": 60964,
+      "stars": 61358,
       "updatedAt": "1790561938"
     },
     {
@@ -1068,6 +1078,16 @@
       "updatedAt": "1788076540"
     },
     {
+      "id": "coreyhaines31-marketingskills-skills-revops-skill-md",
+      "name": "revops",
+      "author": "coreyhaines31",
+      "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'outbound pipeline stages,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' 'deal desk,' 'CRM automation,' 'marketing-to-sales handoff,' 'data hygiene,' 'leads aren't getting to sales,' 'pipeline management,' 'lead qualification,' or 'when should marketing hand off to sales.' Use this for anything involving the systems and processes that connect marketing to revenue. For cold outreach emails, see cold-email. For email drip campaigns, see emails. For pricing decisions, see pricing.",
+      "githubUrl": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/revops",
+      "skillUrl": "https://skillsmp.com/creators/coreyhaines31/marketingskills/skills-revops",
+      "stars": 54922,
+      "updatedAt": "1791650292"
+    },
+    {
       "id": "odoo-odoo-skills-odoo-security-skill-md",
       "name": "odoo-security",
       "author": "odoo",
@@ -1078,14 +1098,14 @@
       "updatedAt": "1790302741"
     },
     {
-      "id": "coreyhaines31-marketingskills-skills-revops-skill-md",
-      "name": "revops",
-      "author": "coreyhaines31",
-      "description": "When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes. Also use when the user mentions 'RevOps,' 'revenue operations,' 'lead scoring,' 'outbound pipeline stages,' 'lead routing,' 'MQL,' 'SQL,' 'pipeline stages,' 'deal desk,' 'CRM automation,' 'marketing-to-sales handoff,' 'data hygiene,' 'leads aren't getting to sales,' 'pipeline management,' 'lead qualification,' or 'when should marketing hand off to sales.' Use this for anything involving the systems and processes that connect marketing to revenue. For cold outreach emails, see cold-email. For email drip campaigns, see emails. For pricing decisions, see pricing.",
-      "githubUrl": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/revops",
-      "skillUrl": "https://skillsmp.com/creators/coreyhaines31/marketingskills/skills-revops",
-      "stars": 54170,
-      "updatedAt": "1791490025"
+      "id": "hkuds-cli-anything-rekordbox-agent-harness-cli-anything-rekordbox-skills-skill-md",
+      "name": "cli-anything-rekordbox",
+      "author": "HKUDS",
+      "description": "Command-line interface for Pioneer Rekordbox 6/7 - DJ library and live-deck control via guarded SQLCipher master.db access (pyrekordbox) + virtual MIDI mapping. Provides library inspection, playlist creation/add/clear, and live-deck mixing (play/sync/crossfade/EQ). Pioneer ships no playback REST API; this harness combines the only two real surfaces (encrypted DB + MIDI) into one agent-native CLI.",
+      "githubUrl": "https://github.com/HKUDS/CLI-Anything/tree/main/rekordbox/agent-harness/cli_anything/rekordbox/skills",
+      "skillUrl": "https://skillsmp.com/creators/hkuds/cli-anything/rekordbox-agent-harness-cli-anything-rekordbox-skills",
+      "stars": 53128,
+      "updatedAt": "1779292871"
     },
     {
       "id": "expo-expo-packages-expo-sqlite-skills-expo-sqlite-skill-md",
@@ -1094,18 +1114,8 @@
       "description": "Persist and query local data with expo-sqlite in Expo or React Native apps. Use for SQLite setup, SQL queries, schema migrations, transactions, SQLiteProvider, expo-sqlite/kv-store, or the localStorage polyfill.",
       "githubUrl": "https://github.com/expo/expo/tree/main/packages/expo-sqlite/skills/expo-sqlite",
       "skillUrl": "https://skillsmp.com/creators/expo/expo/packages-expo-sqlite-skills-expo-sqlite",
-      "stars": 52638,
+      "stars": 52750,
       "updatedAt": "1789405573"
-    },
-    {
-      "id": "hkuds-cli-anything-rekordbox-agent-harness-cli-anything-rekordbox-skills-skill-md",
-      "name": "cli-anything-rekordbox",
-      "author": "HKUDS",
-      "description": "Command-line interface for Pioneer Rekordbox 6/7 - DJ library and live-deck control via guarded SQLCipher master.db access (pyrekordbox) + virtual MIDI mapping. Provides library inspection, playlist creation/add/clear, and live-deck mixing (play/sync/crossfade/EQ). Pioneer ships no playback REST API; this harness combines the only two real surfaces (encrypted DB + MIDI) into one agent-native CLI.",
-      "githubUrl": "https://github.com/HKUDS/CLI-Anything/tree/main/rekordbox/agent-harness/cli_anything/rekordbox/skills",
-      "skillUrl": "https://skillsmp.com/creators/hkuds/cli-anything/rekordbox-agent-harness-cli-anything-rekordbox-skills",
-      "stars": 51906,
-      "updatedAt": "1779292871"
     },
     {
       "id": "cypress-io-cypress-claude-skills-building-cypress-binary-skill-md",
@@ -1114,28 +1124,8 @@
       "description": "Builds and packages the Cypress Electron binary locally (yarn binary-build, binary-package, binary-zip, Docker/Linux parity), including non-interactive --version/--platform flags and unsetting ELECTRON_RUN_AS_NODE for agent hosts. Covers macOS signing, optional env speedups, dist smoke-test pitfalls, and why the tree is dirty after a build. Use when the user asks to build the Cypress binary, binary-package, electron MODULE_NOT_FOUND during binary-build, or local binary zip. For artifact debugging, use debugging-cypress-artifacts.",
       "githubUrl": "https://github.com/cypress-io/cypress/tree/develop/.claude/skills/building-cypress-binary",
       "skillUrl": "https://skillsmp.com/creators/cypress-io/cypress/claude-skills-building-cypress-binary",
-      "stars": 51045,
+      "stars": 51046,
       "updatedAt": "1789243145"
-    },
-    {
-      "id": "apple-container-skills-container-skill-md",
-      "name": "container",
-      "author": "apple",
-      "description": "Use when running, building, or managing Linux containers on macOS, or when a task involves Docker, docker compose, Lima, Colima, or Podman commands on a Mac, Dockerfiles, OCI images, image registries, or setting up a Linux development environment on Apple silicon.",
-      "githubUrl": "https://github.com/apple/container/tree/main/skills/container",
-      "skillUrl": "https://skillsmp.com/creators/apple/container/skills-container",
-      "stars": 50619,
-      "updatedAt": "1787765066"
-    },
-    {
-      "id": "metabase-metabase-resources-mcp-v2-skills-native-parameters-skill-md",
-      "name": "native-parameters",
-      "author": "metabase",
-      "description": "Template tags for native SQL questions written through question_write's `native` — tag kinds, field-filter vs raw-variable, the template_tags shape, widget types, [[ ]] optional blocks, wiring tags to dashboards. Read before first passing template_tags. Triggers — \"add a filter widget to my SQL\", \"parameterize this query\", \"field filter\", \"why does my variable return no rows\", \"wire a dashboard filter to a SQL card\".",
-      "githubUrl": "https://github.com/metabase/metabase/tree/master/resources/mcp/v2/skills/native-parameters",
-      "skillUrl": "https://skillsmp.com/creators/metabase/metabase/resources-mcp-v2-skills-native-parameters",
-      "stars": 49620,
-      "updatedAt": "1789162212"
     },
     {
       "id": "k-dense-ai-scientific-agent-skills-skills-geomaster-skill-md",
@@ -1144,7 +1134,7 @@
       "description": "Supports geospatial research workflows for remote sensing, vector and raster GIS, spatial statistics, terrain and network analysis, and machine learning for Earth observation. Use when processing satellite imagery, aligning coordinate systems and raster grids, accessing STAC catalogs, analyzing geospatial time series, or implementing scientific GIS workflows in Python, R, Julia, JavaScript, C++, Java, Go, or Rust.",
       "githubUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/geomaster",
       "skillUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-geomaster",
-      "stars": 48371,
+      "stars": 50778,
       "updatedAt": "1790874940"
     },
     {
@@ -1154,7 +1144,7 @@
       "description": "Supports Gtars for local genomic interval models and set algebra, overlaps and counts, consensus and coverage, tokenization, fragment processing, and refget/BEDbase planning across Python, Rust, and the CLI.",
       "githubUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/gtars",
       "skillUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-gtars",
-      "stars": 48371,
+      "stars": 50778,
       "updatedAt": "1790874940"
     },
     {
@@ -1164,8 +1154,28 @@
       "description": "Queries and downloads public cancer imaging data from NCI Imaging Data Commons. Supports IDC collection discovery, DICOM access, radiology (CT, MR, PET) and pathology AI datasets, metadata SQL, visualization, licensing, and citations. Uses public metadata and download routes without authentication; optional BigQuery and Google Healthcare routes require Google credentials.",
       "githubUrl": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/imaging-data-commons",
       "skillUrl": "https://skillsmp.com/creators/k-dense-ai/scientific-agent-skills/skills-imaging-data-commons",
-      "stars": 48371,
+      "stars": 50778,
       "updatedAt": "1790874940"
+    },
+    {
+      "id": "apple-container-skills-container-skill-md",
+      "name": "container",
+      "author": "apple",
+      "description": "Use when running, building, or managing Linux containers on macOS, or when a task involves Docker, docker compose, Lima, Colima, or Podman commands on a Mac, Dockerfiles, OCI images, image registries, or setting up a Linux development environment on Apple silicon.",
+      "githubUrl": "https://github.com/apple/container/tree/main/skills/container",
+      "skillUrl": "https://skillsmp.com/creators/apple/container/skills-container",
+      "stars": 50710,
+      "updatedAt": "1787765066"
+    },
+    {
+      "id": "metabase-metabase-resources-mcp-v2-skills-native-parameters-skill-md",
+      "name": "native-parameters",
+      "author": "metabase",
+      "description": "Template tags for native SQL questions written through question_write's `native` — tag kinds, field-filter vs raw-variable, the template_tags shape, widget types, [[ ]] optional blocks, wiring tags to dashboards. Read before first passing template_tags. Triggers — \"add a filter widget to my SQL\", \"parameterize this query\", \"field filter\", \"why does my variable return no rows\", \"wire a dashboard filter to a SQL card\".",
+      "githubUrl": "https://github.com/metabase/metabase/tree/master/resources/mcp/v2/skills/native-parameters",
+      "skillUrl": "https://skillsmp.com/creators/metabase/metabase/resources-mcp-v2-skills-native-parameters",
+      "stars": 49694,
+      "updatedAt": "1789162212"
     },
     {
       "id": "prisma-orm-skills-prisma-8-skill-md",
@@ -1174,18 +1184,8 @@
       "description": "Use when working in a project that depends on @prisma/orm-postgres, @prisma/orm-sqlite, or @prisma/orm-mongo (Prisma 8, formerly Prisma Next): editing contract.prisma or a contract.ts builder, running `prisma contract emit`, planning or applying migrations, editing migration.ts, writing db.orm / db.sql / db.query queries, wiring db.ts or middleware, integrating a build tool, using the Supabase extension or RLS, or reading a dotted error code such as MIGRATION.HASH_MISMATCH. Use when the user asks \"what is Prisma 8\", \"where do I start\", or compares it to another ORM. Use when the user asks to upgrade or bump Prisma 8 in an app or an extension package. Use when you see @internal/* or @prisma/orm-* imports, prisma.config.ts with definePrismaConfig, or contract.json / contract.d.ts. Do not use for Prisma ORM 7 or earlier (schema.prisma + @prisma/client).",
       "githubUrl": "https://github.com/prisma/orm/tree/main/skills/prisma-8",
       "skillUrl": "https://skillsmp.com/creators/prisma/orm/skills-prisma-8",
-      "stars": 47693,
-      "updatedAt": "1791552672"
-    },
-    {
-      "id": "prisma-prisma-skills-prisma-8-skill-md",
-      "name": "prisma-8",
-      "author": "prisma",
-      "description": "Comprehensive guide for building with Prisma 8 (Prisma Next), the contract-first data layer. Use whenever working on Prisma code in a project that uses it — authoring or editing the data contract (contract.prisma, PSL, TypeScript builders), migrations, queries (db.orm / db.sql), runtime wiring (db.ts, middleware, DATABASE_URL), build-tool integration, Supabase / RLS, reading PN-* structured errors, or filing feedback — and for orientation questions like \"what is Prisma Next\" or comparisons to other ORMs. Signals that this skill applies: @internal/* imports, prisma.config.ts, contract.prisma / contract.json / contract.d.ts, the prisma-next CLI, PN-* error codes. Does not apply to Prisma ORM 7 or earlier (schema.prisma + @prisma/client projects).",
-      "githubUrl": "https://github.com/prisma/prisma/tree/main/skills/prisma-8",
-      "skillUrl": "https://skillsmp.com/creators/prisma/prisma/skills-prisma-8",
-      "stars": 47562,
-      "updatedAt": "1787391860"
+      "stars": 47695,
+      "updatedAt": "1792080493"
     },
     {
       "id": "apache-airflow-providers-common-ai-src-airflow-providers-common-ai-example-dags-skills-sql-reporting-skill-md",
@@ -1194,7 +1194,7 @@
       "description": "Conventions and review steps for writing analytics SQL against the warehouse. Use whenever the task involves querying tables, building a report, or aggregating metrics.",
       "githubUrl": "https://github.com/apache/airflow/tree/main/providers/common/ai/src/airflow/providers/common/ai/example_dags/skills/sql-reporting",
       "skillUrl": "https://skillsmp.com/creators/apache/airflow/providers-common-ai-src-airflow-providers-common-ai-example-dags-skills-sql-reporting",
-      "stars": 47147,
+      "stars": 47187,
       "updatedAt": "1780189637"
     },
     {
@@ -1214,7 +1214,7 @@
       "description": "CCXT cryptocurrency exchange library for PHP developers. Covers both REST API (standard) and WebSocket API (real-time). Helps install CCXT, connect to exchanges, fetch market data, place orders, stream live tickers/orderbooks, handle authentication, and manage errors in PHP 8.1+. Use when working with crypto exchanges in PHP projects, trading bots, or web applications. Supports both sync and async (ReactPHP) usage.",
       "githubUrl": "https://github.com/ccxt/ccxt/tree/master/.claude/skills/ccxt-php",
       "skillUrl": "https://skillsmp.com/creators/ccxt/ccxt/claude-skills-ccxt-php",
-      "stars": 44325,
+      "stars": 44393,
       "updatedAt": "1789990973"
     },
     {
@@ -1224,18 +1224,8 @@
       "description": "CCXT cryptocurrency exchange library for Rust developers. Covers both REST API (standard) and WebSocket API (real-time). Helps install CCXT, connect to exchanges, fetch market data, place orders, stream live tickers/orderbooks, handle authentication, and manage errors in Rust projects. Use when working with crypto exchanges in Rust applications, trading bots, or low-latency services. Async (tokio), typed wrappers returning Result\u003cT, ExchangeError\u003e.",
       "githubUrl": "https://github.com/ccxt/ccxt/tree/master/.claude/skills/ccxt-rust",
       "skillUrl": "https://skillsmp.com/creators/ccxt/ccxt/claude-skills-ccxt-rust",
-      "stars": 44325,
+      "stars": 44393,
       "updatedAt": "1789990973"
-    },
-    {
-      "id": "codewhale-hq-codewhale-crates-tui-assets-plugins-rust-toolkit-skills-rust-check-skill-md",
-      "name": "rust-check",
-      "author": "codewhale-hq",
-      "description": "Run cargo check on the current Rust project to find compile errors",
-      "githubUrl": "https://github.com/codewhale-hq/Codewhale/tree/main/crates/tui/assets/plugins/rust-toolkit/skills/rust-check",
-      "skillUrl": "https://skillsmp.com/creators/codewhale-hq/codewhale/crates-tui-assets-plugins-rust-toolkit-skills-rust-check",
-      "stars": 41078,
-      "updatedAt": "1782574465"
     },
     {
       "id": "zhaoxuya520-reverse-skill-ctf-sandbox-orchestrator-competition-k8s-control-plane-skill-md",
@@ -1244,7 +1234,7 @@
       "description": "Internal downstream skill for ctf-sandbox-orchestrator. CTF-sandbox workflow for Kubernetes API analysis, service-account trust, RBAC edges, admission and controller behavior, cluster secrets, workload mutation, and namespace-scoped drift. Use when the user asks to inspect kube API permissions, service-account tokens, RoleBinding or ClusterRoleBinding edges, admission webhooks, controller-created pods, secret exposure, or why live workloads differ from manifests. Use only after `$ctf-sandbox-orchestrator` has already established sandbox assumptions and routed here.",
       "githubUrl": "https://github.com/zhaoxuya520/reverse-skill/tree/main/CTF-Sandbox-Orchestrator/competition-k8s-control-plane",
       "skillUrl": "https://skillsmp.com/creators/zhaoxuya520/reverse-skill/ctf-sandbox-orchestrator-competition-k8s-control-plane",
-      "stars": 40891,
+      "stars": 42173,
       "updatedAt": "1786185153"
     },
     {
@@ -1254,7 +1244,7 @@
       "description": "Use for authorized cloud, container, and Kubernetes security assessment including metadata SSRF, IAM misconfig, container escape paths, and cluster RBAC review.",
       "githubUrl": "https://github.com/zhaoxuya520/reverse-skill/tree/main/skills/cloud-k8s",
       "skillUrl": "https://skillsmp.com/creators/zhaoxuya520/reverse-skill/skills-cloud-k8s",
-      "stars": 40891,
+      "stars": 42173,
       "updatedAt": "1786185153"
     },
     {
@@ -1264,8 +1254,18 @@
       "description": "Use for reverse engineering stripped Go and Rust binaries including runtime recognition, pclntab/moduel data recovery, panic strings, and idiomatic decompilation recovery.",
       "githubUrl": "https://github.com/zhaoxuya520/reverse-skill/tree/main/skills/go-rust-reverse",
       "skillUrl": "https://skillsmp.com/creators/zhaoxuya520/reverse-skill/skills-go-rust-reverse",
-      "stars": 40891,
+      "stars": 42173,
       "updatedAt": "1786185153"
+    },
+    {
+      "id": "codewhale-hq-codewhale-crates-tui-assets-plugins-rust-toolkit-skills-rust-check-skill-md",
+      "name": "rust-check",
+      "author": "codewhale-hq",
+      "description": "Run cargo check on the current Rust project to find compile errors",
+      "githubUrl": "https://github.com/codewhale-hq/Codewhale/tree/main/crates/tui/assets/plugins/rust-toolkit/skills/rust-check",
+      "skillUrl": "https://skillsmp.com/creators/codewhale-hq/codewhale/crates-tui-assets-plugins-rust-toolkit-skills-rust-check",
+      "stars": 41093,
+      "updatedAt": "1782574465"
     },
     {
       "id": "wshobson-agents-plugins-developer-essentials-skills-sql-optimization-patterns-skill-md",
@@ -1274,7 +1274,7 @@
       "description": "Master SQL query optimization, indexing strategies, and EXPLAIN analysis to dramatically improve database performance and eliminate slow queries. Use when debugging slow queries, designing database schemas, or optimizing application performance.",
       "githubUrl": "https://github.com/wshobson/agents/tree/main/plugins/developer-essentials/skills/sql-optimization-patterns",
       "skillUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-developer-essentials-skills-sql-optimization-patterns",
-      "stars": 40388,
+      "stars": 40870,
       "updatedAt": "1779452301"
     },
     {
@@ -1284,7 +1284,7 @@
       "description": "Implement GitOps workflows with ArgoCD and Flux for automated, declarative Kubernetes deployments with continuous reconciliation. Use when implementing GitOps practices, automating Kubernetes deployments, or setting up declarative infrastructure management.",
       "githubUrl": "https://github.com/wshobson/agents/tree/main/plugins/kubernetes-operations/skills/gitops-workflow",
       "skillUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-kubernetes-operations-skills-gitops-workflow",
-      "stars": 40388,
+      "stars": 40870,
       "updatedAt": "1791146571"
     },
     {
@@ -1294,7 +1294,7 @@
       "description": "Design, organize, and manage Helm charts for templating and packaging Kubernetes applications with reusable configurations. Use when creating Helm charts, packaging Kubernetes applications, or implementing templated deployments.",
       "githubUrl": "https://github.com/wshobson/agents/tree/main/plugins/kubernetes-operations/skills/helm-chart-scaffolding",
       "skillUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-kubernetes-operations-skills-helm-chart-scaffolding",
-      "stars": 40388,
+      "stars": 40870,
       "updatedAt": "1779452301"
     },
     {
@@ -1304,7 +1304,7 @@
       "description": "Containerize an ASP.NET .NET Framework project by creating Dockerfile and .dockerfile files customized for the project.",
       "githubUrl": "https://github.com/github/awesome-copilot/tree/main/skills/containerize-aspnet-framework",
       "skillUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-containerize-aspnet-framework",
-      "stars": 39919,
+      "stars": 40063,
       "updatedAt": "1771904373"
     },
     {
@@ -1314,7 +1314,7 @@
       "description": "Containerize an ASP.NET Core project by creating Dockerfile and .dockerfile files customized for the project.",
       "githubUrl": "https://github.com/github/awesome-copilot/tree/main/skills/containerize-aspnetcore",
       "skillUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-containerize-aspnetcore",
-      "stars": 39919,
+      "stars": 40063,
       "updatedAt": "1771904373"
     },
     {
@@ -1324,7 +1324,7 @@
       "description": "Use this skill when someone wants to learn GitHub Copilot CLI from scratch. Offers interactive step-by-step tutorials with separate Developer and Non-Developer tracks, plus on-demand Q\u0026A. Just say \"start tutorial\" or ask a question! Note: This skill targets GitHub Copilot CLI specifically and uses CLI-specific tools (ask_user, sql, fetch_copilot_cli_documentation).",
       "githubUrl": "https://github.com/github/awesome-copilot/tree/main/skills/copilot-cli-quickstart",
       "skillUrl": "https://skillsmp.com/creators/github/awesome-copilot/skills-copilot-cli-quickstart",
-      "stars": 39919,
+      "stars": 40063,
       "updatedAt": "1770928426"
     },
     {
@@ -1334,7 +1334,7 @@
       "description": "Harbor intake for external work — the captain only handles unresolved decisions. Sweeps incoming issues and PRs, verifies every claim before disposition, reuses every decision already made, and hands the maintainer a docket whose pending items each carry one question with options, recommendation, impact and evidence. Agent-autonomous for facts and for actions covered by standing authorization; signed for every new judgment. Never merges.",
       "githubUrl": "https://github.com/Yeachan-Heo/oh-my-claudecode/tree/main/skills/harbor",
       "skillUrl": "https://skillsmp.com/creators/yeachan-heo/oh-my-claudecode/skills-harbor",
-      "stars": 39789,
+      "stars": 39946,
       "updatedAt": "1790549495"
     },
     {
@@ -1368,24 +1368,24 @@
       "updatedAt": "1784727341"
     },
     {
-      "id": "patchy631-ai-engineering-hub-hugging-face-skills-skills-hugging-face-jobs-skill-md",
-      "name": "hugging-face-jobs",
-      "author": "patchy631",
-      "description": "This skill should be used when users want to run any workload on Hugging Face Jobs infrastructure. Covers UV scripts, Docker-based jobs, hardware selection, cost estimation, authentication with tokens, secrets management, timeout configuration, and result persistence. Designed for general-purpose compute workloads including data processing, inference, experiments, batch jobs, and any Python-based tasks. Should be invoked for tasks involving cloud compute, GPU workloads, or when users mention running jobs on Hugging Face infrastructure without local setup.",
-      "githubUrl": "https://github.com/patchy631/ai-engineering-hub/tree/main/hugging-face-skills/skills/hugging-face-jobs",
-      "skillUrl": "https://skillsmp.com/creators/patchy631/ai-engineering-hub/hugging-face-skills-skills-hugging-face-jobs",
-      "stars": 38286,
-      "updatedAt": "1769176896"
-    },
-    {
       "id": "triliumnext-trilium-claude-skills-maintaining-docker-hub-skill-md",
       "name": "maintaining-docker-hub",
       "author": "TriliumNext",
       "description": "Use when working on Trilium's published Docker images on Docker Hub or GHCR rather than on the Dockerfiles — \"how many pulls does the image get?\", \"why is the Docker Hub repository so big?\", \"clean up old tags\", \"delete untagged images\", \"which tags do we publish?\", the legacy repositories (triliumnext/notes, zadam/trilium) and their mirroring, the main-docker.yml copy-to-Docker-Hub step, mirror-legacy-docker.yml, Docker Hub categories, stars or the overview. Includes hub.mjs (stats, tag listing/deletion, the manifest inventory and a safe untagged-image purge, all dry-run by default) and the storage model that decides how a cleanup works. Do NOT use for building or running the image locally (see the Developer Guide's Docker page).",
       "githubUrl": "https://github.com/TriliumNext/Trilium/tree/main/.claude/skills/maintaining-docker-hub",
       "skillUrl": "https://skillsmp.com/creators/triliumnext/trilium/claude-skills-maintaining-docker-hub",
-      "stars": 38278,
+      "stars": 38343,
       "updatedAt": "1791049613"
+    },
+    {
+      "id": "patchy631-ai-engineering-hub-hugging-face-skills-skills-hugging-face-jobs-skill-md",
+      "name": "hugging-face-jobs",
+      "author": "patchy631",
+      "description": "This skill should be used when users want to run any workload on Hugging Face Jobs infrastructure. Covers UV scripts, Docker-based jobs, hardware selection, cost estimation, authentication with tokens, secrets management, timeout configuration, and result persistence. Designed for general-purpose compute workloads including data processing, inference, experiments, batch jobs, and any Python-based tasks. Should be invoked for tasks involving cloud compute, GPU workloads, or when users mention running jobs on Hugging Face infrastructure without local setup.",
+      "githubUrl": "https://github.com/patchy631/ai-engineering-hub/tree/main/hugging-face-skills/skills/hugging-face-jobs",
+      "skillUrl": "https://skillsmp.com/creators/patchy631/ai-engineering-hub/hugging-face-skills-skills-hugging-face-jobs",
+      "stars": 38331,
+      "updatedAt": "1769176896"
     },
     {
       "id": "mukul975-anthropic-cybersecurity-skills-skills-analyzing-docker-container-forensics-skill-md",
@@ -1394,7 +1394,7 @@
       "description": "Investigate compromised Docker containers by analyzing images, layers, volumes, logs, and runtime artifacts to identify malicious activity and evidence.",
       "githubUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/analyzing-docker-container-forensics",
       "skillUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-analyzing-docker-container-forensics",
-      "stars": 34233,
+      "stars": 34517,
       "updatedAt": "1785675654"
     },
     {
@@ -1404,7 +1404,7 @@
       "description": "Parses Kubernetes API server audit logs (JSON lines) to detect exec-into-pod, secret access, RBAC modifications, privileged pod creation, and anonymous API access, and builds SIEM detection rules from the event patterns. Use when investigating a suspected cluster compromise, reconstructing what an attacker did through the API server, or writing Kubernetes-specific detection content. Keywords: audit policy, audit log, kube-apiserver, exec into pod, RBAC change, anonymous access, detection rules. Do not use for syscall-level detection inside a running container - use detecting-container-runtime-threats-with-falco.\n'",
       "githubUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/analyzing-kubernetes-audit-logs",
       "skillUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-analyzing-kubernetes-audit-logs",
-      "stars": 34233,
+      "stars": 34517,
       "updatedAt": "1787498130"
     },
     {
@@ -1414,7 +1414,7 @@
       "description": "Auditing Kubernetes cluster RBAC configurations to identify overly permissive roles, wildcard permissions, dangerous ClusterRoleBindings, service account abuse, and privilege escalation paths using kubectl, rbac-tool, KubiScan, and Kubeaudit.",
       "githubUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/main/skills/auditing-kubernetes-cluster-rbac",
       "skillUrl": "https://skillsmp.com/creators/mukul975/anthropic-cybersecurity-skills/skills-auditing-kubernetes-cluster-rbac",
-      "stars": 34233,
+      "stars": 34517,
       "updatedAt": "1781964364"
     },
     {
@@ -1424,7 +1424,7 @@
       "description": "Comprehensive OWASP-aligned security guidance across six standards - Top 10 (2021) for web apps, ASVS 5.0, MASVS v2.1.0 for mobile, API Security Top 10 (2023), Kubernetes Top 10 (2022), and the Agentic Applications 2026 edition for AI/LLM. Use for security reviews, vulnerability audits, secure auth/crypto/access-control implementation, Kubernetes manifest hardening, and LLM/agent prompt-injection defense - including indirect requests like \"is this login flow secure?\", \"review this endpoint\", or \"audit my pod spec\".",
       "githubUrl": "https://github.com/davila7/claude-code-templates/tree/main/.claude-plugin/skills/owasp-security",
       "skillUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/claude-plugin-skills-owasp-security",
-      "stars": 32559,
+      "stars": 32672,
       "updatedAt": "1783371520"
     },
     {
@@ -1434,7 +1434,7 @@
       "description": "Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development.",
       "githubUrl": "https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/skills/development/cloud-devops",
       "skillUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-cloud-devops",
-      "stars": 32559,
+      "stars": 32672,
       "updatedAt": "1775344090"
     },
     {
@@ -1444,8 +1444,18 @@
       "description": "Implements infrastructure as code using Terraform, Kubernetes, and cloud platforms. Designs scalable architectures, CI/CD pipelines, and observability solutions. Provides security-first DevOps practices and site reliability engineering guidance.",
       "githubUrl": "https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/skills/development/devops-iac-engineer",
       "skillUrl": "https://skillsmp.com/creators/davila7/claude-code-templates/cli-tool-components-skills-development-devops-iac-engineer",
-      "stars": 32559,
+      "stars": 32672,
       "updatedAt": "1766259071"
+    },
+    {
+      "id": "onyx-dot-app-onyx-agents-skills-onyx-dev-stack-skill-md",
+      "name": "onyx-dev-stack",
+      "author": "onyx-dot-app",
+      "description": "Start, inspect, restart, or stop an isolated local Onyx development stack with ODS. Use for empty worktree setup, background services, dynamic ports, migrations, and coordinating agents across worktrees. Do not use for Kubernetes development.",
+      "githubUrl": "https://github.com/onyx-dot-app/onyx/tree/main/.agents/skills/onyx-dev-stack",
+      "skillUrl": "https://skillsmp.com/creators/onyx-dot-app/onyx/agents-skills-onyx-dev-stack",
+      "stars": 32503,
+      "updatedAt": "1792019139"
     },
     {
       "id": "symfony-symfony-agents-skills-hardening-rule-skill-md",
@@ -1454,28 +1464,8 @@
       "description": "Decide whether a recurring hardening invariant is worth a CI gate, and add it without hitting the traps. Covers PHPStan custom rules (implementation-shape checks) and the check-hardening-tests.php convention (test-presence checks). Use when the user says \"write a PHPStan rule\", \"add a hardening rule\", \"gate this pattern\", \"catch this in CI\", or wants to turn a finding into a durable check.",
       "githubUrl": "https://github.com/symfony/symfony/tree/8.2/.agents/skills/hardening-rule",
       "skillUrl": "https://skillsmp.com/creators/symfony/symfony/agents-skills-hardening-rule",
-      "stars": 31187,
+      "stars": 31193,
       "updatedAt": "1787315220"
-    },
-    {
-      "id": "abiosoft-colima-skills-skill-md",
-      "name": "colima",
-      "author": "abiosoft",
-      "description": "Guide to using Colima — container runtimes (Docker, containerd, Kubernetes, Incus) on macOS and Linux via lightweight Lima VMs. Use this skill whenever Colima is (or should be) the container backend: installing Colima; `colima start/stop/status/delete/ssh`; picking or switching a runtime; the `Cannot connect to the Docker daemon at unix:///var/run/docker.sock` error; Docker contexts and socket location; registry mirrors / insecure registries; buildx; bind or volume mounts that show up empty in the container; disk space recovery/resize; reachable VM IP; GPU / AI model workloads; config files, profiles and `COLIMA_HOME`; or a Colima VM that won't start. ALSO use it for **writing scripts that drive Colima** — bootstrap, dev-env, deploy, or CI scripts that bring Colima up non-interactively — because the skill has the correct flags, profile-specific socket paths, idempotent `colima start` guards, and readiness/teardown patterns that hand-written scripts routinely get wrong (e.g. inventing a non-existent flag or ha",
-      "githubUrl": "https://github.com/abiosoft/colima/tree/main/skills",
-      "skillUrl": "https://skillsmp.com/creators/abiosoft/colima/skills",
-      "stars": 31157,
-      "updatedAt": "1782291608"
-    },
-    {
-      "id": "simstudioai-sim-helm-sim-claude-skills-sim-helm-skill-md",
-      "name": "sim-helm",
-      "author": "simstudioai",
-      "description": "Install, upgrade, and operate the Sim Helm chart on Kubernetes. Covers install path selection (inline / existingSecret / External Secrets Operator), required secret generation, the values.yaml mental model (env vs envDefaults vs Secret), and common failure triage. Invoke when a user asks about deploying Sim to a cluster, authoring a Sim values.yaml, debugging a Sim pod that won't start, upgrading a Sim release, or wiring Sim into a secret manager.",
-      "githubUrl": "https://github.com/simstudioai/sim/tree/main/helm/sim/.claude/skills/sim-helm",
-      "skillUrl": "https://skillsmp.com/creators/simstudioai/sim/helm-sim-claude-skills-sim-helm",
-      "stars": 29805,
-      "updatedAt": "1787015795"
     },
     {
       "id": "alirezarezvani-claude-skills-engineering-team-skills-code-reviewer-skill-md",
@@ -1484,7 +1474,7 @@
       "description": "Code review automation for TypeScript, JavaScript, Python, Go, Swift, Kotlin, C#, .NET, Java, C, C++, Rust, Ruby, PHP, and Dart/Flutter. Analyzes PRs for complexity and risk, checks code quality for SOLID violations and code smells, generates review reports. Use when reviewing pull requests, analyzing code quality, identifying issues, generating review checklists.",
       "githubUrl": "https://github.com/alirezarezvani/claude-skills/tree/main/engineering-team/skills/code-reviewer",
       "skillUrl": "https://skillsmp.com/creators/alirezarezvani/claude-skills/engineering-team-skills-code-reviewer",
-      "stars": 28010,
+      "stars": 28245,
       "updatedAt": "1779978446"
     },
     {
@@ -1494,7 +1484,7 @@
       "description": "Use when writing or updating Krayin CRM tests (unit or feature), debugging test failures, using datasets, mocks or custom expectations, writing architecture tests, or when the user mentions test, spec, TDD, expects, assertion, or coverage. Uses the Pest PHP framework (v3) with Laravel 12.",
       "githubUrl": "https://github.com/krayin/laravel-crm/tree/2.2/.github/skills/pest-testing",
       "skillUrl": "https://skillsmp.com/creators/krayin/laravel-crm/github-skills-pest-testing",
-      "stars": 23997,
+      "stars": 24014,
       "updatedAt": "1780413784"
     },
     {
@@ -1504,7 +1494,7 @@
       "description": "CCXT cryptocurrency trading library. Use for cryptocurrency exchange APIs, trading, market data, order management, and crypto trading automation across 150+ exchanges. Supports JavaScript/Python/PHP.",
       "githubUrl": "https://github.com/2025Emma/vibe-coding-cn/tree/main/i18n/zh/skills/ccxt",
       "skillUrl": "https://skillsmp.com/creators/2025emma/vibe-coding-cn/i18n-zh-skills-ccxt",
-      "stars": 23044,
+      "stars": 23068,
       "updatedAt": "1765891813"
     },
     {
@@ -1514,8 +1504,8 @@
       "description": "MUST use when writing PHP scripts.",
       "githubUrl": "https://github.com/windmill-labs/windmill/tree/main/system_prompts/auto-generated/skills/write-script-php",
       "skillUrl": "https://skillsmp.com/creators/windmill-labs/windmill/system-prompts-auto-generated-skills-write-script-php",
-      "stars": 18160,
-      "updatedAt": "1791012798"
+      "stars": 18198,
+      "updatedAt": "1791966250"
     },
     {
       "id": "phpstan-phpstan-claude-skills-analyse-with-phpstan-skill-md",
@@ -1524,7 +1514,7 @@
       "description": "Analyse PHP code with PHPStan via the playground API. Tests across all PHP versions (7.2–8.5) and reports errors grouped by version. Supports configuring level, strict rules, and bleeding edge.",
       "githubUrl": "https://github.com/phpstan/phpstan/tree/2.3.x/.claude/skills/analyse-with-phpstan",
       "skillUrl": "https://skillsmp.com/creators/phpstan/phpstan/claude-skills-analyse-with-phpstan",
-      "stars": 14126,
+      "stars": 14129,
       "updatedAt": "1771672504"
     },
     {
@@ -1534,7 +1524,7 @@
       "description": "Execute PHP code on 3v4l.org to test runtime behavior across multiple PHP versions. Use when you need to verify what PHP actually does with a piece of code.",
       "githubUrl": "https://github.com/phpstan/phpstan/tree/2.3.x/.claude/skills/run-on-3v4l",
       "skillUrl": "https://skillsmp.com/creators/phpstan/phpstan/claude-skills-run-on-3v4l",
-      "stars": 14126,
+      "stars": 14129,
       "updatedAt": "1771672504"
     },
     {
@@ -1544,7 +1534,7 @@
       "description": "Port a WordPress theme's design and template behavior to an EmDash-powered Astro site. Use for theme migrations, design matching, PHP-template conversion, and CMS wiring. Do not use for WordPress plugin behavior that does not affect the site theme.",
       "githubUrl": "https://github.com/emdash-cms/emdash/tree/main/skills/wordpress-theme-to-emdash",
       "skillUrl": "https://skillsmp.com/creators/emdash-cms/emdash/skills-wordpress-theme-to-emdash",
-      "stars": 13564,
+      "stars": 13662,
       "updatedAt": "1791293408"
     },
     {
@@ -1554,7 +1544,7 @@
       "description": "Use when building, modifying, testing, documenting, or debugging Laravel spreadsheet exports and imports with maatwebsite/excel. Activate for every Laravel Excel feature: facade APIs, export/import classes, all concerns, queues, batches, multiple sheets, conditional sheets, headings, mapping, validation, failures, errors, chunking, batch inserts, upserts, CSV settings, value binders, read filters, formulas, charts, drawings, styles, events, properties, Scout exports, view exports, mapped cells, macros, Artisan generators, config/excel.php, temporary files, cache, transactions, cell middleware, Excel::fake(), PhpSpreadsheet integration, or package maintenance.",
       "githubUrl": "https://github.com/SpartnerNL/Laravel-Excel/tree/4.x/resources/boost/skills/laravel-excel",
       "skillUrl": "https://skillsmp.com/creators/spartnernl/laravel-excel/resources-boost-skills-laravel-excel",
-      "stars": 12700,
+      "stars": 12701,
       "updatedAt": "1783523390"
     },
     {
@@ -1564,7 +1554,7 @@
       "description": "Build and configure Laravel 10+ applications, including creating Eloquent models and relationships, implementing Sanctum authentication, configuring Horizon queues, designing RESTful APIs with API resources, and building reactive interfaces with Livewire. Use when creating Laravel models, setting up queue workers, implementing Sanctum auth flows, building Livewire components, optimising Eloquent queries, or writing Pest/PHPUnit tests for Laravel features.",
       "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/laravel-specialist",
       "skillUrl": "https://skillsmp.com/creators/jeffallan/claude-skills/skills-laravel-specialist",
-      "stars": 11820,
+      "stars": 11890,
       "updatedAt": "1791041054"
     },
     {
@@ -1574,8 +1564,8 @@
       "description": "Use when building PHP applications with modern PHP 8.3+ features, Laravel, or Symfony frameworks. Invokes strict typing, PHPStan level 9, async patterns with Swoole, and PSR standards. Creates controllers, configures middleware, generates migrations, writes PHPUnit/Pest tests, defines typed DTOs and value objects, sets up dependency injection, and scaffolds REST/GraphQL APIs. Use when working with Eloquent, Doctrine, Composer, Psalm, ReactPHP, or any PHP API development.",
       "githubUrl": "https://github.com/Jeffallan/claude-skills/tree/main/skills/php-pro",
       "skillUrl": "https://skillsmp.com/creators/jeffallan/claude-skills/skills-php-pro",
-      "stars": 11820,
-      "updatedAt": "1791041054"
+      "stars": 11890,
+      "updatedAt": "1792104054"
     },
     {
       "id": "arize-ai-phoenix-agents-skills-daytona-skill-md",
@@ -1584,8 +1574,8 @@
       "description": "Creates and manages isolated cloud sandboxes (secure code execution environments with dedicated runtimes) on the Daytona platform. Use when a task needs an isolated runtime, sandbox, secure compute, or Daytona SDK/API/CLI operations. Covers Python, TypeScript, Java, Go, and Ruby SDKs.",
       "githubUrl": "https://github.com/Arize-ai/phoenix/tree/main/.agents/skills/daytona",
       "skillUrl": "https://skillsmp.com/creators/arize-ai/phoenix/agents-skills-daytona",
-      "stars": 11785,
-      "updatedAt": "1790109283"
+      "stars": 11868,
+      "updatedAt": "1792063042"
     },
     {
       "id": "wordpress-gutenberg-agents-skills-testing-skill-md",
@@ -1594,7 +1584,7 @@
       "description": "Use when writing, running, or debugging tests in the Gutenberg repository — JavaScript unit tests (Jest), PHP tests (PHPUnit), or end-to-end tests (Playwright).",
       "githubUrl": "https://github.com/WordPress/gutenberg/tree/trunk/.agents/skills/testing",
       "skillUrl": "https://skillsmp.com/creators/wordpress/gutenberg/agents-skills-testing",
-      "stars": 11764,
+      "stars": 11771,
       "updatedAt": "1785362334"
     },
     {
@@ -1604,8 +1594,8 @@
       "description": "Add or modify WooCommerce backend PHP code following project conventions. Use when creating new classes, methods, hooks, or modifying existing backend code. **MUST be invoked before writing any PHP unit tests.**",
       "githubUrl": "https://github.com/woocommerce/woocommerce/tree/trunk/.ai/skills/woocommerce-backend-dev",
       "skillUrl": "https://skillsmp.com/creators/woocommerce/woocommerce/ai-skills-woocommerce-backend-dev",
-      "stars": 10547,
-      "updatedAt": "1788454910"
+      "stars": 10552,
+      "updatedAt": "1792046166"
     },
     {
       "id": "woocommerce-woocommerce-ai-skills-woocommerce-performance-skill-md",
@@ -1614,7 +1604,7 @@
       "description": "Identify performance issues in WooCommerce PHP code. Use when writing or reviewing code that loads collections of post-based objects (products, orders), renders product lists with images, reads multiple options in a loop or method, or writes SQL queries involving joins, aggregates, meta lookups, or range queries.",
       "githubUrl": "https://github.com/woocommerce/woocommerce/tree/trunk/.ai/skills/woocommerce-performance",
       "skillUrl": "https://skillsmp.com/creators/woocommerce/woocommerce/ai-skills-woocommerce-performance",
-      "stars": 10547,
+      "stars": 10552,
       "updatedAt": "1784269787"
     },
     {
@@ -1624,7 +1614,7 @@
       "description": "Execute read-only Ruby/Rails commands against Gumroad's production database for debugging and investigation. Use when the user needs to debug production issues, look up data, investigate user reports, check records, or query production state. Triggers on: \"check in prod\", \"debug this in prod\", \"look up user/purchase/product in production\", \"production console\", \"investigate in prod\", \"query production\", \"what's happening in prod\", \"look up a user by email\", \"who bought this product\", \"why is this user blocked\", \"find this sale/purchase\", \"how many X does Y have\", or any request to examine live Gumroad data — even when the user doesn't say \"prod\" explicitly.",
       "githubUrl": "https://github.com/antiwork/gumroad/tree/main/.agents/skills/gumroad-prod-console",
       "skillUrl": "https://skillsmp.com/creators/antiwork/gumroad/agents-skills-gumroad-prod-console",
-      "stars": 9844,
+      "stars": 9946,
       "updatedAt": "1790552140"
     },
     {
@@ -1634,7 +1624,7 @@
       "description": "PHP后端开发skill说明",
       "githubUrl": "https://github.com/crmeb/CRMEB/tree/master/.codebuddy/skills/php-api",
       "skillUrl": "https://skillsmp.com/creators/crmeb/crmeb/codebuddy-skills-php-api",
-      "stars": 9401,
+      "stars": 9415,
       "updatedAt": "1774249067"
     },
     {
@@ -1644,7 +1634,7 @@
       "description": "Create the PHP feature context class that implements step definitions for a domain, and register it in behat.yml. Covers the PHP implementation side of Behat tests. Trigger: \"create behat context for {Domain}\".",
       "githubUrl": "https://github.com/PrestaShop/PrestaShop/tree/develop/.ai/Component/Behat/skills/create-behat-context",
       "skillUrl": "https://skillsmp.com/creators/prestashop/prestashop/ai-component-behat-skills-create-behat-context",
-      "stars": 9226,
+      "stars": 9229,
       "updatedAt": "1777301508"
     },
     {
@@ -1654,7 +1644,7 @@
       "description": "Read the legacy `Admin{Domain}sController.php` without modifying it. Extract every field rendered, every action method, and every `Hook::exec()` call.",
       "githubUrl": "https://github.com/PrestaShop/PrestaShop/tree/develop/.ai/Component/Migration/skills/audit-legacy-controller",
       "skillUrl": "https://skillsmp.com/creators/prestashop/prestashop/ai-component-migration-skills-audit-legacy-controller",
-      "stars": 9226,
+      "stars": 9229,
       "updatedAt": "1777321351"
     },
     {
@@ -1664,7 +1654,7 @@
       "description": "How the SDK reference docs pipeline works — regenerating references for the Python/TypeScript/Go/Ruby SDKs, adding a new SDK language, and known gotchas. Use when working on docs generation, sdks/*/docs generators, or content/docs/reference.",
       "githubUrl": "https://github.com/hatchet-dev/hatchet/tree/main/.claude/skills/sdk-reference-docs",
       "skillUrl": "https://skillsmp.com/creators/hatchet-dev/hatchet/claude-skills-sdk-reference-docs",
-      "stars": 8099,
+      "stars": 8125,
       "updatedAt": "1788444318"
     },
     {
@@ -1674,7 +1664,7 @@
       "description": "Reviews Dolibarr PHP code for compliance with coding standards and security best practices, and fixes identified issues. Use when the user asks to review, audit, fix, or update code for Dolibarr, or mentions code quality, security vulnerabilities, or PSR-12 compliance.",
       "githubUrl": "https://github.com/Dolibarr/dolibarr/tree/develop/.agents/skills/skill-doli-code-review",
       "skillUrl": "https://skillsmp.com/creators/dolibarr/dolibarr/agents-skills-skill-doli-code-review",
-      "stars": 7715,
+      "stars": 7730,
       "updatedAt": "1789582560"
     },
     {
@@ -1684,7 +1674,7 @@
       "description": "Create interactive PHP test case scripts for Dolibarr ERP/CRM that allow users to setup test data, view results via direct links, and tear down (clean up) the data. Use when asked to create test data for Dolibarr issues or when users need to verify bug fixes in the web interface.",
       "githubUrl": "https://github.com/Dolibarr/dolibarr/tree/develop/.agents/skills/skill-doli-test-interactive",
       "skillUrl": "https://skillsmp.com/creators/dolibarr/dolibarr/agents-skills-skill-doli-test-interactive",
-      "stars": 7715,
+      "stars": 7730,
       "updatedAt": "1789134674"
     },
     {
@@ -1694,7 +1684,7 @@
       "description": "Creates or modify PHP unit tests for Dolibarr ERP/CRM functions and methods. Use when the user asks to add, write, create, or complete a PHPUnit test for Dolibarr, or mentions testing a specific function, method, or class in the Dolibarr codebase.",
       "githubUrl": "https://github.com/Dolibarr/dolibarr/tree/develop/.agents/skills/skill-doli-test-phpunit",
       "skillUrl": "https://skillsmp.com/creators/dolibarr/dolibarr/agents-skills-skill-doli-test-phpunit",
-      "stars": 7715,
+      "stars": 7730,
       "updatedAt": "1791493385"
     },
     {
@@ -1704,7 +1694,7 @@
       "description": "Detects timing side-channel vulnerabilities in cryptographic code. Use when implementing or reviewing crypto code, encountering division on secrets, secret-dependent branches, or constant-time programming questions in C, C++, Go, Rust, Swift, Java, Kotlin, C#, PHP, JavaScript, TypeScript, Python, or Ruby.",
       "githubUrl": "https://github.com/trailofbits/skills/tree/main/plugins/constant-time-analysis/skills/constant-time-analysis",
       "skillUrl": "https://skillsmp.com/creators/trailofbits/skills/plugins-constant-time-analysis-skills-constant-time-analysis",
-      "stars": 7477,
+      "stars": 7574,
       "updatedAt": "1789596309"
     },
     {
@@ -1714,7 +1704,7 @@
       "description": "Scans a codebase for security vulnerabilities using CodeQL's interprocedural data flow and taint tracking analysis. Triggers on \"run codeql\", \"codeql scan\", \"build codeql database\", \"SAST scan\", \"taint analysis\", \"dataflow analysis\", or \"find vulnerabilities in this repo\". Covers Python, JavaScript/TypeScript, Go, Java/Kotlin, C/C++, C#, Ruby, and Swift. Supports \"run all\" (security-and-quality + security-experimental) and \"important only\" (high-precision) scan modes, and creates data extension models for project-specific sources and sinks. For fast single-file pattern matching, or when no build is available for a compiled language, use the semgrep skill; to parse SARIF that already exists rather than produce it, use the sarif-parsing skill.",
       "githubUrl": "https://github.com/trailofbits/skills/tree/main/plugins/static-analysis/skills/codeql",
       "skillUrl": "https://skillsmp.com/creators/trailofbits/skills/plugins-static-analysis-skills-codeql",
-      "stars": 7477,
+      "stars": 7574,
       "updatedAt": "1789596309"
     },
     {
@@ -1724,7 +1714,7 @@
       "description": "Sets up and runs Ruzzy, Trail of Bits' coverage-guided Ruby fuzzer and the only production-ready one for the language. Covers harness structure, fuzzing pure Ruby and the native C extensions in gems, and sanitizer builds. Use when fuzzing a Ruby library or gem, testing a Ruby C extension for memory safety, or asking how to fuzz Ruby at all.",
       "githubUrl": "https://github.com/trailofbits/skills/tree/main/plugins/testing-handbook-skills/skills/ruzzy",
       "skillUrl": "https://skillsmp.com/creators/trailofbits/skills/plugins-testing-handbook-skills-skills-ruzzy",
-      "stars": 7477,
+      "stars": 7574,
       "updatedAt": "1789596309"
     },
     {
@@ -1734,7 +1724,7 @@
       "description": "Deep-dive offensive methodology for dependency confusion and namespace attacks across all major package ecosystems. Covers npm scope confusion exploiting the gap between public and private scoped packages and .npmrc misconfigurations where registry mappings fail to pin internal scopes exclusively. Addresses PyPI namespace attacks through --extra-index-url resolution ordering, NuGet feed priority exploitation when multiple package sources are configured without clear directives, Maven and Gradle repository ordering where artifact resolution traverses repositories sequentially, Go module proxy abuse through GOPROXY misconfiguration, Ruby gems namespace squatting, and Docker image tag confusion with unqualified image references. Provides complete proof-of-concept methodology using safe callbacks including DNS canary via interactsh or Burp Collaborator and HTTP beacon with no destructive payload. Covers reconnaissance techniques for discovering internal package names through GitHub repository analysis, error mess",
       "githubUrl": "https://github.com/SnailSploit/Claude-Red/tree/main/Skills/supply-chain/offensive-dependency-confusion",
       "skillUrl": "https://skillsmp.com/creators/snailsploit/claude-red/skills-supply-chain-offensive-dependency-confusion",
-      "stars": 7420,
+      "stars": 7544,
       "updatedAt": "1787671975"
     },
     {
@@ -1744,7 +1734,7 @@
       "description": "Insecure deserialization exploitation across Java, PHP, .NET, Python, Node.js, and Ruby. Covers gadget chain construction with ysoserial/phpggc/ysoserial.net, ObjectInputStream and BinaryFormatter sink identification, pickle __reduce__ RCE, phar:// wrapper abuse, Jackson polymorphic typing, Json.NET TypeNameHandling, ViewState tampering, node-serialize IIFE injection, Ruby Marshal.load and YAML.load gadgets, framework-specific chains for Spring/Hibernate/Laravel/Symfony, modern attack surfaces including Kubernetes admission webhooks and message queue consumers, WAF bypass through encoding layers and content-type manipulation, and serialVersionUID/JMX/RMI vectors. Activate when the engagement involves deserialization sinks, serialized data in cookies or request bodies, gadget chain development, magic method abuse, ysoserial payload generation, or any review of marshalling and unmarshalling logic in target applications.",
       "githubUrl": "https://github.com/SnailSploit/Claude-Red/tree/main/Skills/web/offensive-deserialization",
       "skillUrl": "https://skillsmp.com/creators/snailsploit/claude-red/skills-web-offensive-deserialization",
-      "stars": 7420,
+      "stars": 7544,
       "updatedAt": "1787671975"
     },
     {
@@ -1754,7 +1744,7 @@
       "description": "Set up Temporal Cloud and run a sample Workflow on it for the user, doing the work end to end. Use when the user wants to set up Temporal Cloud, get started on Temporal Cloud, install the unified Temporal CLI (prerelease cloud-cli), create a Cloud namespace or API key, clone a money-transfer sample app, write the client config TOML, or connect a local Worker to Temporal Cloud and run a sample Workflow. This is the Cloud setup path, not the local learning path (see temporal-getting-started). Covers Python, TypeScript, Go, Java, .NET, and Ruby SDKs.",
       "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/temporal/skills/temporal-cloud-setup",
       "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-temporal-skills-temporal-cloud-setup",
-      "stars": 7387,
+      "stars": 7454,
       "updatedAt": "1787777366"
     },
     {
@@ -1764,7 +1754,7 @@
       "description": "Develop, debug, and manage Temporal applications across Python, TypeScript, Go, Java, .NET, Ruby, and Rust. Use when the user is building workflows, activities, or workers with a Temporal SDK, debugging issues like non-determinism errors, stuck workflows, or activity retries, using Temporal CLI, Temporal Server, or Temporal Cloud, or working with durable execution concepts like signals, queries, heartbeats, versioning, continue-as-new, child workflows, or saga patterns. Also use when the user mentions \"run a Temporal workflow from the CLI\", \"start a dev server\", \"run temporal server start-dev\", \"temporal workflow start\", \"temporal workflow execute\", \"temporal workflow signal\", \"temporal workflow query\", \"temporal workflow update\".",
       "githubUrl": "https://github.com/openai/plugins/tree/main/plugins/temporal/skills/temporal-developer",
       "skillUrl": "https://skillsmp.com/creators/openai/plugins/plugins-temporal-skills-temporal-developer",
-      "stars": 7387,
+      "stars": 7454,
       "updatedAt": "1787777366"
     },
     {
@@ -1778,24 +1768,24 @@
       "updatedAt": "1780885354"
     },
     {
+      "id": "netalertx-netalertx-github-skills-devcontainer-services-skill-md",
+      "name": "restarting-netalertx-services",
+      "author": "netalertx",
+      "description": "Control NetAlertX services inside the devcontainer. Use this when asked to start backend, start frontend, start nginx, start php-fpm, start crond, stop services, restart services, or check if services are running.",
+      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/feat-proxmox_plugin/.github/skills/devcontainer-services",
+      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-devcontainer-services",
+      "stars": 7290,
+      "updatedAt": "1769377557"
+    },
+    {
       "id": "barryvdh-laravel-dompdf-resources-boost-skills-laravel-dompdf-skill-md",
       "name": "laravel-dompdf",
       "author": "barryvdh",
       "description": "Activate when the user is generating, downloading, streaming, saving, or configuring PDFs in a Laravel app with barryvdh/laravel-dompdf. Use for Pdf::loadView(), Pdf::loadHTML(), Pdf::loadFile(), output(), save(), stream(), download(), setPaper(), setOption(), setWarnings(), setPdfA(), addEmbeddedFile(), setAdditionalXmpRdf(), config/dompdf.php, vendor publishing, font configuration, remote asset loading, PDF/A, invoice PDFs, report exports, attachment rendering, or debugging DOMPDF output in Laravel.",
       "githubUrl": "https://github.com/barryvdh/laravel-dompdf/tree/master/resources/boost/skills/laravel-dompdf",
       "skillUrl": "https://skillsmp.com/creators/barryvdh/laravel-dompdf/resources-boost-skills-laravel-dompdf",
-      "stars": 7287,
+      "stars": 7284,
       "updatedAt": "1783581308"
-    },
-    {
-      "id": "netalertx-netalertx-github-skills-devcontainer-services-skill-md",
-      "name": "restarting-netalertx-services",
-      "author": "netalertx",
-      "description": "Control NetAlertX services inside the devcontainer. Use this when asked to start backend, start frontend, start nginx, start php-fpm, start crond, stop services, restart services, or check if services are running.",
-      "githubUrl": "https://github.com/netalertx/NetAlertX/tree/main/.github/skills/devcontainer-services",
-      "skillUrl": "https://skillsmp.com/creators/netalertx/netalertx/github-skills-devcontainer-services",
-      "stars": 7268,
-      "updatedAt": "1769377557"
     },
     {
       "id": "elementor-elementor-cursor-skills-extend-prop-types-skill-md",
@@ -1804,7 +1794,7 @@
       "description": "External: Add or extend a prop type from a third-party plugin. Description also covers transformers for render/import/export. PHP Prop_Type, createPropUtils, atomic-widgets hooks.",
       "githubUrl": "https://github.com/elementor/elementor/tree/main/.cursor/skills/extend-prop-types",
       "skillUrl": "https://skillsmp.com/creators/elementor/elementor/cursor-skills-extend-prop-types",
-      "stars": 7087,
+      "stars": 7091,
       "updatedAt": "1787481420"
     },
     {
@@ -1814,7 +1804,7 @@
       "description": "Implementation specialist for the mongodb/laravel-mongodb package. Triggers on \"Laravel MongoDB\", \"mongodb/laravel-mongodb\", \"Eloquent MongoDB\", \"MongoDB model\", \"_id\", \"ObjectId in Laravel\", \"MongoDB queue/cache/session driver\", \"Atlas Search Laravel\", \"Laravel Scout MongoDB\", \"embedsMany\", \"embedsOne\", \"withCount MongoDB\", \"distinct MongoDB\", \"distinct array MongoDB\", \"get unique values MongoDB\", \"Laravel aggregation pipeline\", \"cross-database relationship MongoDB\". Corrects LLM mistakes when MySQL/Eloquent patterns are applied to MongoDB. Do NOT use this skill for the raw PHP MongoDB driver or mongodb/mongodb library without Laravel, for MongoDB schema design and data-modelling decisions (embed vs reference, unbounded arrays), for MongoDB Atlas infrastructure or cluster/index management via the UI or Admin API, for query performance tuning and index selection, or for non-Laravel PHP frameworks (Symfony, CodeIgniter, plain PHP).",
       "githubUrl": "https://github.com/mongodb/laravel-mongodb/tree/5.x/resources/boost/skills/laravel-mongodb",
       "skillUrl": "https://skillsmp.com/creators/mongodb/laravel-mongodb/resources-boost-skills-laravel-mongodb",
-      "stars": 7065,
+      "stars": 7063,
       "updatedAt": "1791361065"
     },
     {
@@ -1824,7 +1814,7 @@
       "description": "Generates or updates Sorbet inline type signatures directly in Ruby source files using sig blocks. Triggers when creating, updating, or maintaining inline type signatures for Ruby source files.",
       "githubUrl": "https://github.com/midudev/autoskills/tree/main/packages/autoskills/skills-registry/generating-sorbet-inline",
       "skillUrl": "https://skillsmp.com/creators/midudev/autoskills/packages-autoskills-skills-registry-generating-sorbet-inline",
-      "stars": 6948,
+      "stars": 6952,
       "updatedAt": "1777059413"
     },
     {
@@ -1834,18 +1824,18 @@
       "description": "Generates or updates Sorbet type signatures in separate .rbi files. Triggers when creating, updating, or maintaining type signatures for Ruby source files.",
       "githubUrl": "https://github.com/midudev/autoskills/tree/main/packages/autoskills/skills-registry/generating-sorbet",
       "skillUrl": "https://skillsmp.com/creators/midudev/autoskills/packages-autoskills-skills-registry-generating-sorbet",
-      "stars": 6948,
+      "stars": 6952,
       "updatedAt": "1777059413"
     },
     {
-      "id": "midudev-autoskills-packages-autoskills-skills-registry-laravel-specialist-skill-md",
-      "name": "laravel-specialist",
+      "id": "midudev-autoskills-packages-autoskills-skills-registry-php-pro-skill-md",
+      "name": "php-pro",
       "author": "midudev",
-      "description": "Build and configure Laravel 10+ applications, including creating Eloquent models and relationships, implementing Sanctum authentication, configuring Horizon queues, designing RESTful APIs with API resources, and building reactive interfaces with Livewire. Use when creating Laravel models, setting up queue workers, implementing Sanctum auth flows, building Livewire components, optimising Eloquent queries, or writing Pest/PHPUnit tests for Laravel features.",
-      "githubUrl": "https://github.com/midudev/autoskills/tree/main/packages/autoskills/skills-registry/laravel-specialist",
-      "skillUrl": "https://skillsmp.com/creators/midudev/autoskills/packages-autoskills-skills-registry-laravel-specialist",
-      "stars": 6948,
-      "updatedAt": "1777539529"
+      "description": "Use when building PHP applications with modern PHP 8.3+ features, Laravel, or Symfony frameworks. Invokes strict typing, PHPStan level 9, async patterns with Swoole, and PSR standards. Creates controllers, configures middleware, generates migrations, writes PHPUnit/Pest tests, defines typed DTOs and value objects, sets up dependency injection, and scaffolds REST/GraphQL APIs. Use when working with Eloquent, Doctrine, Composer, Psalm, ReactPHP, or any PHP API development.",
+      "githubUrl": "https://github.com/midudev/autoskills/tree/main/packages/autoskills/skills-registry/php-pro",
+      "skillUrl": "https://skillsmp.com/creators/midudev/autoskills/packages-autoskills-skills-registry-php-pro",
+      "stars": 6952,
+      "updatedAt": "1791981606"
     },
     {
       "id": "instructure-canvas-lms-claude-skills-rspec-skill-md",
@@ -1854,7 +1844,7 @@
       "description": "MUST use this skill when writing, reviewing, or modifying Ruby RSpec tests (*_spec.rb) in Canvas",
       "githubUrl": "https://github.com/instructure/canvas-lms/tree/master/.claude/skills/rspec",
       "skillUrl": "https://skillsmp.com/creators/instructure/canvas-lms/claude-skills-rspec",
-      "stars": 6863,
+      "stars": 6873,
       "updatedAt": "1774547449"
     },
     {
@@ -1864,7 +1854,7 @@
       "description": "Update Ruby gem dependencies",
       "githubUrl": "https://github.com/instructure/canvas-lms/tree/master/.claude/skills/update-gems",
       "skillUrl": "https://skillsmp.com/creators/instructure/canvas-lms/claude-skills-update-gems",
-      "stars": 6863,
+      "stars": 6873,
       "updatedAt": "1774547510"
     },
     {
@@ -1874,7 +1864,7 @@
       "description": "Reproduce a GitHub Actions Linux CI failure locally when it does not happen on your machine: a podman/docker image that mirrors the ubuntu-22.04 runner by reusing the real Tools/CI-linux-*.sh install scripts, parameterised by target language and version. Covers the helper Tools/ci-repro/run.sh, the act fallback, and a worked Ruby 3.3 example.",
       "githubUrl": "https://github.com/swig/swig/tree/master/.agents/skills/swig-ci-repro",
       "skillUrl": "https://skillsmp.com/creators/swig/swig/agents-skills-swig-ci-repro",
-      "stars": 6331,
+      "stars": 6328,
       "updatedAt": "1780253351"
     },
     {
@@ -1884,18 +1874,28 @@
       "description": "Hunt insecure deserialization (CWE-502) across Python pickle, Java ObjectInputStream / Jackson / SnakeYAML, .NET BinaryFormatter / DataContractJson, PHP unserialize, Ruby Marshal/YAML.load, and Node.js vm. Direct path to unauthenticated RCE.",
       "githubUrl": "https://github.com/BitterSecurity/Decepticon/tree/main/packages/decepticon/decepticon/skills/standard/analyst/deserialization",
       "skillUrl": "https://skillsmp.com/creators/bittersecurity/decepticon/packages-decepticon-decepticon-skills-standard-analyst-deserialization",
-      "stars": 5912,
+      "stars": 6149,
       "updatedAt": "1780422138"
     },
     {
-      "id": "bittersecurity-decepticon-packages-decepticon-decepticon-skills-standard-exploit-web-ssti-skill-md",
-      "name": "exploit-ssti",
+      "id": "bittersecurity-decepticon-packages-decepticon-decepticon-skills-standard-exploit-web-deserialization-skill-md",
+      "name": "exploit-deserialization",
       "author": "BitterSecurity",
-      "description": "Server-Side Template Injection (SSTI) — RCE through template engines. Covers Jinja2 (Python/Flask), Twig (PHP/Symfony), Freemarker (Java), ERB (Ruby), Razor (.NET). Includes engine fingerprinting, MRO chain construction, and filter bypass.",
-      "githubUrl": "https://github.com/BitterSecurity/Decepticon/tree/main/packages/decepticon/decepticon/skills/standard/exploit/web/ssti",
-      "skillUrl": "https://skillsmp.com/creators/bittersecurity/decepticon/packages-decepticon-decepticon-skills-standard-exploit-web-ssti",
-      "stars": 5912,
+      "description": "Insecure deserialization — RCE via malicious serialized objects in Java (ysoserial), PHP (PHPGGC), .NET (ysoserial.net), and Python (pickle). Covers gadget chain selection, payload generation, and injection into cookies, POST bodies, ViewState, and API endpoints.",
+      "githubUrl": "https://github.com/BitterSecurity/Decepticon/tree/main/packages/decepticon/decepticon/skills/standard/exploit/web/deserialization",
+      "skillUrl": "https://skillsmp.com/creators/bittersecurity/decepticon/packages-decepticon-decepticon-skills-standard-exploit-web-deserialization",
+      "stars": 6149,
       "updatedAt": "1780426654"
+    },
+    {
+      "id": "bittersecurity-decepticon-packages-decepticon-decepticon-skills-standard-exploit-web-php-type-juggling-skill-md",
+      "name": "php-type-juggling",
+      "author": "BitterSecurity",
+      "description": "PHP type juggling and magic hash attacks — exploit loose comparison (==) with 0e-prefixed hash collisions and NULL returns to bypass authentication.",
+      "githubUrl": "https://github.com/BitterSecurity/Decepticon/tree/main/packages/decepticon/decepticon/skills/standard/exploit/web/php-type-juggling",
+      "skillUrl": "https://skillsmp.com/creators/bittersecurity/decepticon/packages-decepticon-decepticon-skills-standard-exploit-web-php-type-juggling",
+      "stars": 6149,
+      "updatedAt": "1780104565"
     },
     {
       "id": "dotnet-skills-plugins-dotnet-test-skills-find-untested-sources-skill-md",
@@ -1904,18 +1904,8 @@
       "description": "MANDATORY for static source-to-test pairing: find or list source files/modules without corresponding tests, or suggest test locations from repository structure. Invoke even for a tiny package; do not substitute manual globbing. Uses Roslyn for C#/.NET and tree-sitter for Python, TS/JS, Go, Java, Rust, Ruby, Kotlin, Swift, PowerShell, and C++. DO NOT USE FOR: real line/branch/Cobertura data, coverage-backed test priorities, CRAP risk, or grading existing tests.",
       "githubUrl": "https://github.com/dotnet/skills/tree/main/plugins/dotnet-test/skills/find-untested-sources",
       "skillUrl": "https://skillsmp.com/creators/dotnet/skills/plugins-dotnet-test-skills-find-untested-sources",
-      "stars": 5603,
-      "updatedAt": "1788877972"
-    },
-    {
-      "id": "dotnet-skills-plugins-dotnet-test-skills-grade-tests-skill-md",
-      "name": "grade-tests",
-      "author": "dotnet",
-      "description": "Grade a curated list of individual tests for readiness, A-F quality, and concrete improvements. ALWAYS USE FOR: grade tests, review only a named test, per-test readiness decisions, or quality bands for supplied methods, bodies, file spans, or bounded PR diffs, including existing tests. Produce a PR-ready Pass, Failed, Uncertain, or Not applicable table; unresolved or empty scopes omit the grade. Compose read-only per-test mutation evidence when available. Polyglot: .NET, Python, TS/JS, Java, Go, Ruby, Rust, Swift, Kotlin, PowerShell, C++. DO NOT USE FOR: suite-wide audits (test-engineer or test-anti-patterns), writing or fixing tests, or measuring coverage.",
-      "githubUrl": "https://github.com/dotnet/skills/tree/main/plugins/dotnet-test/skills/grade-tests",
-      "skillUrl": "https://skillsmp.com/creators/dotnet/skills/plugins-dotnet-test-skills-grade-tests",
-      "stars": 5603,
-      "updatedAt": "1791573518"
+      "stars": 5647,
+      "updatedAt": "1791795555"
     },
     {
       "id": "dotnet-skills-plugins-dotnet-test-skills-test-smell-detection-skill-md",
@@ -1924,7 +1914,7 @@
       "description": "Audits existing tests in any language using formal, research-backed test smell names and the testsmells.org 19-smell academic taxonomy. Use when the caller asks for an academic or citable test-smell review, named smell categories, or a formal severity-ranked smell assessment. Covers Assertion Roulette, Conditional Test Logic, Mystery Guest, Eager Test, Sleepy Test, Unknown Test, Sensitive Equality, and the rest of the catalog across .NET, Python, JavaScript/TypeScript, Java, Go, Ruby, Rust, Swift, Kotlin, PowerShell, and C++. DO NOT USE FOR a quick pragmatic test review (use test-anti-patterns), writing or running tests, framework migration, coverage, or assertion-diversity metrics.",
       "githubUrl": "https://github.com/dotnet/skills/tree/main/plugins/dotnet-test/skills/test-smell-detection",
       "skillUrl": "https://skillsmp.com/creators/dotnet/skills/plugins-dotnet-test-skills-test-smell-detection",
-      "stars": 5603,
+      "stars": 5647,
       "updatedAt": "1791573518"
     },
     {
@@ -1934,7 +1924,7 @@
       "description": "Avoid common Ruby and Rails antipatterns that degrade maintainability and performance. Use when writing new code, reviewing PRs, or refactoring existing code in Doorkeeper.",
       "githubUrl": "https://github.com/doorkeeper-gem/doorkeeper/tree/main/.agents/skills/antipattern-prevention",
       "skillUrl": "https://skillsmp.com/creators/doorkeeper-gem/doorkeeper/agents-skills-antipattern-prevention",
-      "stars": 5523,
+      "stars": 5524,
       "updatedAt": "1786972758"
     },
     {
@@ -1954,7 +1944,7 @@
       "description": "Complete bug bounty workflow — recon (subdomain enumeration, asset discovery, fingerprinting, HackerOne scope, source code audit), pre-hunt learning (disclosed reports, tech stack research, mind maps, threat modeling), vulnerability hunting (IDOR, SSRF, XSS, auth bypass, CSRF, race conditions, SQLi, XXE, file upload, business logic, GraphQL, HTTP smuggling, cache poisoning, OAuth, timing side-channels, OIDC, SSTI, subdomain takeover, cloud misconfig, ATO chains, agentic AI), LLM/AI security testing (chatbot IDOR, prompt injection, indirect injection, ASCII smuggling, exfil channels, RCE via code tools, system prompt extraction, ASI01-ASI10), A-to-B bug chaining (IDOR→auth bypass, SSRF→cloud metadata, XSS→ATO, open redirect→OAuth theft, S3→bundle→secret→OAuth), bypass tables (SSRF IP bypass, open redirect bypass, file upload bypass), language-specific grep (JS prototype pollution, Python pickle, PHP type juggling, Go template.HTML, Ruby YAML.load, Rust unwrap), and reporting (7-Question Gate, 4 validation gate",
       "githubUrl": "https://github.com/elementalsouls/Claude-BugHunter/tree/main/skills/bug-bounty",
       "skillUrl": "https://skillsmp.com/creators/elementalsouls/claude-bughunter/skills-bug-bounty",
-      "stars": 4910,
+      "stars": 5118,
       "updatedAt": "1787587052"
     },
     {
@@ -1964,7 +1954,7 @@
       "description": "Hunt Insecure Deserialization — Java gadget chains (ysoserial), PHP object injection (phpggc), Python pickle RCE, .NET BinaryFormatter, Ruby Marshal.load, JNDI/Log4Shell. RCE via deserialization is almost always Critical. Use when target runs Java, PHP serialization, Python pickle, .NET, or Ruby on Rails.",
       "githubUrl": "https://github.com/elementalsouls/Claude-BugHunter/tree/main/skills/hunt-deserialization",
       "skillUrl": "https://skillsmp.com/creators/elementalsouls/claude-bughunter/skills-hunt-deserialization",
-      "stars": 4910,
+      "stars": 5118,
       "updatedAt": "1787608898"
     },
     {
@@ -1974,7 +1964,7 @@
       "description": "Contribute to the RubyLLM AI framework - set up the repo, run and record specs, work on conversations, individual AI operations, providers, protocols, Rails integration, and docs. Use when fixing a bug, building a feature, writing specs, or changing documentation in the RubyLLM codebase.",
       "githubUrl": "https://github.com/crmne/ruby_llm/tree/main/.claude/skills/contributing",
       "skillUrl": "https://skillsmp.com/creators/crmne/ruby_llm/claude-skills-contributing",
-      "stars": 4453,
+      "stars": 4466,
       "updatedAt": "1791113439"
     },
     {
@@ -1984,8 +1974,8 @@
       "description": "Build and maintain Ruby or Rails applications with the RubyLLM AI framework. Use for chats, agents, tools, MCP servers, structured output, judgments, evaluations, media generation, transcription, OCR, moderation, embeddings, reranking, tracing, Rails integration, and RubyLLM upgrades; not for contributing to the framework itself.",
       "githubUrl": "https://github.com/crmne/ruby_llm/tree/main/skills/rubyllm",
       "skillUrl": "https://skillsmp.com/creators/crmne/ruby_llm/skills-rubyllm",
-      "stars": 4453,
-      "updatedAt": "1791320563"
+      "stars": 4466,
+      "updatedAt": "1792069922"
     },
     {
       "id": "danbooru-danbooru-github-skills-update-dependencies-skill-md",
@@ -1994,7 +1984,7 @@
       "description": "Update Ruby gems or JavaScript packages. Use for upgrading one or all outdated dependencies with Bundler or npm, reviewing changelogs and breaking changes, and running verification after dependency updates.",
       "githubUrl": "https://github.com/danbooru/danbooru/tree/master/.github/skills/update-dependencies",
       "skillUrl": "https://skillsmp.com/creators/danbooru/danbooru/github-skills-update-dependencies",
-      "stars": 2823,
+      "stars": 2828,
       "updatedAt": "1774919470"
     },
     {
@@ -2004,7 +1994,7 @@
       "description": "Operational arsenal for external red-team and bug-bounty reconnaissance. Concrete wordlists (28 Swagger paths, 13 GraphQL paths, 35 high-risk ports, 6 missing-header findings, 15 always-on HTTP checks, 5 SAML paths, cloud bucket permutations, JS guess-paths, vendor product fingerprints for Citrix/F5/Pulse/Fortinet/Cisco/PaloAlto/VMware/Exchange, cloud-native service fingerprints, container/K8s exposure paths, CI/CD platform paths, documentation/wiki leak paths, WHOIS/RDAP, DNS record catalog, Wayback CDX recipes), 80-pattern secret-regex catalog (incl. modern AI API keys: Anthropic/OpenAI/HuggingFace/Cloudflare/DigitalOcean/npm/PyPI/Docker Hub/Atlassian/DataDog/Sentry/ngrok; plus a provider-expansion tier: Postman PMAK/GitLab/Square/Shopify/Mailchimp/PagerDuty/Asana/Databricks/Grafana/Terraform Cloud/Fastly/Algolia/Segment/Airtable/GCP+Google OAuth/Azure AD/Facebook OAuth/RubyGems/JFrog/Okta/Slack app-level/Dropbox/Doppler/HashiCorp Vault/Firebase Cloud Messaging), 80+ dork corpus across 9 categories, GitHub ",
       "githubUrl": "https://github.com/elementalsouls/Claude-OSINT/tree/main/skills/offensive-osint",
       "skillUrl": "https://skillsmp.com/creators/elementalsouls/claude-osint/skills-offensive-osint",
-      "stars": 2800,
+      "stars": 2822,
       "updatedAt": "1787588482"
     },
     {
@@ -2066,6 +2056,56 @@
       "skillUrl": "https://skillsmp.com/creators/leoyeai/openclaw-master-skills/skills-phy-regex-audit",
       "stars": 2160,
       "updatedAt": "1779674443"
+    },
+    {
+      "id": "awesome-skills-code-review-skill-skill-md",
+      "name": "code-review-skill",
+      "author": "awesome-skills",
+      "description": "Provides comprehensive code review guidance for React 19, Vue 3, Angular 17+, Svelte 5,\nRust, TypeScript, Java, Java 8, PHP, Ruby, Rails, Python, Django, FastAPI, Go, C#/.NET, Kotlin, Swift,\nDart, Flutter, NestJS, C/C++, Zig, CSS/Less/Sass, Qt, and more.\nCovers architecture review, performance review, security audit, code quality anti-patterns,\nand common bugs across all ecosystems.\nUse when: reviewing pull requests, conducting PR reviews, code review, reviewing code changes,\nestablishing review standards, mentoring developers, architecture reviews, security audits,\nperformance reviews, checking code quality, finding bugs, giving feedback on code.",
+      "githubUrl": "https://github.com/awesome-skills/code-review-skill/tree/main",
+      "skillUrl": "https://skillsmp.com/creators/awesome-skills/code-review-skill/skill",
+      "stars": 2106,
+      "updatedAt": "1788880185"
+    },
+    {
+      "id": "carapace-sh-carapace-bin-skills-rails-skill-md",
+      "name": "rails",
+      "author": "carapace-sh",
+      "description": "Use when working with the Rails CLI — commands, generators, database tasks, test subcommands, rake tasks, flags, and argument completion. Triggers on: \"rails\", \"Ruby on Rails\", \"bin/rails\", \"rails new\", \"rails generate\", \"rails server\", \"rails console\", \"rails dbconsole\", \"rails runner\", \"rails test\", \"rails routes\", \"rails destroy\", \"rails db\", \"rails credentials\", \"rails middleware\", \"rails notes\", \"rails dev:cache\", \"rails restart\", \"rails secret\", \"rails stats\", \"rails about\", \"rails boot\", \"rails initializers\", \"rails plugin\", \"rails tmp\", \"rails version\", \"rails devcontainer\", \"rails encrypted\", \"rails zeitwerk\", \"rails yarn\", \"rails scaffold\", \"rails model\", \"rails migration\", \"rails controller\", \"rails resource\", \"rails job\", \"rails mailer\", \"rails channel\", \"railsrc\", \".railsrc\", \"config/database.yml\".",
+      "githubUrl": "https://github.com/carapace-sh/carapace-bin/tree/master/skills/rails",
+      "skillUrl": "https://skillsmp.com/creators/carapace-sh/carapace-bin/skills-rails",
+      "stars": 1990,
+      "updatedAt": "1784141973"
+    },
+    {
+      "id": "carapace-sh-carapace-bin-skills-ruby-skill-md",
+      "name": "ruby",
+      "author": "carapace-sh",
+      "description": "Use when working with Ruby — the dynamic, object-oriented language and its runtime (MRI/CRuby). Covers the object model, metaprogramming, core types, blocks/procs/lambdas, control flow and exceptions, I/O and encoding, the concurrency model (Threads, Fibers, Ractors, GVL), garbage collection and ObjectSpace, the RubyGems/Bundler package system, the interpreter CLI and tooling (irb, erb, rake, rdoc/ri), environment variables, and the standard library. Triggers on: \"ruby\", \"Ruby\", \"MRI\", \"CRuby\", \"YARV\", \"Ripper\", \"object model\", \"method lookup\", \"eigenclass\", \"singleton class\", \"metaprogramming\", \"define_method\", \"method_missing\", \"class_eval\", \"instance_eval\", \"Refinements\", \"Binding\", \"Proc\", \"lambda\", \"block\", \"yield\", \"rescue\", \"ensure\", \"raise\", \"begin\", \"end\", \"Encoding\", \"String#encode\", \"Thread\", \"Fiber\", \"Ractor\", \"GVL\", \"GIL\", \"Mutex\", \"ObjectSpace\", \"GC\", \"WeakRef\", \"gem\", \"Gemfile\", \"Bundler\", \"gemspec\", \"bundle exec\", \"irb\", \"erb\", \"rake\", \"Rakefile\", \"rdoc\", \"ri\", \"RUBYOPT\", \"RUBYLIB\", \"GEM_HOME\"",
+      "githubUrl": "https://github.com/carapace-sh/carapace-bin/tree/master/skills/ruby",
+      "skillUrl": "https://skillsmp.com/creators/carapace-sh/carapace-bin/skills-ruby",
+      "stars": 1990,
+      "updatedAt": "1784141973"
+    },
+    {
+      "id": "dicklesworthstone-pi-agent-rust-tests-ext-conformance-artifacts-agents-mikeastock-skills-sandi-metz-rules-skill-md",
+      "name": "sandi-metz-rules",
+      "author": "Dicklesworthstone",
+      "description": "This skill should be used when users request code review, refactoring, or code quality improvements for Ruby codebases. Apply Sandi Metz's four rules for writing maintainable object-oriented code - classes under 100 lines, methods under 5 lines, no more than 4 parameters, and controllers instantiate only one object. Use when users mention \"Sandi Metz\", \"code quality\", \"refactoring\", or when reviewing Ruby code for maintainability.",
+      "githubUrl": "https://github.com/Dicklesworthstone/pi_agent_rust/tree/main/tests/ext_conformance/artifacts/agents-mikeastock/skills/sandi-metz-rules",
+      "skillUrl": "https://skillsmp.com/creators/dicklesworthstone/pi_agent_rust/tests-ext-conformance-artifacts-agents-mikeastock-skills-sandi-metz-rules",
+      "stars": 1895,
+      "updatedAt": "1770274565"
+    },
+    {
+      "id": "mapletechlabs-maple-skills-maple-agent-tracing-opentelemetry-skill-md",
+      "name": "maple-agent-tracing-opentelemetry",
+      "author": "MapleTechLabs",
+      "description": "Trace a hand-rolled or unsupported AI agent with Maple by emitting the OpenTelemetry GenAI conventions yourself (invoke_agent, chat, execute_tool spans) in any language: TypeScript, Python, Go, Rust, Ruby, Elixir, Java, .NET. Triggers on 'trace my custom agent', 'add Maple to my agent loop', 'agent sessions without a framework', 'OpenTelemetry GenAI spans by hand', 'OpenTelemetry for my AI agent in Go/Rust/Ruby'.",
+      "githubUrl": "https://github.com/MapleTechLabs/maple/tree/main/skills/maple-agent-tracing-opentelemetry",
+      "skillUrl": "https://skillsmp.com/creators/mapletechlabs/maple/skills-maple-agent-tracing-opentelemetry",
+      "stars": 1838,
+      "updatedAt": "1791976948"
     }
   ]
 }
