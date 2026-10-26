@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-10-19T11:30:15Z",
+  "generated": "2026-10-26T11:49:24Z",
   "seeds": [
     "Go",
     "Python",
@@ -18,34 +18,34 @@
   ],
   "skills": [
     {
-      "id": "openclaw-openclaw-agents-skills-auto-qa-skill-md",
-      "name": "auto-qa",
+      "id": "openclaw-openclaw-agents-skills-graincrawl-skill-md",
+      "name": "graincrawl",
       "author": "openclaw",
-      "description": "Continuously audit, live-test, and stress-test the current OpenClaw codebase across at least ten independently scoped subsystem lanes; default to 100 independently verified, landed root-cause fixes, maintain an evidence-backed report, and announce each merged pull request immediately. Use for OpenClaw-wide autonomous QA, live-provider campaigns, gateway, CLI, web, plugin, native-app, scenario, packaging, and extended soak testing.",
-      "githubUrl": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/auto-qa",
-      "skillUrl": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-auto-qa",
+      "description": "Granola archive: search, sync freshness, notes, transcripts, panels, SQL counts, and Graincrawl repo work.",
+      "githubUrl": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/graincrawl",
+      "skillUrl": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-graincrawl",
       "stars": 392094,
-      "updatedAt": "1786893904"
+      "updatedAt": "1779016703"
     },
     {
-      "id": "openclaw-openclaw-agents-skills-autoreview-skill-md",
-      "name": "autoreview",
+      "id": "openclaw-openclaw-agents-skills-notcrawl-skill-md",
+      "name": "notcrawl",
       "author": "openclaw",
-      "description": "Structured Codex, Claude, Amp, Pi, or Kimi code review when explicitly requested.",
-      "githubUrl": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/autoreview",
-      "skillUrl": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-autoreview",
+      "description": "Notion archive: search, sync freshness, pages/databases, Markdown exports, SQL counts, and Notcrawl repo work.",
+      "githubUrl": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/notcrawl",
+      "skillUrl": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-notcrawl",
       "stars": 392094,
-      "updatedAt": "1788351039"
+      "updatedAt": "1779016703"
     },
     {
-      "id": "openclaw-openclaw-agents-skills-channel-message-flows-skill-md",
-      "name": "channel-message-flows",
+      "id": "openclaw-openclaw-agents-skills-openclaw-docker-e2e-authoring-skill-md",
+      "name": "openclaw-docker-e2e-authoring",
       "author": "openclaw",
-      "description": "Use when running QA Lab channel message flow evidence.",
-      "githubUrl": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/channel-message-flows",
-      "skillUrl": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-channel-message-flows",
+      "description": "Author OpenClaw Docker E2E and live provider Docker lanes.",
+      "githubUrl": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-docker-e2e-authoring",
+      "skillUrl": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-openclaw-docker-e2e-authoring",
       "stars": 392094,
-      "updatedAt": "1783054109"
+      "updatedAt": "1779108335"
     },
     {
       "id": "mattpocock-skills-skills-engineering-codebase-design-skill-md",
@@ -186,6 +186,16 @@
       "skillUrl": "https://skillsmp.com/creators/deepseek-ai/deepseek-harness/agents-skills-dsh-ci-test-reliability",
       "stars": 250596,
       "updatedAt": "1791558236"
+    },
+    {
+      "id": "deepseek-ai-deepseek-harness-agents-skills-dsh-merging-stacked-prs-skill-md",
+      "name": "dsh-merging-stacked-prs",
+      "author": "deepseek-ai",
+      "description": "Use when landing a stack of dependent GitHub PRs (A ← B ← C, where each bases on the one below) onto master, merging a PR whose base is another open PR's branch, or whenever a request mentions \"stacked PRs\", \"PR stack\", \"dependent PRs\", or merging several related PRs in sequence. Requires every same-repository dependency chain to use GitHub's official stacked-PR feature before landing so GitHub owns stack-wide rules, CI, ordering, retargeting, and merge state.",
+      "githubUrl": "https://github.com/deepseek-ai/deepseek-harness/tree/master/.agents/skills/dsh-merging-stacked-prs",
+      "skillUrl": "https://skillsmp.com/creators/deepseek-ai/deepseek-harness/agents-skills-dsh-merging-stacked-prs",
+      "stars": 250596,
+      "updatedAt": "1788590252"
     },
     {
       "id": "anomalyco-opencode-opencode-skills-effect-skill-md",
@@ -368,6 +378,16 @@
       "updatedAt": "1773195332"
     },
     {
+      "id": "nodejs-node-deps-v8-agents-skills-clangd-setup-skill-md",
+      "name": "clangd-setup",
+      "author": "nodejs",
+      "description": "Handles installation and configuration of clangd-mcp for V8. Use when clangd-mcp is missing or needs configuration for the current workspace. Do not use for general C++ editing.",
+      "githubUrl": "https://github.com/nodejs/node/tree/main/deps/v8/agents/skills/clangd-setup",
+      "skillUrl": "https://skillsmp.com/creators/nodejs/node/deps-v8-agents-skills-clangd-setup",
+      "stars": 122301,
+      "updatedAt": "1791147850"
+    },
+    {
       "id": "nodejs-node-deps-v8-agents-skills-ecmascript-evaluation-skill-md",
       "name": "ecmascript-evaluation",
       "author": "nodejs",
@@ -498,6 +518,16 @@
       "updatedAt": "1781148003"
     },
     {
+      "id": "pytorch-pytorch-agents-skills-at-dispatch-v2-skill-md",
+      "name": "at-dispatch-v2",
+      "author": "pytorch",
+      "description": "Convert PyTorch AT_DISPATCH macros to AT_DISPATCH_V2 format in ATen C++ code. Use when porting AT_DISPATCH_ALL_TYPES_AND*, AT_DISPATCH_FLOATING_TYPES*, or other dispatch macros to the new v2 API. For ATen kernel files, CUDA kernels, and native operator implementations.",
+      "githubUrl": "https://github.com/pytorch/pytorch/tree/main/.agents/skills/at-dispatch-v2",
+      "skillUrl": "https://skillsmp.com/creators/pytorch/pytorch/agents-skills-at-dispatch-v2",
+      "stars": 104792,
+      "updatedAt": "1791243192"
+    },
+    {
       "id": "paperclipai-paperclip-packages-skills-catalog-catalog-optional-browser-agent-browser-skill-md",
       "name": "agent-browser",
       "author": "paperclipai",
@@ -588,6 +618,16 @@
       "updatedAt": "1782064622"
     },
     {
+      "id": "oven-sh-bun-claude-skills-implementing-jsc-classes-cpp-skill-md",
+      "name": "implementing-jsc-classes-cpp",
+      "author": "oven-sh",
+      "description": "Implements JavaScript classes in C++ using JavaScriptCore. Use when creating new JS classes with C++ bindings, prototypes, or constructors.",
+      "githubUrl": "https://github.com/oven-sh/bun/tree/main/.claude/skills/implementing-jsc-classes-cpp",
+      "skillUrl": "https://skillsmp.com/creators/oven-sh/bun/claude-skills-implementing-jsc-classes-cpp",
+      "stars": 96251,
+      "updatedAt": "1787273663"
+    },
+    {
       "id": "oven-sh-bun-claude-skills-implementing-jsc-classes-rust-skill-md",
       "name": "implementing-jsc-classes-rust",
       "author": "oven-sh",
@@ -604,16 +644,6 @@
       "description": "JSC GC reference for Bun. Use for use-after-free, JS object leaks, \"collected too early\", or when touching WriteBarrier, visitChildren, visitAdditionalChildren, JSRef, JSC::Strong/Weak, hasPendingActivity, ensureStillAlive, addOpaqueRoot, reportExtraMemoryAllocated, IsoSubspace, HeapAnalyzer, finalize.",
       "githubUrl": "https://github.com/oven-sh/bun/tree/main/.claude/skills/javascriptcore-garbage-collector",
       "skillUrl": "https://skillsmp.com/creators/oven-sh/bun/claude-skills-javascriptcore-garbage-collector",
-      "stars": 96251,
-      "updatedAt": "1782366479"
-    },
-    {
-      "id": "oven-sh-bun-claude-skills-rust-system-calls-skill-md",
-      "name": "rust-system-calls",
-      "author": "oven-sh",
-      "description": "Guides using bun_sys for system calls and file I/O in Rust. Use when implementing file operations, opening fds, or any syscall path instead of std::fs or libc.",
-      "githubUrl": "https://github.com/oven-sh/bun/tree/main/.claude/skills/rust-system-calls",
-      "skillUrl": "https://skillsmp.com/creators/oven-sh/bun/claude-skills-rust-system-calls",
       "stars": 96251,
       "updatedAt": "1782366479"
     },
@@ -948,6 +978,16 @@
       "updatedAt": "1788292832"
     },
     {
+      "id": "calesthio-openmontage-agents-skills-remotion-to-hyperframes-skill-md",
+      "name": "remotion-to-hyperframes",
+      "author": "calesthio",
+      "description": "Port an existing Remotion (React) composition to HyperFrames HTML. Use ONLY when the user explicitly asks to port/convert/migrate/translate a Remotion source. Do NOT use: (a) authoring a new HyperFrames composition; (b) Remotion mentioned in passing; (c) Remotion code shared as reference only; (d) \"same video as my Remotion one\" without explicit migrate request — treat as fresh build. Doubt → `/general-video`. One-way, Remotion-only: no reverse export (HyperFrames→Remotion or any framework), no non-Remotion source (After Effects, Framer Motion, plain React/CSS) → out of scope, re-create via `/general-video`. Flags unsupported patterns (useState, useEffect, async calculateMetadata, third-party React libs, `@remotion/lambda`) and recommends runtime interop over lossy translation. Unsure whether to port vs. build fresh, or only a passing Remotion mention? → /hyperframes.",
+      "githubUrl": "https://github.com/calesthio/OpenMontage/tree/main/.agents/skills/remotion-to-hyperframes",
+      "skillUrl": "https://skillsmp.com/creators/calesthio/openmontage/agents-skills-remotion-to-hyperframes",
+      "stars": 68686,
+      "updatedAt": "1782594000"
+    },
+    {
       "id": "openinterpreter-openinterpreter-codex-skills-path-types-skill-md",
       "name": "path-types",
       "author": "openinterpreter",
@@ -1006,6 +1046,26 @@
       "skillUrl": "https://skillsmp.com/creators/remotion-dev/remotion/agents-skills-update-remotion-rust-ffmpeg",
       "stars": 64425,
       "updatedAt": "1784199572"
+    },
+    {
+      "id": "eternity4719-howtolivebetter-claude-skills-life-decision-guide-skill-md",
+      "name": "life-decision-guide",
+      "author": "eternity4719",
+      "description": "用《高性价比人生指南》的正文回答具体的人生决策：该不该做、值不值、怎么选、出事了先做什么、能领哪笔钱、这么干犯不犯法。先把相关条目查出来再答，按成本（钱/时间/毅力）、收益量级和证据等级 A/B/C 排序，每条都注明出自第几节第几条。触发词：该不该、值不值、要不要、划不划算、怎么选、帮我决定、这样犯法吗、能领什么、先做什么、性价比。",
+      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter/tree/main/.claude/skills/life-decision-guide",
+      "skillUrl": "https://skillsmp.com/creators/eternity4719/howtolivebetter/claude-skills-life-decision-guide",
+      "stars": 64006,
+      "updatedAt": "1789925509"
+    },
+    {
+      "id": "eternity4719-howtolivebetter-skills-life-decision-guide-skill-md",
+      "name": "life-decision-guide",
+      "author": "eternity4719",
+      "description": "用《高性价比人生指南》(github.com/eternity4719/HowToLiveBetter) 的正文回答具体的人生决策：该不该做、值不值、怎么选、出事了先做什么、能领哪笔钱、这么干犯不犯法。先把相关条目查出来再答，按成本（钱/时间/毅力）、收益量级和证据等级 A/B/C 排序，每条都注明出自第几节第几条。触发词：该不该、值不值、要不要、划不划算、怎么选、帮我决定、这样犯法吗、能领什么、先做什么、性价比。",
+      "githubUrl": "https://github.com/eternity4719/HowToLiveBetter/tree/main/skills/life-decision-guide",
+      "skillUrl": "https://skillsmp.com/creators/eternity4719/howtolivebetter/skills-life-decision-guide",
+      "stars": 64006,
+      "updatedAt": "1791968958"
     },
     {
       "id": "topjohnwu-magisk-agents-skills-magisk-native-skill-md",
@@ -1108,6 +1168,16 @@
       "updatedAt": "1779292871"
     },
     {
+      "id": "hkuds-cli-anything-sbox-agent-harness-cli-anything-sbox-skills-skill-md",
+      "name": "cli-anything-sbox",
+      "author": "HKUDS",
+      "description": "Agent-native CLI for the s\u0026box game engine (Facepunch Studios, Source 2): project management, scene/prefab editing, material/sound/localization configs, C# code generation, asset graph queries, project validation, and editor launch.",
+      "githubUrl": "https://github.com/HKUDS/CLI-Anything/tree/main/sbox/agent-harness/cli_anything/sbox/skills",
+      "skillUrl": "https://skillsmp.com/creators/hkuds/cli-anything/sbox-agent-harness-cli-anything-sbox-skills",
+      "stars": 53128,
+      "updatedAt": "1777166662"
+    },
+    {
       "id": "expo-expo-packages-expo-sqlite-skills-expo-sqlite-skill-md",
       "name": "expo-sqlite",
       "author": "expo",
@@ -1168,6 +1238,16 @@
       "updatedAt": "1787765066"
     },
     {
+      "id": "moeru-ai-airi-agents-skills-stage-tamagotchi-godot-csharp-skill-md",
+      "name": "stage-tamagotchi-godot-csharp",
+      "author": "moeru-ai",
+      "description": "Apply the Stage Tamagotchi Godot C# development method and code style when working in `apps/stage-tamagotchi-kirie` or its migration predecessor, `engines/stage-tamagotchi-godot`. Use it for their `.cs` files, `.csproj`, local `.editorconfig`, and Godot-specific C# structure decisions. Do not use it for TypeScript, Electron, renderer code, shared workspace configuration, or repo-wide C# conventions.",
+      "githubUrl": "https://github.com/moeru-ai/airi/tree/main/.agents/skills/stage-tamagotchi-godot-csharp",
+      "skillUrl": "https://skillsmp.com/creators/moeru-ai/airi/agents-skills-stage-tamagotchi-godot-csharp",
+      "stars": 50418,
+      "updatedAt": "1790913301"
+    },
+    {
       "id": "metabase-metabase-resources-mcp-v2-skills-native-parameters-skill-md",
       "name": "native-parameters",
       "author": "metabase",
@@ -1176,6 +1256,16 @@
       "skillUrl": "https://skillsmp.com/creators/metabase/metabase/resources-mcp-v2-skills-native-parameters",
       "stars": 49694,
       "updatedAt": "1789162212"
+    },
+    {
+      "id": "julialang-julia-doc-src-devdocs-agents-skills-c-static-analysis-skill-md",
+      "name": "c-static-analysis",
+      "author": "JuliaLang",
+      "description": "Run Clang static analysis on Julia's C/C++ runtime and codegen, and satisfy the GC-rooting checker. Use after modifying runtime/codegen .c/.cpp files under src/ (excluding headers), before opening a PR.",
+      "githubUrl": "https://github.com/JuliaLang/julia/tree/master/doc/src/devdocs/agents/skills/c-static-analysis",
+      "skillUrl": "https://skillsmp.com/creators/julialang/julia/doc-src-devdocs-agents-skills-c-static-analysis",
+      "stars": 49207,
+      "updatedAt": "1786056129"
     },
     {
       "id": "prisma-orm-skills-prisma-8-skill-md",
@@ -1208,6 +1298,26 @@
       "updatedAt": "1787767574"
     },
     {
+      "id": "omacom-omarchy-default-agents-skills-omarchy-app-skill-md",
+      "name": "omarchy-app",
+      "author": "omacom",
+      "description": "Build a new desktop app for Omarchy the way Omarchy's own apps are built (Hype, Monologue, Omacut): C++ and Qt Quick, compiled with qmake6 and make into a single binary, following the Omarchy theme live, and installed as an Arch package so it shows up in the app launcher. Use when asked to make, build, or scaffold an app, tool, utility, or GUI program for the desktop. Triggers: new app, make me an app, desktop app, GUI, Qt, QML, Qt Quick, C++ app, qmake, app launcher entry, PKGBUILD for my app.",
+      "githubUrl": "https://github.com/omacom/omarchy/tree/quattro/default/agents/skills/omarchy-app",
+      "skillUrl": "https://skillsmp.com/creators/omacom/omarchy/default-agents-skills-omarchy-app",
+      "stars": 44905,
+      "updatedAt": "1791969218"
+    },
+    {
+      "id": "ccxt-ccxt-claude-skills-ccxt-csharp-skill-md",
+      "name": "ccxt-csharp",
+      "author": "ccxt",
+      "description": "CCXT cryptocurrency exchange library for C# and .NET developers. Covers both REST API (standard) and WebSocket API (real-time). Helps install CCXT, connect to exchanges, fetch market data, place orders, stream live tickers/orderbooks, handle authentication, and manage errors in .NET projects. Use when working with crypto exchanges in C# applications, trading systems, or financial software. Supports .NET Standard 2.0+.",
+      "githubUrl": "https://github.com/ccxt/ccxt/tree/master/.claude/skills/ccxt-csharp",
+      "skillUrl": "https://skillsmp.com/creators/ccxt/ccxt/claude-skills-ccxt-csharp",
+      "stars": 44393,
+      "updatedAt": "1789990973"
+    },
+    {
       "id": "ccxt-ccxt-claude-skills-ccxt-php-skill-md",
       "name": "ccxt-php",
       "author": "ccxt",
@@ -1228,6 +1338,16 @@
       "updatedAt": "1789990973"
     },
     {
+      "id": "zhaoxuya520-reverse-skill-ctf-sandbox-orchestrator-competition-ios-runtime-skill-md",
+      "name": "competition-ios-runtime",
+      "author": "zhaoxuya520",
+      "description": "Internal downstream skill for ctf-sandbox-orchestrator. CTF-sandbox workflow for IPA runtime analysis, Frida hooks, Objective-C or Swift method tracing, Keychain inspection, SSL pinning bypass, URL scheme handling, and iOS request-signing recovery. Use when the user asks to hook an IPA, trace Objective-C or Swift runtime behavior, inspect Keychain or plist state, bypass pinning, analyze deeplinks or universal links, or replay accepted iOS requests. Use only after `$ctf-sandbox-orchestrator` has already established sandbox assumptions and routed here.",
+      "githubUrl": "https://github.com/zhaoxuya520/reverse-skill/tree/main/CTF-Sandbox-Orchestrator/competition-ios-runtime",
+      "skillUrl": "https://skillsmp.com/creators/zhaoxuya520/reverse-skill/ctf-sandbox-orchestrator-competition-ios-runtime",
+      "stars": 42173,
+      "updatedAt": "1786185153"
+    },
+    {
       "id": "zhaoxuya520-reverse-skill-ctf-sandbox-orchestrator-competition-k8s-control-plane-skill-md",
       "name": "competition-k8s-control-plane",
       "author": "zhaoxuya520",
@@ -1244,16 +1364,6 @@
       "description": "Use for authorized cloud, container, and Kubernetes security assessment including metadata SSRF, IAM misconfig, container escape paths, and cluster RBAC review.",
       "githubUrl": "https://github.com/zhaoxuya520/reverse-skill/tree/main/skills/cloud-k8s",
       "skillUrl": "https://skillsmp.com/creators/zhaoxuya520/reverse-skill/skills-cloud-k8s",
-      "stars": 42173,
-      "updatedAt": "1786185153"
-    },
-    {
-      "id": "zhaoxuya520-reverse-skill-skills-go-rust-reverse-skill-md",
-      "name": "go-rust-reverse",
-      "author": "zhaoxuya520",
-      "description": "Use for reverse engineering stripped Go and Rust binaries including runtime recognition, pclntab/moduel data recovery, panic strings, and idiomatic decompilation recovery.",
-      "githubUrl": "https://github.com/zhaoxuya520/reverse-skill/tree/main/skills/go-rust-reverse",
-      "skillUrl": "https://skillsmp.com/creators/zhaoxuya520/reverse-skill/skills-go-rust-reverse",
       "stars": 42173,
       "updatedAt": "1786185153"
     },
@@ -1278,6 +1388,16 @@
       "updatedAt": "1779452301"
     },
     {
+      "id": "wshobson-agents-plugins-dotnet-contribution-skills-dotnet-backend-patterns-skill-md",
+      "name": "dotnet-backend-patterns",
+      "author": "wshobson",
+      "description": "Master C#/.NET backend development patterns for building robust APIs, MCP servers, and enterprise applications. Covers async/await, dependency injection, Entity Framework Core, Dapper, configuration, caching, and testing with xUnit. Use when developing .NET backends, reviewing C# code, or designing API architectures.",
+      "githubUrl": "https://github.com/wshobson/agents/tree/main/plugins/dotnet-contribution/skills/dotnet-backend-patterns",
+      "skillUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-dotnet-contribution-skills-dotnet-backend-patterns",
+      "stars": 40870,
+      "updatedAt": "1772898797"
+    },
+    {
       "id": "wshobson-agents-plugins-kubernetes-operations-skills-gitops-workflow-skill-md",
       "name": "gitops-workflow",
       "author": "wshobson",
@@ -1286,16 +1406,6 @@
       "skillUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-kubernetes-operations-skills-gitops-workflow",
       "stars": 40870,
       "updatedAt": "1791146571"
-    },
-    {
-      "id": "wshobson-agents-plugins-kubernetes-operations-skills-helm-chart-scaffolding-skill-md",
-      "name": "helm-chart-scaffolding",
-      "author": "wshobson",
-      "description": "Design, organize, and manage Helm charts for templating and packaging Kubernetes applications with reusable configurations. Use when creating Helm charts, packaging Kubernetes applications, or implementing templated deployments.",
-      "githubUrl": "https://github.com/wshobson/agents/tree/main/plugins/kubernetes-operations/skills/helm-chart-scaffolding",
-      "skillUrl": "https://skillsmp.com/creators/wshobson/agents/plugins-kubernetes-operations-skills-helm-chart-scaffolding",
-      "stars": 40870,
-      "updatedAt": "1779452301"
     },
     {
       "id": "github-awesome-copilot-skills-containerize-aspnet-framework-skill-md",
